@@ -12,6 +12,10 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" upperBound="-1" eType="#//Type"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trainer" upperBound="-1"
+        eType="#//Trainer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemonInstance" upperBound="-1"
+        eType="#//PokemonInstance"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pokemon">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -62,5 +66,17 @@
         iD="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" upperBound="-1"
         eType="#//Pokemon" eOpposite="#//Pokemon/type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PokemonInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
+        eType="#//Pokemon"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="moves" lowerBound="1" upperBound="4"
+        eType="#//Move"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Trainer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
+        upperBound="6" eType="#//PokemonInstance"/>
   </eClassifiers>
 </ecore:EPackage>
