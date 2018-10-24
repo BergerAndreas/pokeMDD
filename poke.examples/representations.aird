@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_rKMHoNduEeih94ZEGnkEyQ" selectedViews="_LLhWINdvEeih94ZEGnkEyQ" version="13.0.0.201804031646">
+    <semanticResources>Root.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_LLhWINdvEeih94ZEGnkEyQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Wq0rANdvEeih94ZEGnkEyQ" name="new Pokemon diagram" repPath="#_WpIo8NdvEeih94ZEGnkEyQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']"/>
+        <target xmi:type="pokemon:Root" href="Root.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_WqxAoNdvEeih94ZEGnkEyQ" name="new Pokemon diagram" uid="_WpIo8NdvEeih94ZEGnkEyQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_WqxAoddvEeih94ZEGnkEyQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_WqxAotdvEeih94ZEGnkEyQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_WrD7kNdvEeih94ZEGnkEyQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_WrD7kddvEeih94ZEGnkEyQ" type="Sirius" element="_WqxAoNdvEeih94ZEGnkEyQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_WrQv4NdvEeih94ZEGnkEyQ" type="2001" element="_WqxApNdvEeih94ZEGnkEyQ">
+          <children xmi:type="notation:Node" xmi:id="_WrUaQNdvEeih94ZEGnkEyQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WrUaQddvEeih94ZEGnkEyQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WrYrsNdvEeih94ZEGnkEyQ" type="3003" element="_WqxApddvEeih94ZEGnkEyQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WrYrsddvEeih94ZEGnkEyQ" fontName=".SF NS Text"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WrYrstdvEeih94ZEGnkEyQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WrQv4ddvEeih94ZEGnkEyQ" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WrQv4tdvEeih94ZEGnkEyQ" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_WrD7ktdvEeih94ZEGnkEyQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WqxApNdvEeih94ZEGnkEyQ" name="pikachu" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
+      <semanticElements xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_WqxApddvEeih94ZEGnkEyQ" labelPosition="node" width="10" height="5" color="138,226,52">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_WqxAptdvEeih94ZEGnkEyQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer"/>
+    <target xmi:type="pokemon:Root" href="Root.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
