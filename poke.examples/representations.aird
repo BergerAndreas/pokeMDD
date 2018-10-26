@@ -28,65 +28,118 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WrYrstdvEeih94ZEGnkEyQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_WrQv4ddvEeih94ZEGnkEyQ" fontName=".SF NS Text" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WrQv4tdvEeih94ZEGnkEyQ" x="228" y="168" width="100" height="50"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WrQv4tdvEeih94ZEGnkEyQ" x="360" y="96" width="100" height="50"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_t1S-sNj9EeixO4idFTPU9w" type="2001" element="_t1DHENj9EeixO4idFTPU9w">
-          <children xmi:type="notation:Node" xmi:id="_t1d90Nj9EeixO4idFTPU9w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_t1d90dj9EeixO4idFTPU9w" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_DYGY0Nj-EeixO4idFTPU9w" type="2001" element="_DXlbcNj-EeixO4idFTPU9w">
+          <children xmi:type="notation:Node" xmi:id="_DYG_4Nj-EeixO4idFTPU9w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_DYG_4dj-EeixO4idFTPU9w" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_t1mgsNj9EeixO4idFTPU9w" type="3003" element="_t1GxcNj9EeixO4idFTPU9w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_t1mgsdj9EeixO4idFTPU9w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t1nHwNj9EeixO4idFTPU9w"/>
+          <children xmi:type="notation:Node" xmi:id="_DYHm8Nj-EeixO4idFTPU9w" type="3003" element="_DXmCgNj-EeixO4idFTPU9w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_DYHm8dj-EeixO4idFTPU9w" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DYHm8tj-EeixO4idFTPU9w"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_t1S-sdj9EeixO4idFTPU9w" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t1S-stj9EeixO4idFTPU9w" x="36" y="192" width="100" height="50"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_DYGY0dj-EeixO4idFTPU9w" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DYGY0tj-EeixO4idFTPU9w" x="240" y="300" width="97" height="37"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_xxZA0Nj9EeixO4idFTPU9w" type="2001" element="_xwMuANj9EeixO4idFTPU9w">
-          <children xmi:type="notation:Node" xmi:id="_xxZn4Nj9EeixO4idFTPU9w" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_xxZn4dj9EeixO4idFTPU9w" y="5"/>
+        <children xmi:type="notation:Node" xmi:id="_YWK4wNj_EeixO4idFTPU9w" type="2001" element="_YVoGMNj_EeixO4idFTPU9w">
+          <children xmi:type="notation:Node" xmi:id="_YWLf0Nj_EeixO4idFTPU9w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_YWLf0dj_EeixO4idFTPU9w" y="5"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_0kD8wNj9EeixO4idFTPU9w" type="3003" element="_0jMaENj9EeixO4idFTPU9w">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_0kD8wdj9EeixO4idFTPU9w" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0kD8wtj9EeixO4idFTPU9w"/>
+          <children xmi:type="notation:Node" xmi:id="_YWLf0tj_EeixO4idFTPU9w" type="3003" element="_YVoGMdj_EeixO4idFTPU9w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_YWLf09j_EeixO4idFTPU9w" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YWLf1Nj_EeixO4idFTPU9w"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_xxZA0dj9EeixO4idFTPU9w" fontName="Segoe UI"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xxZA0tj9EeixO4idFTPU9w" x="192" y="288" width="133" height="49"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_YWK4wdj_EeixO4idFTPU9w" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YWK4wtj_EeixO4idFTPU9w" x="564" y="300" width="100" height="50"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_WrD7ktdvEeih94ZEGnkEyQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_vHVuANkAEeixO4idFTPU9w" type="4001" element="_vGuC8NkAEeixO4idFTPU9w" source="_WrQv4NdvEeih94ZEGnkEyQ" target="_DYGY0Nj-EeixO4idFTPU9w">
+          <children xmi:type="notation:Node" xmi:id="_vHXjMNkAEeixO4idFTPU9w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vHXjMdkAEeixO4idFTPU9w" x="1" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vHYKQNkAEeixO4idFTPU9w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vHYKQdkAEeixO4idFTPU9w" x="-3" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vHYKQtkAEeixO4idFTPU9w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vHYKQ9kAEeixO4idFTPU9w" x="-4" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vHVuAdkAEeixO4idFTPU9w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vHVuAtkAEeixO4idFTPU9w" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vHVuA9kAEeixO4idFTPU9w" points="[-7, 25, 61, -238]$[-103, 179, -35, -84]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vHcbsNkAEeixO4idFTPU9w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vHcbsdkAEeixO4idFTPU9w" id="(1.056701030927835,2.2837837837837838)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zuSrANkAEeixO4idFTPU9w" type="4001" element="_ztvRYNkAEeixO4idFTPU9w" source="_WrQv4NdvEeih94ZEGnkEyQ" target="_YWK4wNj_EeixO4idFTPU9w">
+          <children xmi:type="notation:Node" xmi:id="_zuSrBNkAEeixO4idFTPU9w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zuSrBdkAEeixO4idFTPU9w" x="11" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zuSrBtkAEeixO4idFTPU9w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zuSrB9kAEeixO4idFTPU9w" x="-15" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zuTSENkAEeixO4idFTPU9w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zuTSEdkAEeixO4idFTPU9w" x="-16" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zuSrAdkAEeixO4idFTPU9w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zuSrAtkAEeixO4idFTPU9w" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zuSrA9kAEeixO4idFTPU9w" points="[25, 25, -179, -179]$[179, 179, -25, -25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zuTSEtkAEeixO4idFTPU9w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zuTSE9kAEeixO4idFTPU9w" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WqxApNdvEeih94ZEGnkEyQ" name="pikachu" width="10" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WqxApNdvEeih94ZEGnkEyQ" name="pikachu" outgoingEdges="_vGuC8NkAEeixO4idFTPU9w _ztvRYNkAEeixO4idFTPU9w" width="10" height="5" resizeKind="NSEW">
       <target xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
       <semanticElements xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" xmi:id="_WqxApddvEeih94ZEGnkEyQ" labelPosition="node" width="10" height="5" color="138,226,52">
+        <customFeatures>labelFormat</customFeatures>
+        <customFeatures>labelColor</customFeatures>
         <description xmi:type="style:SquareDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_t1DHENj9EeixO4idFTPU9w" name="fire" width="10" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_DXlbcNj-EeixO4idFTPU9w" name="fire" incomingEdges="_vGuC8NkAEeixO4idFTPU9w" width="10" height="5" resizeKind="NSEW">
       <target xmi:type="pokemon:Type" href="Root.xmi#fire"/>
       <semanticElements xmi:type="pokemon:Type" href="Root.xmi#fire"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" xmi:id="_t1GxcNj9EeixO4idFTPU9w" labelPosition="node" width="10" height="5">
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_DXmCgNj-EeixO4idFTPU9w" labelPosition="node" width="10" height="5">
+        <customFeatures>labelSize</customFeatures>
+        <customFeatures>labelFormat</customFeatures>
+        <customFeatures>labelColor</customFeatures>
         <description xmi:type="style:SquareDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Type']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Type']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_xwMuANj9EeixO4idFTPU9w" name="action" width="10" height="5" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_YVoGMNj_EeixO4idFTPU9w" name="action" incomingEdges="_ztvRYNkAEeixO4idFTPU9w" width="10" height="5" resizeKind="NSEW">
       <target xmi:type="pokemon:Move" href="Root.xmi#//@move.0"/>
       <semanticElements xmi:type="pokemon:Move" href="Root.xmi#//@move.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" xmi:id="_0jMaENj9EeixO4idFTPU9w" labelPosition="node" width="10" height="5" color="217,196,215">
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_YVoGMdj_EeixO4idFTPU9w" labelPosition="node" width="10" height="5" color="217,196,215">
         <description xmi:type="style:SquareDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Move']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Move']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vGuC8NkAEeixO4idFTPU9w" sourceNode="_WqxApNdvEeih94ZEGnkEyQ" targetNode="_DXlbcNj-EeixO4idFTPU9w">
+      <target xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_vGyUYNkAEeixO4idFTPU9w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@edgeMappings[name='typeEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_vGyUYdkAEeixO4idFTPU9w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@edgeMappings[name='typeEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ztvRYNkAEeixO4idFTPU9w" sourceNode="_WqxApNdvEeih94ZEGnkEyQ" targetNode="_YVoGMNj_EeixO4idFTPU9w">
+      <target xmi:type="pokemon:Pokemon" href="Root.xmi#//@pokemon.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ztv4cNkAEeixO4idFTPU9w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@edgeMappings[name='moveEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ztv4cdkAEeixO4idFTPU9w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@edgeMappings[name='moveEdge']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/my.project.design/description/project.odesign#//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_WqxAptdvEeih94ZEGnkEyQ"/>

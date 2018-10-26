@@ -2,10 +2,12 @@
 <pokemon:Root
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore"
-    xsi:schemaLocation="platform:/plugin/pokeMDD/model/pokemon.ecore pokemon.ecore">
-  <pokemon name="pikachu"/>
-  <move name="action"/>
-  <type name="fire"/>
+    xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
+  <pokemon name="pikachu"
+      type="fire"
+      move="//@move.0"/>
+  <move name="action"
+      pokemon="//@pokemon.0"/>
+  <type name="fire"
+      pokemon="//@pokemon.0"/>
 </pokemon:Root>
