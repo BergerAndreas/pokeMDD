@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pokemon:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
   <pokemon name="pikachu" type="fire" move="//@move.0"/>
-  <pokemon/>
   <move name="action" pokemon="//@pokemon.0"/>
   <type name="fire" pokemon="//@pokemon.0"/>
 </pokemon:Root>
