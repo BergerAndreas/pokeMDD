@@ -41,8 +41,8 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root">
-          <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::Pokemon">
+        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root" childrenPresentation="HorizontalStack">
+          <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::Pokemon" childrenPresentation="VerticalStack">
             <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Move" semanticCandidatesExpression="aql:self.move" domainClass="pokemon::Move">
                 <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
