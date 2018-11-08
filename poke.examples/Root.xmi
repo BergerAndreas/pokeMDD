@@ -16,6 +16,7 @@
       baseExperience="123"
       type="fire"
       move="//@move.0"/>
+  <pokemon name="hallvard"/>
   <move name="Thundersmaash"
       pokemon="//@pokemon.0 //@pokemon.1 5"/>
   <move name="Wateer Smaash"
@@ -28,4 +29,5 @@
       pokemon="//@pokemon.0 //@pokemon.1 5"/>
   <type name="Flying"
       pokemon="//@pokemon.1"/>
+  <trainer name="Tårstain"/>
 </pokemon:Root>
