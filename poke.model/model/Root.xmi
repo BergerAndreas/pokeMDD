@@ -5,7 +5,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore"
     xsi:schemaLocation="platform:/plugin/pokeMDD/model/pokemon.ecore pokemon.ecore">
-  <pokemon name="pikachu"/>
-  <move name="action"/>
-  <type name="fire"/>
+  <pokemon name="Pikachu"
+      type="Electric"
+      move="//@move.0"/>
+  <move name="Smash"
+      pokemon="//@pokemon.0"/>
+  <type name="Electric"
+      pokemon="//@pokemon.0"/>
+  <pokemonInstance
+      pokemon="//@pokemon.0"
+      moves="//@move.0"/>
 </pokemon:Root>

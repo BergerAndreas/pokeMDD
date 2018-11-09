@@ -104,7 +104,7 @@ public interface PokemonPackage extends EPackage {
 	int ROOT__TRAINER = 3;
 
 	/**
-	 * The feature id for the '<em><b>Pokemon Instance</b></em>' reference list.
+	 * The feature id for the '<em><b>Pokemon Instance</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -515,10 +515,10 @@ public interface PokemonPackage extends EPackage {
 	EReference getRoot_Trainer();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pokemon.Root#getPokemonInstance <em>Pokemon Instance</em>}'.
+	 * Returns the meta object for the containment reference list '{@link pokemon.Root#getPokemonInstance <em>Pokemon Instance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Pokemon Instance</em>'.
+	 * @return the meta object for the containment reference list '<em>Pokemon Instance</em>'.
 	 * @see pokemon.Root#getPokemonInstance()
 	 * @see #getRoot()
 	 * @generated
@@ -872,7 +872,7 @@ public interface PokemonPackage extends EPackage {
 		EReference ROOT__TRAINER = eINSTANCE.getRoot_Trainer();
 
 		/**
-		 * The meta object literal for the '<em><b>Pokemon Instance</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Pokemon Instance</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

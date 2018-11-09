@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pokemon:Root
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
-  <pokemon name="pikachu"
-      type="fire"
-      move="//@move.0 3"/>
-  <pokemon name="Charmandaar"
-      type="fire Flying"
-      move="//@move.0 3"/>
-  <pokemon name="Squrrtel"
-      id="5"
-      height="32"
-      weight="123"
-      baseExperience="123"
-      type="fire"
-      move="//@move.0"/>
-  <pokemon name="hallvard"/>
-  <move name="Thundersmaash"
-      pokemon="//@pokemon.0 //@pokemon.1 5"/>
-  <move name="Wateer Smaash"
-      id="3"
-      pp="12"
-      power="321"
-      accuracy="100"
-      pokemon="//@pokemon.0 //@pokemon.1"/>
-  <type name="fire"
-      pokemon="//@pokemon.0 //@pokemon.1 5"/>
-  <type name="Flying"
-      pokemon="//@pokemon.1"/>
-  <trainer name="Tårstain"/>
+<pokemon:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
+  <pokemon name="Pikachu" type="Electric" move="//@move.0"/>
+  <pokemon name="Ola"/>
+  <pokemon name="Per"/>
+  <pokemon name="truls"/>
+  <pokemon name="anne"/>
+  <pokemon name="noe"/>
+  <pokemon name="par"/>
+  <move name="Smash" pokemon="//@pokemon.0"/>
+  <type name="Electric" pokemon="//@pokemon.0"/>
+  <pokemonInstance pokemon="//@pokemon.0"/>
 </pokemon:Root>
