@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pokemon:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
-  <pokemon name="Pikachu" type="Electric" move="//@move.0"/>
-  <pokemon name="Ola"/>
-  <pokemon name="Per"/>
-  <pokemon name="truls"/>
-  <pokemon name="anne"/>
-  <pokemon name="noe"/>
-  <pokemon name="par"/>
-  <move name="Smash" pokemon="//@pokemon.0"/>
-  <type name="Electric" pokemon="//@pokemon.0"/>
-  <pokemonInstance pokemon="//@pokemon.0"/>
+<pokemon:Root
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
+  <pokemon name="Charmander"
+      id="123"
+      height="321"
+      baseExperience="123"
+      type="Fire"
+      move="3 33"/>
+  <pokemon name="Pikachu"
+      type="Electric"
+      move="33"/>
+  <move name="Fireblast"
+      id="3"
+      pp="13"
+      power="321"
+      accuracy="99"
+      pokemon="123"/>
+  <move name="Cut"
+      id="33"
+      pp="12"
+      power="21"
+      accuracy="12"
+      pokemon="123 //@pokemon.1"/>
+  <type name="Fire"
+      pokemon="123"/>
+  <type name="Electric"
+      pokemon="//@pokemon.1"/>
+  <trainer name="Ola"
+      pokemon="//@pokemonInstance.1 //@pokemonInstance.0"/>
+  <trainer name="Per"
+      pokemon="//@pokemonInstance.1"/>
+  <pokemonInstance
+      pokemon="123"
+      level="33"
+      moves="3"/>
+  <pokemonInstance
+      pokemon="//@pokemon.1"
+      level="2"
+      moves="33"/>
 </pokemon:Root>
