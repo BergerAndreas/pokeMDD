@@ -14,7 +14,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pokemon.Move;
@@ -84,7 +83,7 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	protected EList<Trainer> trainer;
 
 	/**
-	 * The cached value of the '{@link #getPokemonInstance() <em>Pokemon Instance</em>}' reference list.
+	 * The cached value of the '{@link #getPokemonInstance() <em>Pokemon Instance</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPokemonInstance()
@@ -167,7 +166,7 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 */
 	public EList<PokemonInstance> getPokemonInstance() {
 		if (pokemonInstance == null) {
-			pokemonInstance = new EObjectResolvingEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.ROOT__POKEMON_INSTANCE);
+			pokemonInstance = new EObjectContainmentEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.ROOT__POKEMON_INSTANCE);
 		}
 		return pokemonInstance;
 	}
@@ -188,6 +187,8 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return ((InternalEList<?>)getType()).basicRemove(otherEnd, msgs);
 			case PokemonPackage.ROOT__TRAINER:
 				return ((InternalEList<?>)getTrainer()).basicRemove(otherEnd, msgs);
+			case PokemonPackage.ROOT__POKEMON_INSTANCE:
+				return ((InternalEList<?>)getPokemonInstance()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

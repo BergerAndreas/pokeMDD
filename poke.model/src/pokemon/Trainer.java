@@ -53,6 +53,7 @@ public interface Trainer extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Pokemon</b></em>' reference list.
 	 * The list contents are of type {@link pokemon.PokemonInstance}.
+	 * It is bidirectional and its opposite is '{@link pokemon.PokemonInstance#getTrainer <em>Trainer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pokemon</em>' reference list isn't clear,
@@ -61,7 +62,8 @@ public interface Trainer extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pokemon</em>' reference list.
 	 * @see pokemon.PokemonPackage#getTrainer_Pokemon()
-	 * @model required="true" upper="6"
+	 * @see pokemon.PokemonInstance#getTrainer
+	 * @model opposite="trainer" required="true" upper="6"
 	 * @generated
 	 */
 	EList<PokemonInstance> getPokemon();

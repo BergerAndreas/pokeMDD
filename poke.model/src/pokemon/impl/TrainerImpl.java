@@ -6,15 +6,16 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
-
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import pokemon.PokemonInstance;
 import pokemon.PokemonPackage;
 import pokemon.Trainer;
@@ -111,9 +112,38 @@ public class TrainerImpl extends MinimalEObjectImpl.Container implements Trainer
 	 */
 	public EList<PokemonInstance> getPokemon() {
 		if (pokemon == null) {
-			pokemon = new EObjectResolvingEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.TRAINER__POKEMON);
+			pokemon = new EObjectWithInverseResolvingEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.TRAINER__POKEMON, PokemonPackage.POKEMON_INSTANCE__TRAINER);
 		}
 		return pokemon;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PokemonPackage.TRAINER__POKEMON:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPokemon()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PokemonPackage.TRAINER__POKEMON:
+				return ((InternalEList<?>)getPokemon()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

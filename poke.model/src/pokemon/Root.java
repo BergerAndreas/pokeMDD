@@ -92,7 +92,7 @@ public interface Root extends EObject {
 	EList<Trainer> getTrainer();
 
 	/**
-	 * Returns the value of the '<em><b>Pokemon Instance</b></em>' reference list.
+	 * Returns the value of the '<em><b>Pokemon Instance</b></em>' containment reference list.
 	 * The list contents are of type {@link pokemon.PokemonInstance}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -100,9 +100,9 @@ public interface Root extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pokemon Instance</em>' reference list.
+	 * @return the value of the '<em>Pokemon Instance</em>' containment reference list.
 	 * @see pokemon.PokemonPackage#getRoot_PokemonInstance()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<PokemonInstance> getPokemonInstance();
