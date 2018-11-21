@@ -6,6 +6,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -20,6 +21,7 @@ import pokemon.Move;
 import pokemon.Pokemon;
 import pokemon.PokemonInstance;
 import pokemon.PokemonPackage;
+import pokemon.Trainer;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,6 +34,7 @@ import pokemon.PokemonPackage;
  *   <li>{@link pokemon.impl.PokemonInstanceImpl#getPokemon <em>Pokemon</em>}</li>
  *   <li>{@link pokemon.impl.PokemonInstanceImpl#getLevel <em>Level</em>}</li>
  *   <li>{@link pokemon.impl.PokemonInstanceImpl#getMoves <em>Moves</em>}</li>
+ *   <li>{@link pokemon.impl.PokemonInstanceImpl#getTrainer <em>Trainer</em>}</li>
  * </ul>
  *
  * @generated
@@ -76,6 +79,16 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected EList<Move> moves;
+
+	/**
+	 * The cached value of the '{@link #getTrainer() <em>Trainer</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTrainer()
+	 * @generated
+	 * @ordered
+	 */
+	protected Trainer trainer;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,6 +185,96 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Trainer getTrainer() {
+		if (trainer != null && trainer.eIsProxy()) {
+			InternalEObject oldTrainer = (InternalEObject)trainer;
+			trainer = (Trainer)eResolveProxy(oldTrainer);
+			if (trainer != oldTrainer) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PokemonPackage.POKEMON_INSTANCE__TRAINER, oldTrainer, trainer));
+			}
+		}
+		return trainer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Trainer basicGetTrainer() {
+		return trainer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTrainer(Trainer newTrainer, NotificationChain msgs) {
+		Trainer oldTrainer = trainer;
+		trainer = newTrainer;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PokemonPackage.POKEMON_INSTANCE__TRAINER, oldTrainer, newTrainer);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTrainer(Trainer newTrainer) {
+		if (newTrainer != trainer) {
+			NotificationChain msgs = null;
+			if (trainer != null)
+				msgs = ((InternalEObject)trainer).eInverseRemove(this, PokemonPackage.TRAINER__POKEMON, Trainer.class, msgs);
+			if (newTrainer != null)
+				msgs = ((InternalEObject)newTrainer).eInverseAdd(this, PokemonPackage.TRAINER__POKEMON, Trainer.class, msgs);
+			msgs = basicSetTrainer(newTrainer, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PokemonPackage.POKEMON_INSTANCE__TRAINER, newTrainer, newTrainer));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				if (trainer != null)
+					msgs = ((InternalEObject)trainer).eInverseRemove(this, PokemonPackage.TRAINER__POKEMON, Trainer.class, msgs);
+				return basicSetTrainer((Trainer)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				return basicSetTrainer(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -182,6 +285,9 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 				return getLevel();
 			case PokemonPackage.POKEMON_INSTANCE__MOVES:
 				return getMoves();
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				if (resolve) return getTrainer();
+				return basicGetTrainer();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -205,6 +311,9 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 				getMoves().clear();
 				getMoves().addAll((Collection<? extends Move>)newValue);
 				return;
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				setTrainer((Trainer)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -226,6 +335,9 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 			case PokemonPackage.POKEMON_INSTANCE__MOVES:
 				getMoves().clear();
 				return;
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				setTrainer((Trainer)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -244,6 +356,8 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 				return level != LEVEL_EDEFAULT;
 			case PokemonPackage.POKEMON_INSTANCE__MOVES:
 				return moves != null && !moves.isEmpty();
+			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
+				return trainer != null;
 		}
 		return super.eIsSet(featureID);
 	}

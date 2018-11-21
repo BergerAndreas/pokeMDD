@@ -406,6 +406,15 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPokemonInstance_Trainer() {
+		return (EReference)pokemonInstanceEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTrainer() {
 		return trainerEClass;
 	}
@@ -489,6 +498,7 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		createEReference(pokemonInstanceEClass, POKEMON_INSTANCE__POKEMON);
 		createEAttribute(pokemonInstanceEClass, POKEMON_INSTANCE__LEVEL);
 		createEReference(pokemonInstanceEClass, POKEMON_INSTANCE__MOVES);
+		createEReference(pokemonInstanceEClass, POKEMON_INSTANCE__TRAINER);
 
 		trainerEClass = createEClass(TRAINER);
 		createEAttribute(trainerEClass, TRAINER__NAME);
@@ -558,10 +568,11 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		initEReference(getPokemonInstance_Pokemon(), this.getPokemon(), null, "pokemon", null, 1, 1, PokemonInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPokemonInstance_Level(), ecorePackage.getEInt(), "level", null, 0, 1, PokemonInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPokemonInstance_Moves(), this.getMove(), null, "moves", null, 1, 4, PokemonInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPokemonInstance_Trainer(), this.getTrainer(), this.getTrainer_Pokemon(), "trainer", null, 0, 1, PokemonInstance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(trainerEClass, Trainer.class, "Trainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTrainer_Name(), ecorePackage.getEString(), "name", null, 0, 1, Trainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTrainer_Pokemon(), this.getPokemonInstance(), null, "pokemon", null, 1, 6, Trainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTrainer_Pokemon(), this.getPokemonInstance(), this.getPokemonInstance_Trainer(), "pokemon", null, 1, 6, Trainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

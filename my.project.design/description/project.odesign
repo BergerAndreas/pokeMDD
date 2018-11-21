@@ -242,6 +242,13 @@
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
+                      <controls xsi:type="properties:SelectDescription" name="TrainerSelect" labelExpression="Trainer:" valueExpression="aql:instance.trainer" candidatesExpression="aql:self.eContainer(pokemon::Root).trainer" candidateDisplayExpression="aql:candidate. name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="trainer" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
                     </groups>
                   </subModelOperations>
                 </subModelOperations>

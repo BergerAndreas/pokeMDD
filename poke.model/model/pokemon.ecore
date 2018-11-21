@@ -73,10 +73,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="moves" lowerBound="1" upperBound="4"
         eType="#//Move"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trainer" eType="#//Trainer"
+        eOpposite="#//Trainer/pokemon"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Trainer">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
-        upperBound="6" eType="#//PokemonInstance"/>
+        upperBound="6" eType="#//PokemonInstance" eOpposite="#//PokemonInstance/trainer"/>
   </eClassifiers>
 </ecore:EPackage>

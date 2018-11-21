@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}</li>
  *   <li>{@link pokemon.PokemonInstance#getLevel <em>Level</em>}</li>
  *   <li>{@link pokemon.PokemonInstance#getMoves <em>Moves</em>}</li>
+ *   <li>{@link pokemon.PokemonInstance#getTrainer <em>Trainer</em>}</li>
  * </ul>
  *
  * @see pokemon.PokemonPackage#getPokemonInstance()
@@ -92,5 +93,33 @@ public interface PokemonInstance extends EObject {
 	 * @generated
 	 */
 	EList<Move> getMoves();
+
+	/**
+	 * Returns the value of the '<em><b>Trainer</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link pokemon.Trainer#getPokemon <em>Pokemon</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Trainer</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Trainer</em>' reference.
+	 * @see #setTrainer(Trainer)
+	 * @see pokemon.PokemonPackage#getPokemonInstance_Trainer()
+	 * @see pokemon.Trainer#getPokemon
+	 * @model opposite="pokemon"
+	 * @generated
+	 */
+	Trainer getTrainer();
+
+	/**
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getTrainer <em>Trainer</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Trainer</em>' reference.
+	 * @see #getTrainer()
+	 * @generated
+	 */
+	void setTrainer(Trainer value);
 
 } // PokemonInstance
