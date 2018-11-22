@@ -41,8 +41,17 @@ public class PokemonSerialize {
 	        	
 	        	Move m = factory.createMove();
 	        	m.setName(move.get("name").asText());
+	    
+	        	int id = Integer.parseInt(move.get("url").asText().split("/")[6]); 
+	        	m.setId(id);
 	        	
-	        	m.setId(Integer.parseInt(move.get("url").asText().split("/")[6]));
+	        	// Add move details
+        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
+        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
+        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
+        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
+
+	        	//Save move
 	        	root.getMove().add(m);
 	        }
 	        
@@ -61,9 +70,6 @@ public class PokemonSerialize {
 	        	p.setId(Integer.parseInt(pokemon.get("url").asText().split("/")[6]));
 	        	root.getPokemon().add(p);
 	        }
-	        
-	        //Add other move details
-//	        Move m = root.getMove().get(0);
 	        
 //		        for(Move m : root.getMove()) {
 //		        	m.
@@ -91,9 +97,9 @@ public class PokemonSerialize {
 
 	}
 	
-	public static JsonNode fetchData(String test) {
+	public static JsonNode fetchData(String apiUrl) {
 		try {
-	        URL url = new URL(test);
+	        URL url = new URL(apiUrl);
 	    	HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
 	        con.setRequestMethod("GET");
 	        con.setRequestProperty("User-Agent" , "value");
@@ -107,6 +113,7 @@ public class PokemonSerialize {
 	        ObjectMapper mapper = new ObjectMapper();
 	        JsonNode node = mapper.readTree(all);
 			br.close();
+			System.out.println(apiUrl);
 			return node;
 		}
 		catch(Exception e) {

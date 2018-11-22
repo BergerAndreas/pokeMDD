@@ -151,171 +151,171 @@
   <pokemon name="squirtle" id="7"/>
   <pokemon name="charmander" id="4"/>
   <pokemon name="bulbasaur" id="1"/>
-  <move name="pound" id="1"/>
-  <move name="karate-chop" id="2"/>
-  <move name="double-slap" id="3"/>
-  <move name="comet-punch" id="4"/>
-  <move name="mega-punch" id="5"/>
-  <move name="pay-day" id="6"/>
-  <move name="fire-punch" id="7"/>
-  <move name="ice-punch" id="8"/>
-  <move name="thunder-punch" id="9"/>
-  <move name="scratch" id="10"/>
-  <move name="vice-grip" id="11"/>
-  <move name="guillotine" id="12"/>
-  <move name="razor-wind" id="13"/>
-  <move name="swords-dance" id="14"/>
-  <move name="cut" id="15"/>
-  <move name="gust" id="16"/>
-  <move name="wing-attack" id="17"/>
-  <move name="whirlwind" id="18"/>
-  <move name="fly" id="19"/>
-  <move name="bind" id="20"/>
-  <move name="slam" id="21"/>
-  <move name="vine-whip" id="22"/>
-  <move name="stomp" id="23"/>
-  <move name="double-kick" id="24"/>
-  <move name="mega-kick" id="25"/>
-  <move name="jump-kick" id="26"/>
-  <move name="rolling-kick" id="27"/>
-  <move name="sand-attack" id="28"/>
-  <move name="headbutt" id="29"/>
-  <move name="horn-attack" id="30"/>
-  <move name="fury-attack" id="31"/>
-  <move name="horn-drill" id="32"/>
-  <move name="tackle" id="33"/>
-  <move name="body-slam" id="34"/>
-  <move name="wrap" id="35"/>
-  <move name="take-down" id="36"/>
-  <move name="thrash" id="37"/>
-  <move name="double-edge" id="38"/>
-  <move name="tail-whip" id="39"/>
-  <move name="poison-sting" id="40"/>
-  <move name="twineedle" id="41"/>
-  <move name="pin-missile" id="42"/>
-  <move name="leer" id="43"/>
-  <move name="bite" id="44"/>
-  <move name="growl" id="45"/>
-  <move name="roar" id="46"/>
-  <move name="sing" id="47"/>
-  <move name="supersonic" id="48"/>
-  <move name="sonic-boom" id="49"/>
-  <move name="disable" id="50"/>
-  <move name="acid" id="51"/>
-  <move name="ember" id="52"/>
-  <move name="flamethrower" id="53"/>
-  <move name="mist" id="54"/>
-  <move name="water-gun" id="55"/>
-  <move name="hydro-pump" id="56"/>
-  <move name="surf" id="57"/>
-  <move name="ice-beam" id="58"/>
-  <move name="blizzard" id="59"/>
-  <move name="psybeam" id="60"/>
-  <move name="bubble-beam" id="61"/>
-  <move name="aurora-beam" id="62"/>
-  <move name="hyper-beam" id="63"/>
-  <move name="peck" id="64"/>
-  <move name="drill-peck" id="65"/>
-  <move name="submission" id="66"/>
-  <move name="low-kick" id="67"/>
-  <move name="counter" id="68"/>
-  <move name="seismic-toss" id="69"/>
-  <move name="strength" id="70"/>
-  <move name="absorb" id="71"/>
-  <move name="mega-drain" id="72"/>
-  <move name="leech-seed" id="73"/>
-  <move name="growth" id="74"/>
-  <move name="razor-leaf" id="75"/>
-  <move name="solar-beam" id="76"/>
-  <move name="poison-powder" id="77"/>
-  <move name="stun-spore" id="78"/>
-  <move name="sleep-powder" id="79"/>
-  <move name="petal-dance" id="80"/>
-  <move name="string-shot" id="81"/>
-  <move name="dragon-rage" id="82"/>
-  <move name="fire-spin" id="83"/>
-  <move name="thunder-shock" id="84"/>
-  <move name="thunderbolt" id="85"/>
-  <move name="thunder-wave" id="86"/>
-  <move name="thunder" id="87"/>
-  <move name="rock-throw" id="88"/>
-  <move name="earthquake" id="89"/>
-  <move name="fissure" id="90"/>
-  <move name="dig" id="91"/>
-  <move name="toxic" id="92"/>
-  <move name="confusion" id="93"/>
-  <move name="psychic" id="94"/>
-  <move name="hypnosis" id="95"/>
-  <move name="meditate" id="96"/>
-  <move name="agility" id="97"/>
-  <move name="quick-attack" id="98"/>
-  <move name="rage" id="99"/>
-  <move name="teleport" id="100"/>
-  <move name="night-shade" id="101"/>
-  <move name="mimic" id="102"/>
-  <move name="screech" id="103"/>
-  <move name="double-team" id="104"/>
-  <move name="recover" id="105"/>
-  <move name="harden" id="106"/>
-  <move name="minimize" id="107"/>
-  <move name="smokescreen" id="108"/>
-  <move name="confuse-ray" id="109"/>
-  <move name="withdraw" id="110"/>
-  <move name="defense-curl" id="111"/>
-  <move name="barrier" id="112"/>
-  <move name="light-screen" id="113"/>
-  <move name="haze" id="114"/>
-  <move name="reflect" id="115"/>
-  <move name="focus-energy" id="116"/>
-  <move name="bide" id="117"/>
-  <move name="metronome" id="118"/>
-  <move name="mirror-move" id="119"/>
-  <move name="self-destruct" id="120"/>
-  <move name="egg-bomb" id="121"/>
-  <move name="lick" id="122"/>
-  <move name="smog" id="123"/>
-  <move name="sludge" id="124"/>
-  <move name="bone-club" id="125"/>
-  <move name="fire-blast" id="126"/>
-  <move name="waterfall" id="127"/>
-  <move name="clamp" id="128"/>
-  <move name="swift" id="129"/>
-  <move name="skull-bash" id="130"/>
-  <move name="spike-cannon" id="131"/>
-  <move name="constrict" id="132"/>
-  <move name="amnesia" id="133"/>
-  <move name="kinesis" id="134"/>
-  <move name="soft-boiled" id="135"/>
-  <move name="high-jump-kick" id="136"/>
-  <move name="glare" id="137"/>
-  <move name="dream-eater" id="138"/>
-  <move name="poison-gas" id="139"/>
-  <move name="barrage" id="140"/>
-  <move name="leech-life" id="141"/>
-  <move name="lovely-kiss" id="142"/>
-  <move name="sky-attack" id="143"/>
-  <move name="transform" id="144"/>
-  <move name="bubble" id="145"/>
-  <move name="dizzy-punch" id="146"/>
-  <move name="spore" id="147"/>
-  <move name="flash" id="148"/>
-  <move name="psywave" id="149"/>
-  <move name="splash" id="150"/>
-  <move name="acid-armor" id="151"/>
-  <move name="crabhammer" id="152"/>
-  <move name="explosion" id="153"/>
-  <move name="fury-swipes" id="154"/>
-  <move name="bonemerang" id="155"/>
-  <move name="rest" id="156"/>
-  <move name="rock-slide" id="157"/>
-  <move name="hyper-fang" id="158"/>
-  <move name="sharpen" id="159"/>
-  <move name="conversion" id="160"/>
-  <move name="tri-attack" id="161"/>
-  <move name="super-fang" id="162"/>
-  <move name="slash" id="163"/>
-  <move name="substitute" id="164"/>
-  <move name="struggle" id="165"/>
+  <move name="pound" id="1" pp="35" power="40" accuracy="100"/>
+  <move name="karate-chop" id="2" pp="25" power="50" accuracy="100"/>
+  <move name="double-slap" id="3" pp="10" power="15" accuracy="85"/>
+  <move name="comet-punch" id="4" pp="15" power="18" accuracy="85"/>
+  <move name="mega-punch" id="5" pp="20" power="80" accuracy="85"/>
+  <move name="pay-day" id="6" pp="20" power="40" accuracy="100"/>
+  <move name="fire-punch" id="7" pp="15" power="75" accuracy="100"/>
+  <move name="ice-punch" id="8" pp="15" power="75" accuracy="100"/>
+  <move name="thunder-punch" id="9" pp="15" power="75" accuracy="100"/>
+  <move name="scratch" id="10" pp="35" power="40" accuracy="100"/>
+  <move name="vice-grip" id="11" pp="30" power="55" accuracy="100"/>
+  <move name="guillotine" id="12" pp="5" accuracy="30"/>
+  <move name="razor-wind" id="13" pp="10" power="80" accuracy="100"/>
+  <move name="swords-dance" id="14" pp="20"/>
+  <move name="cut" id="15" pp="30" power="50" accuracy="95"/>
+  <move name="gust" id="16" pp="35" power="40" accuracy="100"/>
+  <move name="wing-attack" id="17" pp="35" power="60" accuracy="100"/>
+  <move name="whirlwind" id="18" pp="20"/>
+  <move name="fly" id="19" pp="15" power="90" accuracy="95"/>
+  <move name="bind" id="20" pp="20" power="15" accuracy="85"/>
+  <move name="slam" id="21" pp="20" power="80" accuracy="75"/>
+  <move name="vine-whip" id="22" pp="25" power="45" accuracy="100"/>
+  <move name="stomp" id="23" pp="20" power="65" accuracy="100"/>
+  <move name="double-kick" id="24" pp="30" power="30" accuracy="100"/>
+  <move name="mega-kick" id="25" pp="5" power="120" accuracy="75"/>
+  <move name="jump-kick" id="26" pp="10" power="100" accuracy="95"/>
+  <move name="rolling-kick" id="27" pp="15" power="60" accuracy="85"/>
+  <move name="sand-attack" id="28" pp="15" accuracy="100"/>
+  <move name="headbutt" id="29" pp="15" power="70" accuracy="100"/>
+  <move name="horn-attack" id="30" pp="25" power="65" accuracy="100"/>
+  <move name="fury-attack" id="31" pp="20" power="15" accuracy="85"/>
+  <move name="horn-drill" id="32" pp="5" accuracy="30"/>
+  <move name="tackle" id="33" pp="35" power="40" accuracy="100"/>
+  <move name="body-slam" id="34" pp="15" power="85" accuracy="100"/>
+  <move name="wrap" id="35" pp="20" power="15" accuracy="90"/>
+  <move name="take-down" id="36" pp="20" power="90" accuracy="85"/>
+  <move name="thrash" id="37" pp="10" power="120" accuracy="100"/>
+  <move name="double-edge" id="38" pp="15" power="120" accuracy="100"/>
+  <move name="tail-whip" id="39" pp="30" accuracy="100"/>
+  <move name="poison-sting" id="40" pp="35" power="15" accuracy="100"/>
+  <move name="twineedle" id="41" pp="20" power="25" accuracy="100"/>
+  <move name="pin-missile" id="42" pp="20" power="25" accuracy="95"/>
+  <move name="leer" id="43" pp="30" accuracy="100"/>
+  <move name="bite" id="44" pp="25" power="60" accuracy="100"/>
+  <move name="growl" id="45" pp="40" accuracy="100"/>
+  <move name="roar" id="46" pp="20"/>
+  <move name="sing" id="47" pp="15" accuracy="55"/>
+  <move name="supersonic" id="48" pp="20" accuracy="55"/>
+  <move name="sonic-boom" id="49" pp="20" accuracy="90"/>
+  <move name="disable" id="50" pp="20" accuracy="100"/>
+  <move name="acid" id="51" pp="30" power="40" accuracy="100"/>
+  <move name="ember" id="52" pp="25" power="40" accuracy="100"/>
+  <move name="flamethrower" id="53" pp="15" power="90" accuracy="100"/>
+  <move name="mist" id="54" pp="30"/>
+  <move name="water-gun" id="55" pp="25" power="40" accuracy="100"/>
+  <move name="hydro-pump" id="56" pp="5" power="110" accuracy="80"/>
+  <move name="surf" id="57" pp="15" power="90" accuracy="100"/>
+  <move name="ice-beam" id="58" pp="10" power="90" accuracy="100"/>
+  <move name="blizzard" id="59" pp="5" power="110" accuracy="70"/>
+  <move name="psybeam" id="60" pp="20" power="65" accuracy="100"/>
+  <move name="bubble-beam" id="61" pp="20" power="65" accuracy="100"/>
+  <move name="aurora-beam" id="62" pp="20" power="65" accuracy="100"/>
+  <move name="hyper-beam" id="63" pp="5" power="150" accuracy="90"/>
+  <move name="peck" id="64" pp="35" power="35" accuracy="100"/>
+  <move name="drill-peck" id="65" pp="20" power="80" accuracy="100"/>
+  <move name="submission" id="66" pp="20" power="80" accuracy="80"/>
+  <move name="low-kick" id="67" pp="20" accuracy="100"/>
+  <move name="counter" id="68" pp="20" accuracy="100"/>
+  <move name="seismic-toss" id="69" pp="20" accuracy="100"/>
+  <move name="strength" id="70" pp="15" power="80" accuracy="100"/>
+  <move name="absorb" id="71" pp="25" power="20" accuracy="100"/>
+  <move name="mega-drain" id="72" pp="15" power="40" accuracy="100"/>
+  <move name="leech-seed" id="73" pp="10" accuracy="90"/>
+  <move name="growth" id="74" pp="20"/>
+  <move name="razor-leaf" id="75" pp="25" power="55" accuracy="95"/>
+  <move name="solar-beam" id="76" pp="10" power="120" accuracy="100"/>
+  <move name="poison-powder" id="77" pp="35" accuracy="75"/>
+  <move name="stun-spore" id="78" pp="30" accuracy="75"/>
+  <move name="sleep-powder" id="79" pp="15" accuracy="75"/>
+  <move name="petal-dance" id="80" pp="10" power="120" accuracy="100"/>
+  <move name="string-shot" id="81" pp="40" accuracy="95"/>
+  <move name="dragon-rage" id="82" pp="10" accuracy="100"/>
+  <move name="fire-spin" id="83" pp="15" power="35" accuracy="85"/>
+  <move name="thunder-shock" id="84" pp="30" power="40" accuracy="100"/>
+  <move name="thunderbolt" id="85" pp="15" power="90" accuracy="100"/>
+  <move name="thunder-wave" id="86" pp="20" accuracy="90"/>
+  <move name="thunder" id="87" pp="10" power="110" accuracy="70"/>
+  <move name="rock-throw" id="88" pp="15" power="50" accuracy="90"/>
+  <move name="earthquake" id="89" pp="10" power="100" accuracy="100"/>
+  <move name="fissure" id="90" pp="5" accuracy="30"/>
+  <move name="dig" id="91" pp="10" power="80" accuracy="100"/>
+  <move name="toxic" id="92" pp="10" accuracy="90"/>
+  <move name="confusion" id="93" pp="25" power="50" accuracy="100"/>
+  <move name="psychic" id="94" pp="10" power="90" accuracy="100"/>
+  <move name="hypnosis" id="95" pp="20" accuracy="60"/>
+  <move name="meditate" id="96" pp="40"/>
+  <move name="agility" id="97" pp="30"/>
+  <move name="quick-attack" id="98" pp="30" power="40" accuracy="100"/>
+  <move name="rage" id="99" pp="20" power="20" accuracy="100"/>
+  <move name="teleport" id="100" pp="20"/>
+  <move name="night-shade" id="101" pp="15" accuracy="100"/>
+  <move name="mimic" id="102" pp="10"/>
+  <move name="screech" id="103" pp="40" accuracy="85"/>
+  <move name="double-team" id="104" pp="15"/>
+  <move name="recover" id="105" pp="10"/>
+  <move name="harden" id="106" pp="30"/>
+  <move name="minimize" id="107" pp="10"/>
+  <move name="smokescreen" id="108" pp="20" accuracy="100"/>
+  <move name="confuse-ray" id="109" pp="10" accuracy="100"/>
+  <move name="withdraw" id="110" pp="40"/>
+  <move name="defense-curl" id="111" pp="40"/>
+  <move name="barrier" id="112" pp="20"/>
+  <move name="light-screen" id="113" pp="30"/>
+  <move name="haze" id="114" pp="30"/>
+  <move name="reflect" id="115" pp="20"/>
+  <move name="focus-energy" id="116" pp="30"/>
+  <move name="bide" id="117" pp="10"/>
+  <move name="metronome" id="118" pp="10"/>
+  <move name="mirror-move" id="119" pp="20"/>
+  <move name="self-destruct" id="120" pp="5" power="200" accuracy="100"/>
+  <move name="egg-bomb" id="121" pp="10" power="100" accuracy="75"/>
+  <move name="lick" id="122" pp="30" power="30" accuracy="100"/>
+  <move name="smog" id="123" pp="20" power="30" accuracy="70"/>
+  <move name="sludge" id="124" pp="20" power="65" accuracy="100"/>
+  <move name="bone-club" id="125" pp="20" power="65" accuracy="85"/>
+  <move name="fire-blast" id="126" pp="5" power="110" accuracy="85"/>
+  <move name="waterfall" id="127" pp="15" power="80" accuracy="100"/>
+  <move name="clamp" id="128" pp="15" power="35" accuracy="85"/>
+  <move name="swift" id="129" pp="20" power="60"/>
+  <move name="skull-bash" id="130" pp="10" power="130" accuracy="100"/>
+  <move name="spike-cannon" id="131" pp="15" power="20" accuracy="100"/>
+  <move name="constrict" id="132" pp="35" power="10" accuracy="100"/>
+  <move name="amnesia" id="133" pp="20"/>
+  <move name="kinesis" id="134" pp="15" accuracy="80"/>
+  <move name="soft-boiled" id="135" pp="10"/>
+  <move name="high-jump-kick" id="136" pp="10" power="130" accuracy="90"/>
+  <move name="glare" id="137" pp="30" accuracy="100"/>
+  <move name="dream-eater" id="138" pp="15" power="100" accuracy="100"/>
+  <move name="poison-gas" id="139" pp="40" accuracy="90"/>
+  <move name="barrage" id="140" pp="20" power="15" accuracy="85"/>
+  <move name="leech-life" id="141" pp="10" power="80" accuracy="100"/>
+  <move name="lovely-kiss" id="142" pp="10" accuracy="75"/>
+  <move name="sky-attack" id="143" pp="5" power="140" accuracy="90"/>
+  <move name="transform" id="144" pp="10"/>
+  <move name="bubble" id="145" pp="30" power="40" accuracy="100"/>
+  <move name="dizzy-punch" id="146" pp="10" power="70" accuracy="100"/>
+  <move name="spore" id="147" pp="15" accuracy="100"/>
+  <move name="flash" id="148" pp="20" accuracy="100"/>
+  <move name="psywave" id="149" pp="15" accuracy="100"/>
+  <move name="splash" id="150" pp="40"/>
+  <move name="acid-armor" id="151" pp="20"/>
+  <move name="crabhammer" id="152" pp="10" power="100" accuracy="90"/>
+  <move name="explosion" id="153" pp="5" power="250" accuracy="100"/>
+  <move name="fury-swipes" id="154" pp="15" power="18" accuracy="80"/>
+  <move name="bonemerang" id="155" pp="10" power="50" accuracy="90"/>
+  <move name="rest" id="156" pp="10"/>
+  <move name="rock-slide" id="157" pp="10" power="75" accuracy="90"/>
+  <move name="hyper-fang" id="158" pp="15" power="80" accuracy="90"/>
+  <move name="sharpen" id="159" pp="30"/>
+  <move name="conversion" id="160" pp="30"/>
+  <move name="tri-attack" id="161" pp="10" power="80" accuracy="100"/>
+  <move name="super-fang" id="162" pp="10" accuracy="90"/>
+  <move name="slash" id="163" pp="20" power="70" accuracy="100"/>
+  <move name="substitute" id="164" pp="10"/>
+  <move name="struggle" id="165" pp="1" power="50"/>
   <type name="normal"/>
   <type name="fighting"/>
   <type name="flying"/>
