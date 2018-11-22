@@ -70,11 +70,24 @@ public class PokemonSerialize {
 	        	int id = Integer.parseInt(pokemon.get("url").asText().split("/")[6]);
 	        	p.setId(id);
 	        	
-	        	//Add moves
+	        	if(id == 101) {
+	        		break;
+	        	}
+	        	//Add attributes
 	        	JsonNode pokemonNode = fetchData("https://pokeapi.co/api/v2/pokemon/"+ id +"/");
 	        	p.setHeight(pokemonNode.get("height").asInt());
 	        	p.setWeight(pokemonNode.get("weight").asInt());
 	        	p.setSprite(pokemonNode.get("sprites").get("front_default").asText());
+	        	p.setBaseExperience(pokemonNode.get("base_experience").asInt());
+	        	
+	        	//Add moves to pokemon
+	        	for(JsonNode moves : pokemonNode.get("moves")) {
+	        		Move move = root.getMove().stream().filter(x -> x.getName().equals(moves.get("move").get("name").asText())).findFirst().orElse(null);
+	        		//Don't add moves from later generations
+	        		if(move != null) {
+	        			p.getMove().add(move);
+	        		}
+	        	}
 	        	
 	        	root.getPokemon().add(p);
 	        }
