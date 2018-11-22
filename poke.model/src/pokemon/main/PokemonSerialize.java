@@ -34,63 +34,50 @@ public class PokemonSerialize {
 		PokemonFactory factory = PokemonFactory.eINSTANCE;
 		
 		Root root = factory.createRoot();
-		
-		try {
-	        URL url = new URL("https://pokeapi.co/api/v2/" + "generation/1/");
-	        	HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
-		        con.setRequestMethod("GET");
-		        con.setRequestProperty("User-Agent" , "value");
-		        
-		        InputStream is = con.getInputStream();
-		        InputStreamReader isr = new InputStreamReader(is);
-		        BufferedReader br = new BufferedReader(isr);
-		        
-		        String all = br.lines().collect(Collectors.joining());
-		      
-		        ObjectMapper mapper = new ObjectMapper();
-		        JsonNode node = mapper.readTree(all);
-		        
-		        //Add moves
-		        for(JsonNode move : node.get("moves")) {
-		        	
-		        	Move m = factory.createMove();
-		        	m.setName(move.get("name").asText());
-		        	
-		        	m.setId(Integer.parseInt(move.get("url").asText().split("/")[6]));
-		        	root.getMove().add(m);
-		        }
-		        
-		        //Add type
-		        for(JsonNode type : node.get("types")) {
-		        	
-		        	Type t = factory.createType();
-		        	t.setName(type.get("name").asText());
-		        	root.getType().add(t);
-		        }
-		        
-		        //Add pokemon
-		        for(JsonNode pokemon : node.get("pokemon_species")) {
-		        	Pokemon p = factory.createPokemon();
-		        	p.setName(pokemon.get("name").asText());
-		        	p.setId(Integer.parseInt(pokemon.get("url").asText().split("/")[6]));
-		        	root.getPokemon().add(p);
-		        }
-		        
-
-		        br.close();
-		        
+				
+			JsonNode node = fetchData("https://pokeapi.co/api/v2/generation/1/");
+	        //Add moves
+	        for(JsonNode move : node.get("moves")) {
+	        	
+	        	Move m = factory.createMove();
+	        	m.setName(move.get("name").asText());
+	        	
+	        	m.setId(Integer.parseInt(move.get("url").asText().split("/")[6]));
+	        	root.getMove().add(m);
 	        }
-		catch (Exception e) {
-			e.printStackTrace();
-		}
+	        
+	        //Add type
+	        for(JsonNode type : node.get("types")) {
+	        	
+	        	Type t = factory.createType();
+	        	t.setName(type.get("name").asText());
+	        	root.getType().add(t);
+	        }
+	        
+	        //Add pokemon
+	        for(JsonNode pokemon : node.get("pokemon_species")) {
+	        	Pokemon p = factory.createPokemon();
+	        	p.setName(pokemon.get("name").asText());
+	        	p.setId(Integer.parseInt(pokemon.get("url").asText().split("/")[6]));
+	        	root.getPokemon().add(p);
+	        }
+	        
+	        //Add other move details
+//	        Move m = root.getMove().get(0);
+	        
+//		        for(Move m : root.getMove()) {
+//		        	m.
+//		        }
+//		        
+	       
 		
 		
 		//Save the model
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
-		Map<String, Object> m = reg.getExtensionToFactoryMap();
+		Map<String, Object> map = reg.getExtensionToFactoryMap();
 		
 		// The string is the package in the ecore model
-		m.put("pokemon", new XMIResourceFactoryImpl());
+		map.put("pokemon", new XMIResourceFactoryImpl());
 		
 		ResourceSet resSet = new ResourceSetImpl();
 		Resource resource = resSet.createResource(URI.createURI("model/m1mm.pokemon"));
@@ -102,6 +89,30 @@ public class PokemonSerialize {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public static JsonNode fetchData(String test) {
+		try {
+	        URL url = new URL(test);
+	    	HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
+	        con.setRequestMethod("GET");
+	        con.setRequestProperty("User-Agent" , "value");
+	        
+	        InputStream is = con.getInputStream();
+	        InputStreamReader isr = new InputStreamReader(is);
+	        BufferedReader br = new BufferedReader(isr);
+	        
+	        String all = br.lines().collect(Collectors.joining());
+	      
+	        ObjectMapper mapper = new ObjectMapper();
+	        JsonNode node = mapper.readTree(all);
+			br.close();
+			return node;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 }
