@@ -21,24 +21,6 @@ import pokemon.*;
 public class PokeFetch2 {
 	public static void main(String[] args) {
 		try {
-			/*
-	        // Generate absolute URL
-	        // Base URL = www.gnu.org
-	        URL url1 = new URL("http://www.gnu.org");
-	        System.out.println("URL1: " + url1.toString());
-	
-	        // Generate URL for pages with a common base
-	        URL url2 = new URL(url1, "licenses/gpl.txt");
-	        System.out.println("URL2: " + url2.toString());
-	
-	        // Generate URLs from different pieces of data
-	        URL url3 = new URL("http", "www.gnu.org", "/licenses/gpl.txt");
-	        System.out.println("URL3: " + url3.toString());
-	
-	        URL url4 = new URL("http", "www.gnu.org", 80, "/licenses/gpl.txt");
-	        System.out.println("URL4: " + url4.toString() + "\n");
-	        */
-	        
 	        URL url = new URL("https://pokeapi.co/api/v2/" + "pokemon/1/");
 	        
 	        try {
@@ -59,35 +41,12 @@ public class PokeFetch2 {
 		        System.out.println(node.get("types").get(1).get("type"));
 		        System.out.println(node.get("types").get(1).get("type").get("name"));
 		        
-		        /*
-		        String inputLine;
-
-		        while ((inputLine = br.readLine()) != null) {
-		            System.out.println(inputLine);
-		        }
-				
-		        
-		        ObjectMapper mapper = new ObjectMapper();
-		        Pokemon mon = mapper.readValue(url, Pokemon.class);
-		        */
 		        
 		        
 		        br.close();
-		        //System.out.println(mon.getName());
 		        
 	        }
-	        
-	        /*
-	            // Open URL stream as an input stream and print contents to command line
-	        try (BufferedReader in = new BufferedReader(new InputStreamReader(url4.openStream()))) {
-	            String inputLine;
-	
-	            // Read the "gpl.txt" text file from its URL representation
-	          System.out.println("/***** File content (URL4) *****n");
-	            while((inputLine = in.readLine()) != null) {
-	                System.out.println(inputLine);
-	            }
-	        } */
+	       
 	        catch (IOException ioe) {
 	            ioe.printStackTrace(System.err);
 	      }
