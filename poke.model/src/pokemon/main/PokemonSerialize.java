@@ -46,10 +46,10 @@ public class PokemonSerialize {
 	        	m.setId(id);
 	        	
 	        	// Add move details
-        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
-        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
-        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
-        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
+//        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
+//        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
+//        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
+//        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
 
 	        	//Save move
 	        	root.getMove().add(m);
@@ -67,7 +67,15 @@ public class PokemonSerialize {
 	        for(JsonNode pokemon : node.get("pokemon_species")) {
 	        	Pokemon p = factory.createPokemon();
 	        	p.setName(pokemon.get("name").asText());
-	        	p.setId(Integer.parseInt(pokemon.get("url").asText().split("/")[6]));
+	        	int id = Integer.parseInt(pokemon.get("url").asText().split("/")[6]);
+	        	p.setId(id);
+	        	
+	        	//Add moves
+	        	JsonNode pokemonNode = fetchData("https://pokeapi.co/api/v2/pokemon/"+ id +"/");
+	        	p.setHeight(pokemonNode.get("height").asInt());
+	        	p.setWeight(pokemonNode.get("weight").asInt());
+	        	p.setSprite(pokemonNode.get("sprites").get("front_default").asText());
+	        	
 	        	root.getPokemon().add(p);
 	        }
 	        

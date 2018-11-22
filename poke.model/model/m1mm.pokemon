@@ -1,321 +1,321 @@
 <?xml version="1.0" encoding="ASCII"?>
 <pokemon:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
-  <pokemon name="dragonite" id="149"/>
-  <pokemon name="dragonair" id="148"/>
-  <pokemon name="snorlax" id="143"/>
-  <pokemon name="kabutops" id="141"/>
-  <pokemon name="omastar" id="139"/>
-  <pokemon name="flareon" id="136"/>
-  <pokemon name="jolteon" id="135"/>
-  <pokemon name="vaporeon" id="134"/>
-  <pokemon name="gyarados" id="130"/>
-  <pokemon name="magmar" id="126"/>
-  <pokemon name="electabuzz" id="125"/>
-  <pokemon name="jynx" id="124"/>
-  <pokemon name="mr-mime" id="122"/>
-  <pokemon name="starmie" id="121"/>
-  <pokemon name="seaking" id="119"/>
-  <pokemon name="seadra" id="117"/>
-  <pokemon name="chansey" id="113"/>
-  <pokemon name="rhydon" id="112"/>
-  <pokemon name="weezing" id="110"/>
-  <pokemon name="hitmonchan" id="107"/>
-  <pokemon name="hitmonlee" id="106"/>
-  <pokemon name="marowak" id="105"/>
-  <pokemon name="exeggutor" id="103"/>
-  <pokemon name="electrode" id="101"/>
-  <pokemon name="kingler" id="99"/>
-  <pokemon name="hypno" id="97"/>
-  <pokemon name="gengar" id="94"/>
-  <pokemon name="haunter" id="93"/>
-  <pokemon name="cloyster" id="91"/>
-  <pokemon name="muk" id="89"/>
-  <pokemon name="dewgong" id="87"/>
-  <pokemon name="dodrio" id="85"/>
-  <pokemon name="magneton" id="82"/>
-  <pokemon name="slowbro" id="80"/>
-  <pokemon name="rapidash" id="78"/>
-  <pokemon name="golem" id="76"/>
-  <pokemon name="graveler" id="75"/>
-  <pokemon name="tentacruel" id="73"/>
-  <pokemon name="victreebel" id="71"/>
-  <pokemon name="weepinbell" id="70"/>
-  <pokemon name="machamp" id="68"/>
-  <pokemon name="machoke" id="67"/>
-  <pokemon name="alakazam" id="65"/>
-  <pokemon name="kadabra" id="64"/>
-  <pokemon name="poliwrath" id="62"/>
-  <pokemon name="poliwhirl" id="61"/>
-  <pokemon name="arcanine" id="59"/>
-  <pokemon name="primeape" id="57"/>
-  <pokemon name="golduck" id="55"/>
-  <pokemon name="persian" id="53"/>
-  <pokemon name="dugtrio" id="51"/>
-  <pokemon name="venomoth" id="49"/>
-  <pokemon name="parasect" id="47"/>
-  <pokemon name="vileplume" id="45"/>
-  <pokemon name="gloom" id="44"/>
-  <pokemon name="golbat" id="42"/>
-  <pokemon name="wigglytuff" id="40"/>
-  <pokemon name="jigglypuff" id="39"/>
-  <pokemon name="ninetales" id="38"/>
-  <pokemon name="clefable" id="36"/>
-  <pokemon name="clefairy" id="35"/>
-  <pokemon name="nidoking" id="34"/>
-  <pokemon name="nidorino" id="33"/>
-  <pokemon name="nidoqueen" id="31"/>
-  <pokemon name="nidorina" id="30"/>
-  <pokemon name="sandslash" id="28"/>
-  <pokemon name="raichu" id="26"/>
-  <pokemon name="pikachu" id="25"/>
-  <pokemon name="arbok" id="24"/>
-  <pokemon name="fearow" id="22"/>
-  <pokemon name="raticate" id="20"/>
-  <pokemon name="pidgeot" id="18"/>
-  <pokemon name="pidgeotto" id="17"/>
-  <pokemon name="beedrill" id="15"/>
-  <pokemon name="kakuna" id="14"/>
-  <pokemon name="butterfree" id="12"/>
-  <pokemon name="metapod" id="11"/>
-  <pokemon name="blastoise" id="9"/>
-  <pokemon name="wartortle" id="8"/>
-  <pokemon name="charizard" id="6"/>
-  <pokemon name="charmeleon" id="5"/>
-  <pokemon name="venusaur" id="3"/>
-  <pokemon name="ivysaur" id="2"/>
-  <pokemon name="mew" id="151"/>
-  <pokemon name="mewtwo" id="150"/>
-  <pokemon name="dratini" id="147"/>
-  <pokemon name="moltres" id="146"/>
-  <pokemon name="zapdos" id="145"/>
-  <pokemon name="articuno" id="144"/>
-  <pokemon name="aerodactyl" id="142"/>
-  <pokemon name="kabuto" id="140"/>
-  <pokemon name="omanyte" id="138"/>
-  <pokemon name="porygon" id="137"/>
-  <pokemon name="eevee" id="133"/>
-  <pokemon name="ditto" id="132"/>
-  <pokemon name="lapras" id="131"/>
-  <pokemon name="magikarp" id="129"/>
-  <pokemon name="tauros" id="128"/>
-  <pokemon name="pinsir" id="127"/>
-  <pokemon name="scyther" id="123"/>
-  <pokemon name="staryu" id="120"/>
-  <pokemon name="goldeen" id="118"/>
-  <pokemon name="horsea" id="116"/>
-  <pokemon name="kangaskhan" id="115"/>
-  <pokemon name="tangela" id="114"/>
-  <pokemon name="rhyhorn" id="111"/>
-  <pokemon name="koffing" id="109"/>
-  <pokemon name="lickitung" id="108"/>
-  <pokemon name="cubone" id="104"/>
-  <pokemon name="exeggcute" id="102"/>
-  <pokemon name="voltorb" id="100"/>
-  <pokemon name="krabby" id="98"/>
-  <pokemon name="drowzee" id="96"/>
-  <pokemon name="onix" id="95"/>
-  <pokemon name="gastly" id="92"/>
-  <pokemon name="shellder" id="90"/>
-  <pokemon name="grimer" id="88"/>
-  <pokemon name="seel" id="86"/>
-  <pokemon name="doduo" id="84"/>
-  <pokemon name="farfetchd" id="83"/>
-  <pokemon name="magnemite" id="81"/>
-  <pokemon name="slowpoke" id="79"/>
-  <pokemon name="ponyta" id="77"/>
-  <pokemon name="geodude" id="74"/>
-  <pokemon name="tentacool" id="72"/>
-  <pokemon name="bellsprout" id="69"/>
-  <pokemon name="machop" id="66"/>
-  <pokemon name="abra" id="63"/>
-  <pokemon name="poliwag" id="60"/>
-  <pokemon name="growlithe" id="58"/>
-  <pokemon name="mankey" id="56"/>
-  <pokemon name="psyduck" id="54"/>
-  <pokemon name="meowth" id="52"/>
-  <pokemon name="diglett" id="50"/>
-  <pokemon name="venonat" id="48"/>
-  <pokemon name="paras" id="46"/>
-  <pokemon name="oddish" id="43"/>
-  <pokemon name="zubat" id="41"/>
-  <pokemon name="vulpix" id="37"/>
-  <pokemon name="nidoran-m" id="32"/>
-  <pokemon name="nidoran-f" id="29"/>
-  <pokemon name="sandshrew" id="27"/>
-  <pokemon name="ekans" id="23"/>
-  <pokemon name="spearow" id="21"/>
-  <pokemon name="rattata" id="19"/>
-  <pokemon name="pidgey" id="16"/>
-  <pokemon name="weedle" id="13"/>
-  <pokemon name="caterpie" id="10"/>
-  <pokemon name="squirtle" id="7"/>
-  <pokemon name="charmander" id="4"/>
-  <pokemon name="bulbasaur" id="1"/>
-  <move name="pound" id="1" pp="35" power="40" accuracy="100"/>
-  <move name="karate-chop" id="2" pp="25" power="50" accuracy="100"/>
-  <move name="double-slap" id="3" pp="10" power="15" accuracy="85"/>
-  <move name="comet-punch" id="4" pp="15" power="18" accuracy="85"/>
-  <move name="mega-punch" id="5" pp="20" power="80" accuracy="85"/>
-  <move name="pay-day" id="6" pp="20" power="40" accuracy="100"/>
-  <move name="fire-punch" id="7" pp="15" power="75" accuracy="100"/>
-  <move name="ice-punch" id="8" pp="15" power="75" accuracy="100"/>
-  <move name="thunder-punch" id="9" pp="15" power="75" accuracy="100"/>
-  <move name="scratch" id="10" pp="35" power="40" accuracy="100"/>
-  <move name="vice-grip" id="11" pp="30" power="55" accuracy="100"/>
-  <move name="guillotine" id="12" pp="5" accuracy="30"/>
-  <move name="razor-wind" id="13" pp="10" power="80" accuracy="100"/>
-  <move name="swords-dance" id="14" pp="20"/>
-  <move name="cut" id="15" pp="30" power="50" accuracy="95"/>
-  <move name="gust" id="16" pp="35" power="40" accuracy="100"/>
-  <move name="wing-attack" id="17" pp="35" power="60" accuracy="100"/>
-  <move name="whirlwind" id="18" pp="20"/>
-  <move name="fly" id="19" pp="15" power="90" accuracy="95"/>
-  <move name="bind" id="20" pp="20" power="15" accuracy="85"/>
-  <move name="slam" id="21" pp="20" power="80" accuracy="75"/>
-  <move name="vine-whip" id="22" pp="25" power="45" accuracy="100"/>
-  <move name="stomp" id="23" pp="20" power="65" accuracy="100"/>
-  <move name="double-kick" id="24" pp="30" power="30" accuracy="100"/>
-  <move name="mega-kick" id="25" pp="5" power="120" accuracy="75"/>
-  <move name="jump-kick" id="26" pp="10" power="100" accuracy="95"/>
-  <move name="rolling-kick" id="27" pp="15" power="60" accuracy="85"/>
-  <move name="sand-attack" id="28" pp="15" accuracy="100"/>
-  <move name="headbutt" id="29" pp="15" power="70" accuracy="100"/>
-  <move name="horn-attack" id="30" pp="25" power="65" accuracy="100"/>
-  <move name="fury-attack" id="31" pp="20" power="15" accuracy="85"/>
-  <move name="horn-drill" id="32" pp="5" accuracy="30"/>
-  <move name="tackle" id="33" pp="35" power="40" accuracy="100"/>
-  <move name="body-slam" id="34" pp="15" power="85" accuracy="100"/>
-  <move name="wrap" id="35" pp="20" power="15" accuracy="90"/>
-  <move name="take-down" id="36" pp="20" power="90" accuracy="85"/>
-  <move name="thrash" id="37" pp="10" power="120" accuracy="100"/>
-  <move name="double-edge" id="38" pp="15" power="120" accuracy="100"/>
-  <move name="tail-whip" id="39" pp="30" accuracy="100"/>
-  <move name="poison-sting" id="40" pp="35" power="15" accuracy="100"/>
-  <move name="twineedle" id="41" pp="20" power="25" accuracy="100"/>
-  <move name="pin-missile" id="42" pp="20" power="25" accuracy="95"/>
-  <move name="leer" id="43" pp="30" accuracy="100"/>
-  <move name="bite" id="44" pp="25" power="60" accuracy="100"/>
-  <move name="growl" id="45" pp="40" accuracy="100"/>
-  <move name="roar" id="46" pp="20"/>
-  <move name="sing" id="47" pp="15" accuracy="55"/>
-  <move name="supersonic" id="48" pp="20" accuracy="55"/>
-  <move name="sonic-boom" id="49" pp="20" accuracy="90"/>
-  <move name="disable" id="50" pp="20" accuracy="100"/>
-  <move name="acid" id="51" pp="30" power="40" accuracy="100"/>
-  <move name="ember" id="52" pp="25" power="40" accuracy="100"/>
-  <move name="flamethrower" id="53" pp="15" power="90" accuracy="100"/>
-  <move name="mist" id="54" pp="30"/>
-  <move name="water-gun" id="55" pp="25" power="40" accuracy="100"/>
-  <move name="hydro-pump" id="56" pp="5" power="110" accuracy="80"/>
-  <move name="surf" id="57" pp="15" power="90" accuracy="100"/>
-  <move name="ice-beam" id="58" pp="10" power="90" accuracy="100"/>
-  <move name="blizzard" id="59" pp="5" power="110" accuracy="70"/>
-  <move name="psybeam" id="60" pp="20" power="65" accuracy="100"/>
-  <move name="bubble-beam" id="61" pp="20" power="65" accuracy="100"/>
-  <move name="aurora-beam" id="62" pp="20" power="65" accuracy="100"/>
-  <move name="hyper-beam" id="63" pp="5" power="150" accuracy="90"/>
-  <move name="peck" id="64" pp="35" power="35" accuracy="100"/>
-  <move name="drill-peck" id="65" pp="20" power="80" accuracy="100"/>
-  <move name="submission" id="66" pp="20" power="80" accuracy="80"/>
-  <move name="low-kick" id="67" pp="20" accuracy="100"/>
-  <move name="counter" id="68" pp="20" accuracy="100"/>
-  <move name="seismic-toss" id="69" pp="20" accuracy="100"/>
-  <move name="strength" id="70" pp="15" power="80" accuracy="100"/>
-  <move name="absorb" id="71" pp="25" power="20" accuracy="100"/>
-  <move name="mega-drain" id="72" pp="15" power="40" accuracy="100"/>
-  <move name="leech-seed" id="73" pp="10" accuracy="90"/>
-  <move name="growth" id="74" pp="20"/>
-  <move name="razor-leaf" id="75" pp="25" power="55" accuracy="95"/>
-  <move name="solar-beam" id="76" pp="10" power="120" accuracy="100"/>
-  <move name="poison-powder" id="77" pp="35" accuracy="75"/>
-  <move name="stun-spore" id="78" pp="30" accuracy="75"/>
-  <move name="sleep-powder" id="79" pp="15" accuracy="75"/>
-  <move name="petal-dance" id="80" pp="10" power="120" accuracy="100"/>
-  <move name="string-shot" id="81" pp="40" accuracy="95"/>
-  <move name="dragon-rage" id="82" pp="10" accuracy="100"/>
-  <move name="fire-spin" id="83" pp="15" power="35" accuracy="85"/>
-  <move name="thunder-shock" id="84" pp="30" power="40" accuracy="100"/>
-  <move name="thunderbolt" id="85" pp="15" power="90" accuracy="100"/>
-  <move name="thunder-wave" id="86" pp="20" accuracy="90"/>
-  <move name="thunder" id="87" pp="10" power="110" accuracy="70"/>
-  <move name="rock-throw" id="88" pp="15" power="50" accuracy="90"/>
-  <move name="earthquake" id="89" pp="10" power="100" accuracy="100"/>
-  <move name="fissure" id="90" pp="5" accuracy="30"/>
-  <move name="dig" id="91" pp="10" power="80" accuracy="100"/>
-  <move name="toxic" id="92" pp="10" accuracy="90"/>
-  <move name="confusion" id="93" pp="25" power="50" accuracy="100"/>
-  <move name="psychic" id="94" pp="10" power="90" accuracy="100"/>
-  <move name="hypnosis" id="95" pp="20" accuracy="60"/>
-  <move name="meditate" id="96" pp="40"/>
-  <move name="agility" id="97" pp="30"/>
-  <move name="quick-attack" id="98" pp="30" power="40" accuracy="100"/>
-  <move name="rage" id="99" pp="20" power="20" accuracy="100"/>
-  <move name="teleport" id="100" pp="20"/>
-  <move name="night-shade" id="101" pp="15" accuracy="100"/>
-  <move name="mimic" id="102" pp="10"/>
-  <move name="screech" id="103" pp="40" accuracy="85"/>
-  <move name="double-team" id="104" pp="15"/>
-  <move name="recover" id="105" pp="10"/>
-  <move name="harden" id="106" pp="30"/>
-  <move name="minimize" id="107" pp="10"/>
-  <move name="smokescreen" id="108" pp="20" accuracy="100"/>
-  <move name="confuse-ray" id="109" pp="10" accuracy="100"/>
-  <move name="withdraw" id="110" pp="40"/>
-  <move name="defense-curl" id="111" pp="40"/>
-  <move name="barrier" id="112" pp="20"/>
-  <move name="light-screen" id="113" pp="30"/>
-  <move name="haze" id="114" pp="30"/>
-  <move name="reflect" id="115" pp="20"/>
-  <move name="focus-energy" id="116" pp="30"/>
-  <move name="bide" id="117" pp="10"/>
-  <move name="metronome" id="118" pp="10"/>
-  <move name="mirror-move" id="119" pp="20"/>
-  <move name="self-destruct" id="120" pp="5" power="200" accuracy="100"/>
-  <move name="egg-bomb" id="121" pp="10" power="100" accuracy="75"/>
-  <move name="lick" id="122" pp="30" power="30" accuracy="100"/>
-  <move name="smog" id="123" pp="20" power="30" accuracy="70"/>
-  <move name="sludge" id="124" pp="20" power="65" accuracy="100"/>
-  <move name="bone-club" id="125" pp="20" power="65" accuracy="85"/>
-  <move name="fire-blast" id="126" pp="5" power="110" accuracy="85"/>
-  <move name="waterfall" id="127" pp="15" power="80" accuracy="100"/>
-  <move name="clamp" id="128" pp="15" power="35" accuracy="85"/>
-  <move name="swift" id="129" pp="20" power="60"/>
-  <move name="skull-bash" id="130" pp="10" power="130" accuracy="100"/>
-  <move name="spike-cannon" id="131" pp="15" power="20" accuracy="100"/>
-  <move name="constrict" id="132" pp="35" power="10" accuracy="100"/>
-  <move name="amnesia" id="133" pp="20"/>
-  <move name="kinesis" id="134" pp="15" accuracy="80"/>
-  <move name="soft-boiled" id="135" pp="10"/>
-  <move name="high-jump-kick" id="136" pp="10" power="130" accuracy="90"/>
-  <move name="glare" id="137" pp="30" accuracy="100"/>
-  <move name="dream-eater" id="138" pp="15" power="100" accuracy="100"/>
-  <move name="poison-gas" id="139" pp="40" accuracy="90"/>
-  <move name="barrage" id="140" pp="20" power="15" accuracy="85"/>
-  <move name="leech-life" id="141" pp="10" power="80" accuracy="100"/>
-  <move name="lovely-kiss" id="142" pp="10" accuracy="75"/>
-  <move name="sky-attack" id="143" pp="5" power="140" accuracy="90"/>
-  <move name="transform" id="144" pp="10"/>
-  <move name="bubble" id="145" pp="30" power="40" accuracy="100"/>
-  <move name="dizzy-punch" id="146" pp="10" power="70" accuracy="100"/>
-  <move name="spore" id="147" pp="15" accuracy="100"/>
-  <move name="flash" id="148" pp="20" accuracy="100"/>
-  <move name="psywave" id="149" pp="15" accuracy="100"/>
-  <move name="splash" id="150" pp="40"/>
-  <move name="acid-armor" id="151" pp="20"/>
-  <move name="crabhammer" id="152" pp="10" power="100" accuracy="90"/>
-  <move name="explosion" id="153" pp="5" power="250" accuracy="100"/>
-  <move name="fury-swipes" id="154" pp="15" power="18" accuracy="80"/>
-  <move name="bonemerang" id="155" pp="10" power="50" accuracy="90"/>
-  <move name="rest" id="156" pp="10"/>
-  <move name="rock-slide" id="157" pp="10" power="75" accuracy="90"/>
-  <move name="hyper-fang" id="158" pp="15" power="80" accuracy="90"/>
-  <move name="sharpen" id="159" pp="30"/>
-  <move name="conversion" id="160" pp="30"/>
-  <move name="tri-attack" id="161" pp="10" power="80" accuracy="100"/>
-  <move name="super-fang" id="162" pp="10" accuracy="90"/>
-  <move name="slash" id="163" pp="20" power="70" accuracy="100"/>
-  <move name="substitute" id="164" pp="10"/>
-  <move name="struggle" id="165" pp="1" power="50"/>
+  <pokemon name="dragonite" id="149" height="22" weight="2100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"/>
+  <pokemon name="dragonair" id="148" height="40" weight="165" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"/>
+  <pokemon name="snorlax" id="143" height="21" weight="4600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"/>
+  <pokemon name="kabutops" id="141" height="13" weight="405" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"/>
+  <pokemon name="omastar" id="139" height="10" weight="350" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"/>
+  <pokemon name="flareon" id="136" height="9" weight="250" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"/>
+  <pokemon name="jolteon" id="135" height="8" weight="245" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"/>
+  <pokemon name="vaporeon" id="134" height="10" weight="290" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"/>
+  <pokemon name="gyarados" id="130" height="65" weight="2350" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"/>
+  <pokemon name="magmar" id="126" height="13" weight="445" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"/>
+  <pokemon name="electabuzz" id="125" height="11" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"/>
+  <pokemon name="jynx" id="124" height="14" weight="406" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"/>
+  <pokemon name="mr-mime" id="122" height="13" weight="545" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"/>
+  <pokemon name="starmie" id="121" height="11" weight="800" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"/>
+  <pokemon name="seaking" id="119" height="13" weight="390" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"/>
+  <pokemon name="seadra" id="117" height="12" weight="250" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"/>
+  <pokemon name="chansey" id="113" height="11" weight="346" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"/>
+  <pokemon name="rhydon" id="112" height="19" weight="1200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"/>
+  <pokemon name="weezing" id="110" height="12" weight="95" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"/>
+  <pokemon name="hitmonchan" id="107" height="14" weight="502" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"/>
+  <pokemon name="hitmonlee" id="106" height="15" weight="498" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"/>
+  <pokemon name="marowak" id="105" height="10" weight="450" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"/>
+  <pokemon name="exeggutor" id="103" height="20" weight="1200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"/>
+  <pokemon name="electrode" id="101" height="12" weight="666" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"/>
+  <pokemon name="kingler" id="99" height="13" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"/>
+  <pokemon name="hypno" id="97" height="16" weight="756" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"/>
+  <pokemon name="gengar" id="94" height="15" weight="405" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+  <pokemon name="haunter" id="93" height="16" weight="1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"/>
+  <pokemon name="cloyster" id="91" height="15" weight="1325" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"/>
+  <pokemon name="muk" id="89" height="12" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"/>
+  <pokemon name="dewgong" id="87" height="17" weight="1200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"/>
+  <pokemon name="dodrio" id="85" height="18" weight="852" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"/>
+  <pokemon name="magneton" id="82" height="10" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"/>
+  <pokemon name="slowbro" id="80" height="16" weight="785" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"/>
+  <pokemon name="rapidash" id="78" height="17" weight="950" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"/>
+  <pokemon name="golem" id="76" height="14" weight="3000" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"/>
+  <pokemon name="graveler" id="75" height="10" weight="1050" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"/>
+  <pokemon name="tentacruel" id="73" height="16" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"/>
+  <pokemon name="victreebel" id="71" height="17" weight="155" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"/>
+  <pokemon name="weepinbell" id="70" height="10" weight="64" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"/>
+  <pokemon name="machamp" id="68" height="16" weight="1300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"/>
+  <pokemon name="machoke" id="67" height="15" weight="705" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"/>
+  <pokemon name="alakazam" id="65" height="15" weight="480" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"/>
+  <pokemon name="kadabra" id="64" height="13" weight="565" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"/>
+  <pokemon name="poliwrath" id="62" height="13" weight="540" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"/>
+  <pokemon name="poliwhirl" id="61" height="10" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"/>
+  <pokemon name="arcanine" id="59" height="19" weight="1550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"/>
+  <pokemon name="primeape" id="57" height="10" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"/>
+  <pokemon name="golduck" id="55" height="17" weight="766" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"/>
+  <pokemon name="persian" id="53" height="10" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"/>
+  <pokemon name="dugtrio" id="51" height="7" weight="333" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"/>
+  <pokemon name="venomoth" id="49" height="15" weight="125" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"/>
+  <pokemon name="parasect" id="47" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"/>
+  <pokemon name="vileplume" id="45" height="12" weight="186" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"/>
+  <pokemon name="gloom" id="44" height="8" weight="86" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"/>
+  <pokemon name="golbat" id="42" height="16" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"/>
+  <pokemon name="wigglytuff" id="40" height="10" weight="120" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"/>
+  <pokemon name="jigglypuff" id="39" height="5" weight="55" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"/>
+  <pokemon name="ninetales" id="38" height="11" weight="199" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"/>
+  <pokemon name="clefable" id="36" height="13" weight="400" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"/>
+  <pokemon name="clefairy" id="35" height="6" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"/>
+  <pokemon name="nidoking" id="34" height="14" weight="620" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"/>
+  <pokemon name="nidorino" id="33" height="9" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"/>
+  <pokemon name="nidoqueen" id="31" height="13" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"/>
+  <pokemon name="nidorina" id="30" height="8" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"/>
+  <pokemon name="sandslash" id="28" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"/>
+  <pokemon name="raichu" id="26" height="8" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"/>
+  <pokemon name="pikachu" id="25" height="4" weight="60" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"/>
+  <pokemon name="arbok" id="24" height="35" weight="650" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"/>
+  <pokemon name="fearow" id="22" height="12" weight="380" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"/>
+  <pokemon name="raticate" id="20" height="7" weight="185" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"/>
+  <pokemon name="pidgeot" id="18" height="15" weight="395" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"/>
+  <pokemon name="pidgeotto" id="17" height="11" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"/>
+  <pokemon name="beedrill" id="15" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"/>
+  <pokemon name="kakuna" id="14" height="6" weight="100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"/>
+  <pokemon name="butterfree" id="12" height="11" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"/>
+  <pokemon name="metapod" id="11" height="7" weight="99" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"/>
+  <pokemon name="blastoise" id="9" height="16" weight="855" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"/>
+  <pokemon name="wartortle" id="8" height="10" weight="225" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"/>
+  <pokemon name="charizard" id="6" height="17" weight="905" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"/>
+  <pokemon name="charmeleon" id="5" height="11" weight="190" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"/>
+  <pokemon name="venusaur" id="3" height="20" weight="1000" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"/>
+  <pokemon name="ivysaur" id="2" height="10" weight="130" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"/>
+  <pokemon name="mew" id="151" height="4" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"/>
+  <pokemon name="mewtwo" id="150" height="20" weight="1220" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"/>
+  <pokemon name="dratini" id="147" height="18" weight="33" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"/>
+  <pokemon name="moltres" id="146" height="20" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"/>
+  <pokemon name="zapdos" id="145" height="16" weight="526" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"/>
+  <pokemon name="articuno" id="144" height="17" weight="554" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"/>
+  <pokemon name="aerodactyl" id="142" height="18" weight="590" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"/>
+  <pokemon name="kabuto" id="140" height="5" weight="115" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"/>
+  <pokemon name="omanyte" id="138" height="4" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"/>
+  <pokemon name="porygon" id="137" height="8" weight="365" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"/>
+  <pokemon name="eevee" id="133" height="3" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"/>
+  <pokemon name="ditto" id="132" height="3" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"/>
+  <pokemon name="lapras" id="131" height="25" weight="2200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"/>
+  <pokemon name="magikarp" id="129" height="9" weight="100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"/>
+  <pokemon name="tauros" id="128" height="14" weight="884" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"/>
+  <pokemon name="pinsir" id="127" height="15" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"/>
+  <pokemon name="scyther" id="123" height="15" weight="560" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"/>
+  <pokemon name="staryu" id="120" height="8" weight="345" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"/>
+  <pokemon name="goldeen" id="118" height="6" weight="150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"/>
+  <pokemon name="horsea" id="116" height="4" weight="80" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"/>
+  <pokemon name="kangaskhan" id="115" height="22" weight="800" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"/>
+  <pokemon name="tangela" id="114" height="10" weight="350" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"/>
+  <pokemon name="rhyhorn" id="111" height="10" weight="1150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"/>
+  <pokemon name="koffing" id="109" height="6" weight="10" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"/>
+  <pokemon name="lickitung" id="108" height="12" weight="655" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"/>
+  <pokemon name="cubone" id="104" height="4" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"/>
+  <pokemon name="exeggcute" id="102" height="4" weight="25" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"/>
+  <pokemon name="voltorb" id="100" height="5" weight="104" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"/>
+  <pokemon name="krabby" id="98" height="4" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"/>
+  <pokemon name="drowzee" id="96" height="10" weight="324" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"/>
+  <pokemon name="onix" id="95" height="88" weight="2100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"/>
+  <pokemon name="gastly" id="92" height="13" weight="1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"/>
+  <pokemon name="shellder" id="90" height="3" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"/>
+  <pokemon name="grimer" id="88" height="9" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"/>
+  <pokemon name="seel" id="86" height="11" weight="900" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"/>
+  <pokemon name="doduo" id="84" height="14" weight="392" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"/>
+  <pokemon name="farfetchd" id="83" height="8" weight="150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"/>
+  <pokemon name="magnemite" id="81" height="3" weight="60" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"/>
+  <pokemon name="slowpoke" id="79" height="12" weight="360" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"/>
+  <pokemon name="ponyta" id="77" height="10" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"/>
+  <pokemon name="geodude" id="74" height="4" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"/>
+  <pokemon name="tentacool" id="72" height="9" weight="455" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"/>
+  <pokemon name="bellsprout" id="69" height="7" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"/>
+  <pokemon name="machop" id="66" height="8" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"/>
+  <pokemon name="abra" id="63" height="9" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"/>
+  <pokemon name="poliwag" id="60" height="6" weight="124" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"/>
+  <pokemon name="growlithe" id="58" height="7" weight="190" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"/>
+  <pokemon name="mankey" id="56" height="5" weight="280" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"/>
+  <pokemon name="psyduck" id="54" height="8" weight="196" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"/>
+  <pokemon name="meowth" id="52" height="4" weight="42" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"/>
+  <pokemon name="diglett" id="50" height="2" weight="8" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"/>
+  <pokemon name="venonat" id="48" height="10" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"/>
+  <pokemon name="paras" id="46" height="3" weight="54" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"/>
+  <pokemon name="oddish" id="43" height="5" weight="54" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"/>
+  <pokemon name="zubat" id="41" height="8" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"/>
+  <pokemon name="vulpix" id="37" height="6" weight="99" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"/>
+  <pokemon name="nidoran-m" id="32" height="5" weight="90" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"/>
+  <pokemon name="nidoran-f" id="29" height="4" weight="70" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"/>
+  <pokemon name="sandshrew" id="27" height="6" weight="120" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"/>
+  <pokemon name="ekans" id="23" height="20" weight="69" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"/>
+  <pokemon name="spearow" id="21" height="3" weight="20" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"/>
+  <pokemon name="rattata" id="19" height="3" weight="35" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"/>
+  <pokemon name="pidgey" id="16" height="3" weight="18" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"/>
+  <pokemon name="weedle" id="13" height="3" weight="32" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"/>
+  <pokemon name="caterpie" id="10" height="3" weight="29" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"/>
+  <pokemon name="squirtle" id="7" height="5" weight="90" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"/>
+  <pokemon name="charmander" id="4" height="6" weight="85" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"/>
+  <pokemon name="bulbasaur" id="1" height="7" weight="69" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"/>
+  <move name="pound" id="1"/>
+  <move name="karate-chop" id="2"/>
+  <move name="double-slap" id="3"/>
+  <move name="comet-punch" id="4"/>
+  <move name="mega-punch" id="5"/>
+  <move name="pay-day" id="6"/>
+  <move name="fire-punch" id="7"/>
+  <move name="ice-punch" id="8"/>
+  <move name="thunder-punch" id="9"/>
+  <move name="scratch" id="10"/>
+  <move name="vice-grip" id="11"/>
+  <move name="guillotine" id="12"/>
+  <move name="razor-wind" id="13"/>
+  <move name="swords-dance" id="14"/>
+  <move name="cut" id="15"/>
+  <move name="gust" id="16"/>
+  <move name="wing-attack" id="17"/>
+  <move name="whirlwind" id="18"/>
+  <move name="fly" id="19"/>
+  <move name="bind" id="20"/>
+  <move name="slam" id="21"/>
+  <move name="vine-whip" id="22"/>
+  <move name="stomp" id="23"/>
+  <move name="double-kick" id="24"/>
+  <move name="mega-kick" id="25"/>
+  <move name="jump-kick" id="26"/>
+  <move name="rolling-kick" id="27"/>
+  <move name="sand-attack" id="28"/>
+  <move name="headbutt" id="29"/>
+  <move name="horn-attack" id="30"/>
+  <move name="fury-attack" id="31"/>
+  <move name="horn-drill" id="32"/>
+  <move name="tackle" id="33"/>
+  <move name="body-slam" id="34"/>
+  <move name="wrap" id="35"/>
+  <move name="take-down" id="36"/>
+  <move name="thrash" id="37"/>
+  <move name="double-edge" id="38"/>
+  <move name="tail-whip" id="39"/>
+  <move name="poison-sting" id="40"/>
+  <move name="twineedle" id="41"/>
+  <move name="pin-missile" id="42"/>
+  <move name="leer" id="43"/>
+  <move name="bite" id="44"/>
+  <move name="growl" id="45"/>
+  <move name="roar" id="46"/>
+  <move name="sing" id="47"/>
+  <move name="supersonic" id="48"/>
+  <move name="sonic-boom" id="49"/>
+  <move name="disable" id="50"/>
+  <move name="acid" id="51"/>
+  <move name="ember" id="52"/>
+  <move name="flamethrower" id="53"/>
+  <move name="mist" id="54"/>
+  <move name="water-gun" id="55"/>
+  <move name="hydro-pump" id="56"/>
+  <move name="surf" id="57"/>
+  <move name="ice-beam" id="58"/>
+  <move name="blizzard" id="59"/>
+  <move name="psybeam" id="60"/>
+  <move name="bubble-beam" id="61"/>
+  <move name="aurora-beam" id="62"/>
+  <move name="hyper-beam" id="63"/>
+  <move name="peck" id="64"/>
+  <move name="drill-peck" id="65"/>
+  <move name="submission" id="66"/>
+  <move name="low-kick" id="67"/>
+  <move name="counter" id="68"/>
+  <move name="seismic-toss" id="69"/>
+  <move name="strength" id="70"/>
+  <move name="absorb" id="71"/>
+  <move name="mega-drain" id="72"/>
+  <move name="leech-seed" id="73"/>
+  <move name="growth" id="74"/>
+  <move name="razor-leaf" id="75"/>
+  <move name="solar-beam" id="76"/>
+  <move name="poison-powder" id="77"/>
+  <move name="stun-spore" id="78"/>
+  <move name="sleep-powder" id="79"/>
+  <move name="petal-dance" id="80"/>
+  <move name="string-shot" id="81"/>
+  <move name="dragon-rage" id="82"/>
+  <move name="fire-spin" id="83"/>
+  <move name="thunder-shock" id="84"/>
+  <move name="thunderbolt" id="85"/>
+  <move name="thunder-wave" id="86"/>
+  <move name="thunder" id="87"/>
+  <move name="rock-throw" id="88"/>
+  <move name="earthquake" id="89"/>
+  <move name="fissure" id="90"/>
+  <move name="dig" id="91"/>
+  <move name="toxic" id="92"/>
+  <move name="confusion" id="93"/>
+  <move name="psychic" id="94"/>
+  <move name="hypnosis" id="95"/>
+  <move name="meditate" id="96"/>
+  <move name="agility" id="97"/>
+  <move name="quick-attack" id="98"/>
+  <move name="rage" id="99"/>
+  <move name="teleport" id="100"/>
+  <move name="night-shade" id="101"/>
+  <move name="mimic" id="102"/>
+  <move name="screech" id="103"/>
+  <move name="double-team" id="104"/>
+  <move name="recover" id="105"/>
+  <move name="harden" id="106"/>
+  <move name="minimize" id="107"/>
+  <move name="smokescreen" id="108"/>
+  <move name="confuse-ray" id="109"/>
+  <move name="withdraw" id="110"/>
+  <move name="defense-curl" id="111"/>
+  <move name="barrier" id="112"/>
+  <move name="light-screen" id="113"/>
+  <move name="haze" id="114"/>
+  <move name="reflect" id="115"/>
+  <move name="focus-energy" id="116"/>
+  <move name="bide" id="117"/>
+  <move name="metronome" id="118"/>
+  <move name="mirror-move" id="119"/>
+  <move name="self-destruct" id="120"/>
+  <move name="egg-bomb" id="121"/>
+  <move name="lick" id="122"/>
+  <move name="smog" id="123"/>
+  <move name="sludge" id="124"/>
+  <move name="bone-club" id="125"/>
+  <move name="fire-blast" id="126"/>
+  <move name="waterfall" id="127"/>
+  <move name="clamp" id="128"/>
+  <move name="swift" id="129"/>
+  <move name="skull-bash" id="130"/>
+  <move name="spike-cannon" id="131"/>
+  <move name="constrict" id="132"/>
+  <move name="amnesia" id="133"/>
+  <move name="kinesis" id="134"/>
+  <move name="soft-boiled" id="135"/>
+  <move name="high-jump-kick" id="136"/>
+  <move name="glare" id="137"/>
+  <move name="dream-eater" id="138"/>
+  <move name="poison-gas" id="139"/>
+  <move name="barrage" id="140"/>
+  <move name="leech-life" id="141"/>
+  <move name="lovely-kiss" id="142"/>
+  <move name="sky-attack" id="143"/>
+  <move name="transform" id="144"/>
+  <move name="bubble" id="145"/>
+  <move name="dizzy-punch" id="146"/>
+  <move name="spore" id="147"/>
+  <move name="flash" id="148"/>
+  <move name="psywave" id="149"/>
+  <move name="splash" id="150"/>
+  <move name="acid-armor" id="151"/>
+  <move name="crabhammer" id="152"/>
+  <move name="explosion" id="153"/>
+  <move name="fury-swipes" id="154"/>
+  <move name="bonemerang" id="155"/>
+  <move name="rest" id="156"/>
+  <move name="rock-slide" id="157"/>
+  <move name="hyper-fang" id="158"/>
+  <move name="sharpen" id="159"/>
+  <move name="conversion" id="160"/>
+  <move name="tri-attack" id="161"/>
+  <move name="super-fang" id="162"/>
+  <move name="slash" id="163"/>
+  <move name="substitute" id="164"/>
+  <move name="struggle" id="165"/>
   <type name="normal"/>
   <type name="fighting"/>
   <type name="flying"/>
