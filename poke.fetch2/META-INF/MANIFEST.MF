@@ -6,3 +6,5 @@ Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: poke.fetch2
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: pokemon
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi
