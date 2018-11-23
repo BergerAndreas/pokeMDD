@@ -46,10 +46,10 @@ public class PokemonSerialize {
 	        	m.setId(id);
 	        	
 	        	// Add move details
-        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
-        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
-        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
-        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
+//        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
+//        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
+//        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
+//        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
 
 	        	//Save move
 	        	root.getMove().add(m);
@@ -60,6 +60,7 @@ public class PokemonSerialize {
 	        	
 	        	Type t = factory.createType();
 	        	t.setName(type.get("name").asText());
+	        	t.setId(Integer.parseInt(type.get("url").asText().split("/")[6]));
 	        	root.getType().add(t);
 	        }
 	        
@@ -77,7 +78,7 @@ public class PokemonSerialize {
 	        	p.setSprite(pokemonNode.get("sprites").get("front_default").asText());
 	        	p.setBaseExperience(pokemonNode.get("base_experience").asInt());
 	        	
-//	        	//Add moves to pokemon
+	        	//Add moves to pokemon
 	        	for(JsonNode moves : pokemonNode.get("moves")) {
 	        		Move move = root.getMove().stream().filter(x -> x.getName().equals(moves.get("move").get("name").asText())).findFirst().orElse(null);
 
@@ -86,6 +87,18 @@ public class PokemonSerialize {
 	        			p.getMove().add(move);
 	        		}
 	        	}
+	        	
+	        	//Add types to pokemon
+	        	for(JsonNode types : pokemonNode.get("types")) {
+	        		
+	        		Type type = root.getType().stream().filter(x -> x.getName().equals(types.get("type").get("name").asText())).findFirst().orElse(null);
+
+	        		//Don't add moves from later generations
+	        		if(type != null) {
+	        			p.getType().add(type);
+	        		}
+	        	}
+	        	
 	        	root.getPokemon().add(p);
 	        }
 	        

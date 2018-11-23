@@ -323,13 +323,22 @@ public interface PokemonPackage extends EPackage {
 	int TYPE = 3;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPE__ID = 0;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TYPE__NAME = 0;
+	int TYPE__NAME = 1;
 
 	/**
 	 * The feature id for the '<em><b>Pokemon</b></em>' reference list.
@@ -338,7 +347,7 @@ public interface PokemonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPE__POKEMON = 1;
+	int TYPE__POKEMON = 2;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -347,7 +356,7 @@ public interface PokemonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPE_FEATURE_COUNT = 2;
+	int TYPE_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Type</em>' class.
@@ -719,6 +728,17 @@ public interface PokemonPackage extends EPackage {
 	EClass getType();
 
 	/**
+	 * Returns the meta object for the attribute '{@link pokemon.Type#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see pokemon.Type#getId()
+	 * @see #getType()
+	 * @generated
+	 */
+	EAttribute getType_Id();
+
+	/**
 	 * Returns the meta object for the attribute '{@link pokemon.Type#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1040,6 +1060,14 @@ public interface PokemonPackage extends EPackage {
 		 * @generated
 		 */
 		EClass TYPE = eINSTANCE.getType();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TYPE__ID = eINSTANCE.getType_Id();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.

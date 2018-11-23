@@ -352,7 +352,7 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getType_Name() {
+	public EAttribute getType_Id() {
 		return (EAttribute)typeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -361,8 +361,17 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getType_Name() {
+		return (EAttribute)typeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getType_Pokemon() {
-		return (EReference)typeEClass.getEStructuralFeatures().get(1);
+		return (EReference)typeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -491,6 +500,7 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		createEReference(moveEClass, MOVE__POKEMON);
 
 		typeEClass = createEClass(TYPE);
+		createEAttribute(typeEClass, TYPE__ID);
 		createEAttribute(typeEClass, TYPE__NAME);
 		createEReference(typeEClass, TYPE__POKEMON);
 
@@ -561,7 +571,8 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		initEReference(getMove_Pokemon(), this.getPokemon(), this.getPokemon_Move(), "pokemon", null, 0, -1, Move.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(typeEClass, Type.class, "Type", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getType_Name(), ecorePackage.getEString(), "name", null, 1, 1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getType_Id(), ecorePackage.getEInt(), "id", null, 1, 1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getType_Name(), ecorePackage.getEString(), "name", null, 1, 1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getType_Pokemon(), this.getPokemon(), this.getPokemon_Type(), "pokemon", null, 0, -1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pokemonInstanceEClass, PokemonInstance.class, "PokemonInstance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
