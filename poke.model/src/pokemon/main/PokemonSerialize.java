@@ -46,10 +46,10 @@ public class PokemonSerialize {
 	        	m.setId(id);
 	        	
 	        	// Add move details
-//        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
-//        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
-//        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
-//        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
+        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
+        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
+        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
+        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
 
 	        	//Save move
 	        	root.getMove().add(m);
@@ -86,7 +86,6 @@ public class PokemonSerialize {
 	        			p.getMove().add(move);
 	        		}
 	        	}
-//	        	System.out.println(p.getName());
 	        	root.getPokemon().add(p);
 	        }
 	        
@@ -127,6 +126,7 @@ public class PokemonSerialize {
 	        ObjectMapper mapper = new ObjectMapper();
 	        JsonNode node = mapper.readTree(all);
 			br.close();
+			System.out.println(apiUrl);
 			return node;
 		}
 		catch(Exception e) {

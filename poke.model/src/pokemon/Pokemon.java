@@ -42,7 +42,7 @@ public interface Pokemon extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see pokemon.PokemonPackage#getPokemon_Name()
-	 * @model required="true"
+	 * @model id="true" required="true"
 	 * @generated
 	 */
 	String getName();
@@ -68,7 +68,7 @@ public interface Pokemon extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
 	 * @see pokemon.PokemonPackage#getPokemon_Id()
-	 * @model id="true" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	int getId();
