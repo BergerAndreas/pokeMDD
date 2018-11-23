@@ -15,11 +15,13 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import pokemon.Move;
 import pokemon.Pokemon;
+import pokemon.PokemonInstance;
 import pokemon.PokemonPackage;
 import pokemon.Type;
 
@@ -39,6 +41,7 @@ import pokemon.Type;
  *   <li>{@link pokemon.impl.PokemonImpl#getBaseExperience <em>Base Experience</em>}</li>
  *   <li>{@link pokemon.impl.PokemonImpl#getType <em>Type</em>}</li>
  *   <li>{@link pokemon.impl.PokemonImpl#getMove <em>Move</em>}</li>
+ *   <li>{@link pokemon.impl.PokemonImpl#getPokemonInstance <em>Pokemon Instance</em>}</li>
  * </ul>
  *
  * @generated
@@ -183,6 +186,16 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 	 * @ordered
 	 */
 	protected EList<Move> move;
+
+	/**
+	 * The cached value of the '{@link #getPokemonInstance() <em>Pokemon Instance</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPokemonInstance()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<PokemonInstance> pokemonInstance;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,6 +371,18 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<PokemonInstance> getPokemonInstance() {
+		if (pokemonInstance == null) {
+			pokemonInstance = new EObjectContainmentEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.POKEMON__POKEMON_INSTANCE);
+		}
+		return pokemonInstance;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -382,6 +407,8 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 				return ((InternalEList<?>)getType()).basicRemove(otherEnd, msgs);
 			case PokemonPackage.POKEMON__MOVE:
 				return ((InternalEList<?>)getMove()).basicRemove(otherEnd, msgs);
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				return ((InternalEList<?>)getPokemonInstance()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -410,6 +437,8 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 				return getType();
 			case PokemonPackage.POKEMON__MOVE:
 				return getMove();
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				return getPokemonInstance();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -449,6 +478,10 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 				getMove().clear();
 				getMove().addAll((Collection<? extends Move>)newValue);
 				return;
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				getPokemonInstance().clear();
+				getPokemonInstance().addAll((Collection<? extends PokemonInstance>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -485,6 +518,9 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 			case PokemonPackage.POKEMON__MOVE:
 				getMove().clear();
 				return;
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				getPokemonInstance().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -513,6 +549,8 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 				return type != null && !type.isEmpty();
 			case PokemonPackage.POKEMON__MOVE:
 				return move != null && !move.isEmpty();
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				return pokemonInstance != null && !pokemonInstance.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

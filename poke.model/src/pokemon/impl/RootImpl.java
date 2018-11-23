@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import pokemon.Move;
 import pokemon.Pokemon;
-import pokemon.PokemonInstance;
 import pokemon.PokemonPackage;
 import pokemon.Root;
 import pokemon.Trainer;
@@ -36,7 +35,6 @@ import pokemon.Type;
  *   <li>{@link pokemon.impl.RootImpl#getMove <em>Move</em>}</li>
  *   <li>{@link pokemon.impl.RootImpl#getType <em>Type</em>}</li>
  *   <li>{@link pokemon.impl.RootImpl#getTrainer <em>Trainer</em>}</li>
- *   <li>{@link pokemon.impl.RootImpl#getPokemonInstance <em>Pokemon Instance</em>}</li>
  * </ul>
  *
  * @generated
@@ -81,16 +79,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * @ordered
 	 */
 	protected EList<Trainer> trainer;
-
-	/**
-	 * The cached value of the '{@link #getPokemonInstance() <em>Pokemon Instance</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPokemonInstance()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<PokemonInstance> pokemonInstance;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,18 +152,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PokemonInstance> getPokemonInstance() {
-		if (pokemonInstance == null) {
-			pokemonInstance = new EObjectContainmentEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.ROOT__POKEMON_INSTANCE);
-		}
-		return pokemonInstance;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -187,8 +163,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return ((InternalEList<?>)getType()).basicRemove(otherEnd, msgs);
 			case PokemonPackage.ROOT__TRAINER:
 				return ((InternalEList<?>)getTrainer()).basicRemove(otherEnd, msgs);
-			case PokemonPackage.ROOT__POKEMON_INSTANCE:
-				return ((InternalEList<?>)getPokemonInstance()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -209,8 +183,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return getType();
 			case PokemonPackage.ROOT__TRAINER:
 				return getTrainer();
-			case PokemonPackage.ROOT__POKEMON_INSTANCE:
-				return getPokemonInstance();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -240,10 +212,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				getTrainer().clear();
 				getTrainer().addAll((Collection<? extends Trainer>)newValue);
 				return;
-			case PokemonPackage.ROOT__POKEMON_INSTANCE:
-				getPokemonInstance().clear();
-				getPokemonInstance().addAll((Collection<? extends PokemonInstance>)newValue);
-				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -268,9 +236,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 			case PokemonPackage.ROOT__TRAINER:
 				getTrainer().clear();
 				return;
-			case PokemonPackage.ROOT__POKEMON_INSTANCE:
-				getPokemonInstance().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -291,8 +256,6 @@ public class RootImpl extends MinimalEObjectImpl.Container implements Root {
 				return type != null && !type.isEmpty();
 			case PokemonPackage.ROOT__TRAINER:
 				return trainer != null && !trainer.isEmpty();
-			case PokemonPackage.ROOT__POKEMON_INSTANCE:
-				return pokemonInstance != null && !pokemonInstance.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pokemon.Root#getMove <em>Move</em>}</li>
  *   <li>{@link pokemon.Root#getType <em>Type</em>}</li>
  *   <li>{@link pokemon.Root#getTrainer <em>Trainer</em>}</li>
- *   <li>{@link pokemon.Root#getPokemonInstance <em>Pokemon Instance</em>}</li>
  * </ul>
  *
  * @see pokemon.PokemonPackage#getRoot()
@@ -90,21 +89,5 @@ public interface Root extends EObject {
 	 * @generated
 	 */
 	EList<Trainer> getTrainer();
-
-	/**
-	 * Returns the value of the '<em><b>Pokemon Instance</b></em>' containment reference list.
-	 * The list contents are of type {@link pokemon.PokemonInstance}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pokemon Instance</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pokemon Instance</em>' containment reference list.
-	 * @see pokemon.PokemonPackage#getRoot_PokemonInstance()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<PokemonInstance> getPokemonInstance();
 
 } // Root

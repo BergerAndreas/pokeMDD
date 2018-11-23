@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pokemon.Pokemon#getBaseExperience <em>Base Experience</em>}</li>
  *   <li>{@link pokemon.Pokemon#getType <em>Type</em>}</li>
  *   <li>{@link pokemon.Pokemon#getMove <em>Move</em>}</li>
+ *   <li>{@link pokemon.Pokemon#getPokemonInstance <em>Pokemon Instance</em>}</li>
  * </ul>
  *
  * @see pokemon.PokemonPackage#getPokemon()
@@ -222,5 +223,21 @@ public interface Pokemon extends EObject {
 	 * @generated
 	 */
 	EList<Move> getMove();
+
+	/**
+	 * Returns the value of the '<em><b>Pokemon Instance</b></em>' containment reference list.
+	 * The list contents are of type {@link pokemon.PokemonInstance}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Pokemon Instance</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pokemon Instance</em>' containment reference list.
+	 * @see pokemon.PokemonPackage#getPokemon_PokemonInstance()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<PokemonInstance> getPokemonInstance();
 
 } // Pokemon

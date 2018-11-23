@@ -190,15 +190,6 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getRoot_PokemonInstance() {
-		return (EReference)rootEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getPokemon() {
 		return pokemonEClass;
 	}
@@ -273,6 +264,15 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 	 */
 	public EReference getPokemon_Move() {
 		return (EReference)pokemonEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPokemon_PokemonInstance() {
+		return (EReference)pokemonEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -479,7 +479,6 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		createEReference(rootEClass, ROOT__MOVE);
 		createEReference(rootEClass, ROOT__TYPE);
 		createEReference(rootEClass, ROOT__TRAINER);
-		createEReference(rootEClass, ROOT__POKEMON_INSTANCE);
 
 		pokemonEClass = createEClass(POKEMON);
 		createEAttribute(pokemonEClass, POKEMON__NAME);
@@ -490,6 +489,7 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		createEAttribute(pokemonEClass, POKEMON__BASE_EXPERIENCE);
 		createEReference(pokemonEClass, POKEMON__TYPE);
 		createEReference(pokemonEClass, POKEMON__MOVE);
+		createEReference(pokemonEClass, POKEMON__POKEMON_INSTANCE);
 
 		moveEClass = createEClass(MOVE);
 		createEAttribute(moveEClass, MOVE__NAME);
@@ -550,7 +550,6 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		initEReference(getRoot_Move(), this.getMove(), null, "move", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_Type(), this.getType(), null, "type", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRoot_Trainer(), this.getTrainer(), null, "trainer", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRoot_PokemonInstance(), this.getPokemonInstance(), null, "pokemonInstance", null, 0, -1, Root.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pokemonEClass, Pokemon.class, "Pokemon", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPokemon_Name(), ecorePackage.getEString(), "name", null, 1, 1, Pokemon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -561,6 +560,7 @@ public class PokemonPackageImpl extends EPackageImpl implements PokemonPackage {
 		initEAttribute(getPokemon_BaseExperience(), ecorePackage.getEInt(), "baseExperience", null, 1, 1, Pokemon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPokemon_Type(), this.getType(), this.getType_Pokemon(), "type", null, 0, -1, Pokemon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPokemon_Move(), this.getMove(), this.getMove_Pokemon(), "move", null, 0, -1, Pokemon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPokemon_PokemonInstance(), this.getPokemonInstance(), null, "pokemonInstance", null, 0, -1, Pokemon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(moveEClass, Move.class, "Move", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMove_Name(), ecorePackage.getEString(), "name", null, 1, 1, Move.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

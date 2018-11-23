@@ -14,8 +14,6 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="trainer" upperBound="-1"
         eType="#//Trainer" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemonInstance" upperBound="-1"
-        eType="#//PokemonInstance" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pokemon">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -41,6 +39,8 @@
         eOpposite="#//Type/pokemon"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="move" upperBound="-1" eType="#//Move"
         eOpposite="#//Move/pokemon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemonInstance" upperBound="-1"
+        eType="#//PokemonInstance" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Move">
     <eAnnotations source="http://www.eclipse.org/acceleo/query/1.0">
