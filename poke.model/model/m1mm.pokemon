@@ -23,170 +23,298 @@
   <pokemon name="hitmonlee" id="106" height="15" weight="498" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png" baseExperience="159" move="5 24 25 26 27 29 34 36 38 66 67 68 69 70 89 92 96 99 102 104 116 117 118 129 130 136 156 157 164"/>
   <pokemon name="marowak" id="105" height="10" weight="450" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png" baseExperience="149" move="5 7 9 14 25 29 34 36 37 38 39 43 45 53 55 58 59 61 63 66 67 68 69 70 89 90 91 92 99 102 104 116 117 125 126 130 155 156 157 164"/>
   <pokemon name="exeggutor" id="103" height="20" weight="1200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png" baseExperience="186" move="14 23 29 36 38 63 67 70 72 76 92 93 94 95 99 100 102 104 113 115 117 120 121 138 140 148 149 153 156 164"/>
-  <move name="pound" id="1" pokemon="124 113"/>
-  <move name="karate-chop" id="2"/>
-  <move name="double-slap" id="3" pokemon="124 122 113"/>
-  <move name="comet-punch" id="4" pokemon="107"/>
-  <move name="mega-punch" id="5" pokemon="143 126 125 124 122 113 112 107 106 105"/>
-  <move name="pay-day" id="6" pokemon="143 112"/>
-  <move name="fire-punch" id="7" pokemon="149 143 126 125 122 113 112 107 105"/>
-  <move name="ice-punch" id="8" pokemon="149 143 125 124 122 113 112 107"/>
-  <move name="thunder-punch" id="9" pokemon="149 143 126 125 122 113 112 107 105"/>
-  <move name="scratch" id="10" pokemon="141"/>
-  <move name="vice-grip" id="11"/>
-  <move name="guillotine" id="12"/>
-  <move name="razor-wind" id="13" pokemon="149 141"/>
-  <move name="swords-dance" id="14" pokemon="141 112 105 103"/>
-  <move name="cut" id="15" pokemon="149 141 112"/>
-  <move name="gust" id="16"/>
-  <move name="wing-attack" id="17" pokemon="149"/>
-  <move name="whirlwind" id="18" pokemon="143"/>
-  <move name="fly" id="19" pokemon="149"/>
-  <move name="bind" id="20" pokemon="149 148 139"/>
-  <move name="slam" id="21" pokemon="149 148"/>
-  <move name="vine-whip" id="22"/>
-  <move name="stomp" id="23" pokemon="112 103"/>
-  <move name="double-kick" id="24" pokemon="135 106"/>
-  <move name="mega-kick" id="25" pokemon="143 141 126 125 124 122 113 112 107 106 105"/>
-  <move name="jump-kick" id="26" pokemon="106"/>
-  <move name="rolling-kick" id="27" pokemon="106"/>
-  <move name="sand-attack" id="28" pokemon="141 136 135 134"/>
-  <move name="headbutt" id="29" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 117 113 112 107 106 105 103"/>
-  <move name="horn-attack" id="30" pokemon="139 119 112"/>
-  <move name="fury-attack" id="31" pokemon="119 112"/>
-  <move name="horn-drill" id="32" pokemon="149 148 139 119 112"/>
-  <move name="tackle" id="33" pokemon="143 136 135 134 130 121 110"/>
-  <move name="body-slam" id="34" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 113 112 107 106 105"/>
-  <move name="wrap" id="35" pokemon="149 148"/>
-  <move name="take-down" id="36" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105 103"/>
-  <move name="thrash" id="37" pokemon="130 124 105"/>
-  <move name="double-edge" id="38" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105 103"/>
-  <move name="tail-whip" id="39" pokemon="136 135 134 119 113 112 105"/>
-  <move name="poison-sting" id="40"/>
-  <move name="twineedle" id="41"/>
-  <move name="pin-missile" id="42" pokemon="135"/>
-  <move name="leer" id="43" pokemon="149 148 141 139 136 130 126 125 117 112 105"/>
-  <move name="bite" id="44" pokemon="139 136 134 130"/>
-  <move name="growl" id="45" pokemon="113 105"/>
-  <move name="roar" id="46" pokemon="149 136 135 134 130 112"/>
-  <move name="sing" id="47" pokemon="113"/>
-  <move name="supersonic" id="48" pokemon="119"/>
-  <move name="sonic-boom" id="49"/>
-  <move name="disable" id="50"/>
-  <move name="acid" id="51"/>
-  <move name="ember" id="52" pokemon="136 126"/>
-  <move name="flamethrower" id="53" pokemon="149 148 143 136 130 126 113 112 110 105"/>
-  <move name="mist" id="54" pokemon="134"/>
-  <move name="water-gun" id="55" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105"/>
-  <move name="hydro-pump" id="56" pokemon="141 139 134 130 121 117"/>
-  <move name="surf" id="57" pokemon="149 148 143 141 139 134 130 121 119 117 112"/>
-  <move name="ice-beam" id="58" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105"/>
-  <move name="blizzard" id="59" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105"/>
-  <move name="psybeam" id="60" pokemon="122"/>
-  <move name="bubble-beam" id="61" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105"/>
-  <move name="aurora-beam" id="62" pokemon="134"/>
-  <move name="hyper-beam" id="63" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 105 103"/>
-  <move name="peck" id="64" pokemon="119"/>
-  <move name="drill-peck" id="65"/>
-  <move name="submission" id="66" pokemon="143 141 139 126 125 124 122 113 112 107 106 105"/>
-  <move name="low-kick" id="67" pokemon="141 126 125 107 106 105 103"/>
-  <move name="counter" id="68" pokemon="143 126 125 124 122 113 112 107 106 105"/>
-  <move name="seismic-toss" id="69" pokemon="143 141 139 126 125 124 122 113 112 107 106 105"/>
-  <move name="strength" id="70" pokemon="149 143 136 135 134 130 126 125 113 112 107 106 105 103"/>
-  <move name="absorb" id="71" pokemon="141"/>
-  <move name="mega-drain" id="72" pokemon="141 103"/>
-  <move name="leech-seed" id="73"/>
-  <move name="growth" id="74"/>
-  <move name="razor-leaf" id="75"/>
-  <move name="solar-beam" id="76" pokemon="143 122 113 103"/>
-  <move name="poison-powder" id="77"/>
-  <move name="stun-spore" id="78"/>
-  <move name="sleep-powder" id="79"/>
-  <move name="petal-dance" id="80"/>
-  <move name="string-shot" id="81"/>
-  <move name="dragon-rage" id="82" pokemon="149 148 130"/>
-  <move name="fire-spin" id="83" pokemon="136 126"/>
-  <move name="thunder-shock" id="84" pokemon="135 125"/>
-  <move name="thunderbolt" id="85" pokemon="149 148 143 135 130 125 122 121 113 112 110"/>
-  <move name="thunder-wave" id="86" pokemon="149 148 135 130 125 122 121 113"/>
-  <move name="thunder" id="87" pokemon="149 148 143 135 130 125 122 121 113 112 110"/>
-  <move name="rock-throw" id="88"/>
-  <move name="earthquake" id="89" pokemon="149 143 130 113 112 107 106 105"/>
-  <move name="fissure" id="90" pokemon="143 112 105"/>
-  <move name="dig" id="91" pokemon="141 136 135 134 112 105"/>
-  <move name="toxic" id="92" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="confusion" id="93" pokemon="122 103"/>
-  <move name="psychic" id="94" pokemon="143 126 125 124 122 121 113 103"/>
-  <move name="hypnosis" id="95" pokemon="122 103"/>
-  <move name="meditate" id="96" pokemon="122 106"/>
-  <move name="agility" id="97" pokemon="149 148 135 119 117 107"/>
-  <move name="quick-attack" id="98" pokemon="136 135 134 125"/>
-  <move name="rage" id="99" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="teleport" id="100" pokemon="126 125 124 122 121 113 103"/>
-  <move name="night-shade" id="101"/>
-  <move name="mimic" id="102" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="screech" id="103" pokemon="125"/>
-  <move name="double-team" id="104" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="recover" id="105" pokemon="121"/>
-  <move name="harden" id="106" pokemon="143 141 121"/>
-  <move name="minimize" id="107" pokemon="113"/>
-  <move name="smokescreen" id="108" pokemon="126 117 110"/>
-  <move name="confuse-ray" id="109" pokemon="126 122 121"/>
-  <move name="withdraw" id="110" pokemon="139"/>
-  <move name="defense-curl" id="111" pokemon="143 113"/>
-  <move name="barrier" id="112" pokemon="122"/>
-  <move name="light-screen" id="113" pokemon="149 148 135 125 124 122 121 113 103"/>
-  <move name="haze" id="114" pokemon="134 110"/>
-  <move name="reflect" id="115" pokemon="149 148 143 141 139 136 135 134 130 125 124 122 121 113 103"/>
-  <move name="focus-energy" id="116" pokemon="117 106 105"/>
-  <move name="bide" id="117" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="metronome" id="118" pokemon="143 126 125 124 122 113 107 106"/>
-  <move name="mirror-move" id="119"/>
-  <move name="self-destruct" id="120" pokemon="143 110 103"/>
-  <move name="egg-bomb" id="121" pokemon="113 103"/>
-  <move name="lick" id="122" pokemon="143 124"/>
-  <move name="smog" id="123" pokemon="136 126 110"/>
-  <move name="sludge" id="124" pokemon="110"/>
-  <move name="bone-club" id="125" pokemon="105"/>
-  <move name="fire-blast" id="126" pokemon="149 148 143 136 130 126 113 112 110 105"/>
-  <move name="waterfall" id="127" pokemon="149 148 141 139 134 130 121 119 117"/>
-  <move name="clamp" id="128"/>
-  <move name="swift" id="129" pokemon="149 148 136 135 134 125 121 119 117 107 106"/>
-  <move name="skull-bash" id="130" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105"/>
-  <move name="spike-cannon" id="131" pokemon="139"/>
-  <move name="constrict" id="132" pokemon="139"/>
-  <move name="amnesia" id="133" pokemon="143"/>
-  <move name="kinesis" id="134"/>
-  <move name="soft-boiled" id="135" pokemon="113"/>
+  <pokemon name="electrode" id="101" height="12" weight="666" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png" baseExperience="172" move="29 33 36 49 63 85 86 87 92 99 100 102 103 104 113 115 117 120 129 130 148 153 156 164"/>
+  <pokemon name="kingler" id="99" height="13" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png" baseExperience="166" move="11 12 14 15 21 23 34 36 38 43 55 57 58 59 61 63 70 91 92 99 102 104 106 117 145 152 156 157 164"/>
+  <pokemon name="hypno" id="97" height="16" weight="756" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png" baseExperience="169" move="1 5 7 8 9 25 29 34 36 38 50 60 63 66 67 68 69 86 92 93 94 95 96 99 100 102 104 113 115 117 118 130 138 139 148 149 156 161 164"/>
+  <pokemon name="gengar" id="94" height="15" weight="405" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" baseExperience="225" move="5 7 8 9 25 29 34 36 38 63 66 68 69 70 72 85 87 92 94 95 99 101 102 104 109 117 118 120 122 130 138 149 153 156 164"/>
+  <pokemon name="haunter" id="93" height="16" weight="1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" baseExperience="142" move="7 8 9 72 85 87 92 94 95 99 101 102 104 109 117 120 122 138 149 153 156 164"/>
+  <pokemon name="cloyster" id="91" height="15" weight="1325" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" baseExperience="184" move="36 38 48 55 56 57 58 59 61 62 63 92 99 100 102 104 110 115 117 120 128 129 131 153 156 161 164"/>
+  <pokemon name="muk" id="89" height="12" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png" baseExperience="175" move="1 7 8 9 34 50 53 63 70 72 85 87 91 92 99 102 103 104 106 107 117 120 124 126 139 151 153 156 157 164"/>
+  <pokemon name="dewgong" id="87" height="17" weight="1200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png" baseExperience="166" move="6 29 32 34 36 38 45 55 57 58 59 61 62 63 70 92 99 102 104 117 127 130 156 164"/>
+  <pokemon name="dodrio" id="85" height="18" weight="852" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png" baseExperience="165" move="14 18 19 26 31 34 36 37 38 45 63 64 65 92 97 98 99 102 104 115 117 129 130 143 156 161 164"/>
+  <pokemon name="magneton" id="82" height="10" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png" baseExperience="163" move="33 36 38 48 49 63 84 85 86 87 92 99 100 102 103 104 113 115 117 129 148 153 156 161 164"/>
+  <pokemon name="slowbro" id="80" height="16" weight="785" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" baseExperience="172" move="5 6 8 25 29 33 34 36 38 45 50 53 55 57 58 59 61 63 66 68 69 70 86 89 90 91 92 93 94 99 100 102 104 110 113 115 117 126 129 130 133 138 148 149 156 161 164"/>
+  <pokemon name="rapidash" id="78" height="17" weight="950" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png" baseExperience="175" move="23 29 31 32 33 34 36 38 39 45 52 53 63 67 70 76 83 92 97 98 99 102 104 115 117 126 129 130 156 164"/>
+  <pokemon name="golem" id="76" height="14" weight="3000" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png" baseExperience="223" move="5 7 9 25 29 33 34 36 38 46 53 63 66 68 69 70 88 89 90 91 92 99 102 104 106 111 117 118 120 126 153 156 157 164"/>
+  <pokemon name="graveler" id="75" height="10" weight="1050" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png" baseExperience="137" move="5 7 9 29 33 34 36 38 53 66 68 69 70 88 89 90 91 92 99 102 104 106 111 117 118 120 126 153 156 157 164"/>
+  <pokemon name="tentacruel" id="73" height="16" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" baseExperience="180" move="14 15 20 35 36 38 40 48 51 55 56 57 58 59 61 63 72 92 99 102 103 104 112 115 117 127 130 132 156 164"/>
+  <pokemon name="victreebel" id="71" height="17" weight="155" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png" baseExperience="221" move="14 15 20 22 34 35 36 38 51 63 72 75 76 77 78 79 92 99 102 104 115 117 148 156 164"/>
+  <pokemon name="weepinbell" id="70" height="10" weight="64" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png" baseExperience="137" move="14 15 20 21 22 35 36 38 51 72 74 75 76 77 78 79 92 99 102 104 115 117 148 156 164"/>
+  <pokemon name="machamp" id="68" height="16" weight="1300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png" baseExperience="227" move="2 5 7 8 9 25 29 34 36 38 43 53 63 66 67 68 69 70 89 90 91 92 99 102 104 113 116 117 118 126 130 156 157 164"/>
+  <pokemon name="machoke" id="67" height="15" weight="705" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" baseExperience="142" move="2 5 7 8 9 25 29 34 36 38 43 53 66 67 68 69 70 89 90 91 92 99 102 104 113 116 117 118 126 130 156 157 164"/>
+  <pokemon name="alakazam" id="65" height="15" weight="480" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png" baseExperience="225" move="5 7 8 9 25 29 34 36 38 50 60 63 66 68 69 86 91 92 93 94 99 100 102 104 105 113 115 117 118 130 134 138 148 149 156 161 164"/>
+  <pokemon name="kadabra" id="64" height="13" weight="565" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png" baseExperience="140" move="5 7 8 9 25 29 34 36 38 50 60 66 68 69 86 91 92 93 94 99 100 102 104 105 113 115 117 118 130 134 138 148 149 156 161 164"/>
+  <pokemon name="poliwrath" id="62" height="13" weight="540" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" baseExperience="230" move="3 5 8 25 29 34 36 38 55 57 58 59 61 63 66 68 69 70 89 90 91 92 94 95 99 102 104 111 117 118 127 130 149 156 157 164"/>
+  <pokemon name="poliwhirl" id="61" height="10" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" baseExperience="135" move="3 5 8 25 29 34 36 38 55 56 57 58 59 61 66 68 69 70 89 90 91 92 94 95 99 102 104 111 117 118 127 130 133 145 149 156 164"/>
+  <pokemon name="arcanine" id="59" height="19" weight="1550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" baseExperience="194" move="29 34 36 38 43 44 46 52 53 63 70 76 82 91 92 99 100 102 104 115 117 126 129 130 156 164"/>
+  <pokemon name="primeape" id="57" height="10" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png" baseExperience="159" move="2 5 6 7 8 9 10 25 29 34 36 37 38 43 63 66 67 68 69 70 85 87 89 91 92 99 102 103 104 111 116 117 118 129 130 154 156 157 164"/>
+  <pokemon name="golduck" id="55" height="17" weight="766" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" baseExperience="175" move="5 6 8 10 25 29 34 36 38 39 50 55 56 57 58 59 61 63 66 67 68 69 70 91 92 93 94 99 102 103 104 113 117 127 129 130 133 148 154 156 164"/>
+  <pokemon name="persian" id="53" height="10" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" baseExperience="154" move="6 10 15 29 34 36 38 44 45 46 55 61 63 85 87 91 92 99 102 103 104 111 117 129 130 138 148 154 156 163 164"/>
+  <pokemon name="dugtrio" id="51" height="7" weight="333" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png" baseExperience="149" move="10 15 28 34 36 38 45 63 89 90 91 92 99 102 104 117 154 156 157 161 163 164"/>
+  <pokemon name="venomoth" id="49" height="15" weight="125" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png" baseExperience="158" move="13 16 18 33 36 38 48 50 60 63 72 76 77 78 79 81 92 93 94 99 100 102 104 115 117 129 141 148 149 156 164"/>
+  <pokemon name="parasect" id="47" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" baseExperience="142" move="10 14 15 34 36 38 63 68 71 72 74 76 77 78 81 91 92 99 102 104 113 115 117 130 141 147 148 156 163 164"/>
+  <pokemon name="vileplume" id="45" height="12" weight="186" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png" baseExperience="221" move="14 15 34 36 38 51 63 71 72 76 77 78 79 80 92 99 102 104 115 117 148 156 164"/>
+  <pokemon name="gloom" id="44" height="8" weight="86" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png" baseExperience="138" move="14 15 36 38 51 71 72 74 76 77 78 79 80 92 99 102 104 115 117 148 156 164"/>
+  <pokemon name="golbat" id="42" height="16" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" baseExperience="159" move="13 17 18 19 36 38 44 48 63 71 72 92 99 102 103 104 109 114 117 129 141 156 162 164"/>
+  <pokemon name="wigglytuff" id="40" height="10" weight="120" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png" baseExperience="196" move="3 5 7 8 9 25 29 34 36 38 47 50 53 55 58 59 61 63 66 68 69 70 76 85 86 87 91 92 94 99 100 102 104 111 113 115 117 126 130 138 148 149 156 161 164"/>
+  <pokemon name="jigglypuff" id="39" height="5" weight="55" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" baseExperience="95" move="1 3 5 7 8 9 25 29 34 36 38 47 50 53 55 58 59 61 66 68 69 70 76 85 86 87 91 92 94 99 100 102 104 111 113 115 117 126 130 138 148 149 156 161 164"/>
+  <pokemon name="ninetales" id="38" height="11" weight="199" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" baseExperience="177" move="29 34 36 38 39 46 52 53 63 76 83 91 92 98 99 102 104 109 115 117 126 129 130 138 156 164"/>
+  <pokemon name="clefable" id="36" height="13" weight="400" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png" baseExperience="217" move="3 5 7 8 9 25 29 34 36 38 47 53 55 58 59 61 63 66 68 69 70 76 85 86 87 91 92 94 99 100 102 104 107 111 113 115 117 118 126 130 135 138 148 149 156 161 164"/>
+  <pokemon name="clefairy" id="35" height="6" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" baseExperience="113" move="1 3 5 7 8 9 25 29 34 36 38 45 47 53 55 58 59 61 66 68 69 70 76 85 86 87 91 92 94 99 100 102 104 107 111 113 115 117 118 126 130 135 138 148 149 156 161 164"/>
+  <pokemon name="nidoking" id="34" height="14" weight="620" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" baseExperience="227" move="5 6 7 8 9 15 24 25 29 30 32 33 34 36 37 38 40 46 53 55 57 58 59 61 63 64 66 68 69 70 85 87 89 90 91 92 99 102 104 111 115 116 117 126 130 156 157 162 164"/>
+  <pokemon name="nidorino" id="33" height="9" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png" baseExperience="128" move="15 24 29 30 31 32 33 34 36 38 40 43 55 58 59 61 64 68 70 85 87 91 92 99 102 104 111 115 116 117 130 156 162 164"/>
+  <pokemon name="nidoqueen" id="31" height="13" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" baseExperience="227" move="5 6 7 8 9 10 15 24 25 29 32 33 34 36 38 39 40 46 53 55 57 58 59 61 63 66 68 69 70 85 87 89 90 91 92 99 102 104 111 115 117 126 130 156 157 162 164"/>
+  <pokemon name="nidorina" id="30" height="8" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png" baseExperience="128" move="10 15 24 29 32 33 34 36 38 39 40 44 45 55 58 59 61 68 70 85 87 91 92 99 102 104 111 115 117 130 154 156 162 164"/>
+  <pokemon name="sandslash" id="28" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" baseExperience="158" move="10 14 15 28 29 34 36 38 40 63 66 68 69 70 89 90 91 92 99 102 104 111 117 129 130 154 156 157 162 163 164"/>
+  <pokemon name="raichu" id="26" height="8" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" baseExperience="218" move="5 6 9 25 29 34 36 38 39 45 63 66 68 69 70 84 85 86 87 91 92 98 99 102 104 111 113 115 117 129 130 148 156 164"/>
+  <pokemon name="pikachu" id="25" height="4" weight="60" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" baseExperience="112" move="5 6 9 21 25 29 34 36 38 39 45 57 66 68 69 70 84 85 86 87 91 92 97 98 99 102 104 111 113 115 117 129 130 148 156 164"/>
+  <pokemon name="arbok" id="24" height="35" weight="650" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" baseExperience="157" move="20 29 34 35 36 38 40 43 44 51 63 70 72 89 90 91 92 99 102 103 104 114 117 130 137 156 157 164"/>
+  <pokemon name="fearow" id="22" height="12" weight="380" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" baseExperience="155" move="13 18 19 31 36 38 43 45 63 64 65 92 97 99 102 104 116 117 119 129 143 156 164"/>
+  <pokemon name="raticate" id="20" height="7" weight="185" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" baseExperience="145" move="14 15 29 33 34 36 38 39 44 46 55 58 59 61 63 68 70 85 86 87 91 92 98 99 102 104 111 116 117 129 130 156 158 162 164"/>
+  <pokemon name="pidgeot" id="18" height="15" weight="395" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" baseExperience="216" move="13 16 17 18 19 28 33 36 38 63 92 97 98 99 102 104 115 117 119 129 143 156 164"/>
+  <pokemon name="pidgeotto" id="17" height="11" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" baseExperience="122" move="13 16 17 18 19 28 33 36 38 92 97 98 99 102 104 115 117 119 129 143 156 164"/>
+  <pokemon name="beedrill" id="15" height="10" weight="295" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" baseExperience="178" move="14 15 31 36 38 41 42 63 72 76 81 92 97 99 102 104 115 116 117 129 130 148 156 164"/>
+  <pokemon name="kakuna" id="14" height="6" weight="100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" baseExperience="72" move="81 106"/>
+  <pokemon name="butterfree" id="12" height="11" weight="320" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" baseExperience="178" move="13 16 18 36 38 48 60 63 72 76 77 78 79 81 92 93 94 99 100 102 104 115 117 129 138 148 149 156 164"/>
+  <pokemon name="metapod" id="11" height="7" weight="99" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" baseExperience="72" move="81 106"/>
+  <pokemon name="blastoise" id="9" height="16" weight="855" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" baseExperience="239" move="5 8 25 29 33 34 36 38 39 44 46 55 56 57 58 59 61 63 66 68 69 70 89 90 91 92 99 102 104 110 111 115 117 127 130 145 156 157 164"/>
+  <pokemon name="wartortle" id="8" height="10" weight="225" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" baseExperience="142" move="5 8 25 29 33 34 36 38 39 44 55 56 57 58 59 61 66 68 69 70 91 92 99 102 104 110 111 115 117 127 130 145 156 164"/>
+  <pokemon name="charizard" id="6" height="17" weight="905" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" baseExperience="240" move="5 7 9 10 14 15 17 19 25 29 34 36 38 43 45 46 52 53 63 66 68 69 70 76 82 83 89 90 91 92 99 102 104 108 111 115 117 126 129 130 156 157 163 164"/>
+  <pokemon name="charmeleon" id="5" height="11" weight="190" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" baseExperience="142" move="5 7 9 10 14 15 25 29 34 36 38 43 45 52 53 66 68 69 70 82 83 91 92 99 102 104 108 111 115 117 126 129 130 156 157 163 164"/>
+  <pokemon name="venusaur" id="3" height="20" weight="1000" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" baseExperience="236" move="14 15 20 22 29 33 34 36 38 45 46 63 70 72 73 74 75 76 77 79 80 81 89 92 99 102 104 111 113 115 117 148 156 164"/>
+  <pokemon name="ivysaur" id="2" height="10" weight="130" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" baseExperience="142" move="14 15 20 22 29 33 34 36 38 45 70 72 73 74 75 76 77 79 81 92 99 102 104 111 113 115 117 148 156 164"/>
+  <pokemon name="mew" id="151" height="4" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" baseExperience="270" move="1 5 6 7 8 9 13 14 15 18 19 20 25 29 32 34 36 38 46 53 55 57 58 59 61 63 66 67 68 69 70 72 76 81 82 85 86 87 89 90 91 92 94 95 99 100 101 102 104 111 112 113 115 117 118 120 121 126 127 129 130 133 135 138 141 143 144 148 149 153 156 157 161 162 164"/>
+  <pokemon name="mewtwo" id="150" height="20" weight="1220" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" baseExperience="306" move="5 6 7 8 9 25 29 34 36 38 50 53 54 55 58 59 61 63 66 67 68 69 70 76 85 86 87 89 92 93 94 99 100 102 104 105 112 113 115 117 118 120 126 129 130 133 138 148 149 156 157 161 164"/>
+  <pokemon name="dratini" id="147" height="18" weight="33" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png" baseExperience="60" move="20 21 29 34 35 36 38 43 48 53 54 55 57 58 59 61 63 82 85 86 87 92 97 99 102 104 113 114 115 117 126 127 129 130 156 164"/>
+  <pokemon name="moltres" id="146" height="20" weight="600" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png" baseExperience="261" move="13 17 18 19 36 38 43 46 52 53 63 64 76 83 92 97 99 102 104 115 117 126 129 143 156 164"/>
+  <pokemon name="zapdos" id="145" height="16" weight="526" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png" baseExperience="261" move="13 18 19 36 38 46 63 64 65 84 85 86 87 92 97 99 102 104 113 115 117 129 143 148 156 164"/>
+  <pokemon name="articuno" id="144" height="17" weight="554" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png" baseExperience="261" move="13 16 18 19 36 38 46 54 55 58 59 61 63 64 92 97 99 102 104 115 117 129 143 156 164"/>
+  <pokemon name="aerodactyl" id="142" height="18" weight="590" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png" baseExperience="180" move="13 17 18 19 29 36 38 44 46 48 53 63 70 82 89 92 97 99 102 104 115 117 126 129 143 156 157 164"/>
+  <pokemon name="kabuto" id="140" height="5" weight="115" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png" baseExperience="71" move="10 28 34 36 38 43 55 56 57 58 59 61 62 71 72 91 92 99 102 103 104 106 109 115 117 127 156 157 163 164"/>
+  <pokemon name="omanyte" id="138" height="4" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png" baseExperience="71" move="20 21 29 30 34 36 38 43 44 48 55 56 57 58 59 61 62 92 99 102 104 110 114 115 117 127 131 132 156 157 164"/>
+  <pokemon name="porygon" id="137" height="8" weight="365" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png" baseExperience="79" move="33 36 38 58 59 60 63 76 85 86 87 92 94 97 99 100 102 104 105 115 117 129 130 138 148 149 156 159 160 161 164"/>
+  <pokemon name="eevee" id="133" height="3" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" baseExperience="65" move="28 29 33 34 36 38 39 44 45 91 92 98 99 102 104 115 116 117 129 130 156 164"/>
+  <pokemon name="ditto" id="132" height="3" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" baseExperience="101" move="144"/>
+  <pokemon name="lapras" id="131" height="25" weight="2200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png" baseExperience="187" move="29 32 34 36 38 45 46 47 54 55 56 57 58 59 61 62 63 70 76 82 85 87 90 92 94 99 102 104 109 115 117 127 130 138 149 156 164"/>
+  <pokemon name="magikarp" id="129" height="9" weight="100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" baseExperience="40" move="33 150"/>
+  <pokemon name="tauros" id="128" height="14" weight="884" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png" baseExperience="172" move="23 29 30 32 33 34 36 37 38 39 43 53 57 58 59 63 70 76 85 87 89 90 92 99 102 104 117 126 130 156 157 164"/>
+  <pokemon name="pinsir" id="127" height="15" weight="550" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png" baseExperience="175" move="11 12 14 15 20 29 31 34 36 37 38 63 66 69 70 81 89 91 92 98 99 102 104 106 116 117 156 157 163 164"/>
+  <pokemon name="scyther" id="123" height="15" weight="560" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png" baseExperience="100" move="13 14 15 17 29 36 38 43 63 68 92 97 98 99 102 104 113 116 117 129 130 156 163 164"/>
+  <pokemon name="staryu" id="120" height="8" weight="345" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png" baseExperience="68" move="33 36 38 48 55 56 57 58 59 61 62 85 86 87 92 94 99 100 102 104 105 106 107 109 112 113 115 117 127 129 130 148 149 156 161 164"/>
+  <pokemon name="goldeen" id="118" height="6" weight="150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png" baseExperience="64" move="30 31 32 34 36 38 39 48 55 56 57 58 59 60 61 64 92 97 99 102 104 114 117 127 129 130 156 164"/>
+  <pokemon name="horsea" id="116" height="4" weight="80" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png" baseExperience="59" move="13 29 36 38 43 50 55 56 57 58 59 61 62 82 92 97 99 102 104 108 116 117 127 129 130 145 150 156 164"/>
+  <pokemon name="kangaskhan" id="115" height="22" weight="800" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png" baseExperience="172" move="4 5 7 8 9 15 23 25 29 34 36 38 39 43 44 46 50 53 55 57 58 59 61 63 66 67 68 69 70 76 85 87 89 90 91 92 99 102 104 116 117 126 130 146 156 157 164"/>
+  <pokemon name="tangela" id="114" height="10" weight="350" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png" baseExperience="87" move="14 15 20 21 22 29 34 36 38 63 71 72 73 74 76 77 78 79 92 93 99 102 104 115 117 130 132 133 148 156 164"/>
+  <pokemon name="rhyhorn" id="111" height="10" weight="1150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png" baseExperience="69" move="14 23 29 30 31 32 34 36 37 38 39 43 46 53 58 59 68 70 85 87 89 90 91 92 99 102 104 117 126 130 156 157 164"/>
+  <pokemon name="koffing" id="109" height="6" weight="10" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png" baseExperience="68" move="33 53 60 85 87 92 99 102 103 104 108 114 117 120 123 124 126 139 148 149 153 156 164"/>
+  <pokemon name="lickitung" id="108" height="12" weight="655" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" baseExperience="77" move="5 7 8 9 14 15 20 21 23 25 29 34 35 36 38 48 50 53 55 57 58 59 61 63 66 68 69 70 76 85 87 89 90 91 92 99 102 103 104 111 117 122 126 130 133 138 156 157 164"/>
+  <pokemon name="cubone" id="104" height="4" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png" baseExperience="64" move="5 7 9 14 24 25 29 34 36 37 38 39 43 45 53 55 58 59 61 66 67 68 69 70 89 90 91 92 99 102 103 104 116 117 125 126 130 155 156 157 164"/>
+  <pokemon name="exeggcute" id="102" height="4" weight="25" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png" baseExperience="65" move="14 36 38 70 72 73 76 77 78 79 92 93 94 95 99 100 102 104 113 115 117 120 121 138 140 148 149 153 156 164"/>
+  <pokemon name="voltorb" id="100" height="5" weight="104" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png" baseExperience="66" move="29 33 36 49 85 86 87 92 99 100 102 103 104 113 115 117 120 129 148 153 156 164"/>
+  <pokemon name="krabby" id="98" height="4" weight="65" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png" baseExperience="65" move="11 12 14 15 21 23 34 36 38 43 55 57 58 59 61 70 91 92 97 99 102 104 106 114 117 133 145 152 156 157 164"/>
+  <pokemon name="drowzee" id="96" height="10" weight="324" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" baseExperience="66" move="1 5 7 8 9 25 29 34 36 38 50 60 66 67 68 69 86 92 93 94 95 96 99 100 102 104 112 113 115 117 118 130 138 139 148 149 156 161 164"/>
+  <pokemon name="onix" id="95" height="88" weight="2100" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png" baseExperience="77" move="20 21 29 33 34 36 38 46 70 88 89 90 91 92 99 102 103 104 106 111 117 120 130 153 156 157 164"/>
+  <pokemon name="gastly" id="92" height="13" weight="1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" baseExperience="62" move="7 8 9 50 72 85 87 92 94 95 99 101 102 104 109 114 117 120 122 123 138 149 153 156 164"/>
+  <pokemon name="shellder" id="90" height="3" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png" baseExperience="61" move="33 36 38 41 43 48 55 56 57 58 59 61 62 92 99 100 102 103 104 110 112 115 117 120 128 129 153 156 161 164"/>
+  <pokemon name="grimer" id="88" height="9" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png" baseExperience="65" move="1 7 8 9 34 50 53 70 72 85 87 91 92 99 102 103 104 106 107 114 117 120 122 124 126 139 151 153 156 157 164"/>
+  <pokemon name="seel" id="86" height="11" weight="900" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png" baseExperience="65" move="6 21 29 32 34 36 38 45 50 55 57 58 59 61 62 64 70 92 99 102 104 117 122 127 130 156 164"/>
+  <pokemon name="doduo" id="84" height="14" weight="392" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png" baseExperience="62" move="14 18 19 26 31 34 36 37 38 45 48 64 65 92 97 98 99 102 104 114 115 117 119 129 130 143 156 161 164"/>
+  <pokemon name="farfetchd" id="83" height="8" weight="150" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png" baseExperience="132" move="13 14 15 16 18 19 28 29 31 34 36 38 43 64 92 97 98 99 102 104 115 117 119 129 130 143 156 163 164"/>
+  <pokemon name="magnemite" id="81" height="3" weight="60" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" baseExperience="65" move="33 36 38 48 49 84 85 86 87 92 99 100 102 103 104 113 115 117 129 148 153 156 164"/>
+  <pokemon name="slowpoke" id="79" height="12" weight="360" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" baseExperience="63" move="6 23 29 33 34 36 38 45 50 53 55 57 58 59 61 70 86 89 90 91 92 93 94 99 100 102 104 113 115 117 126 129 130 133 138 148 149 156 161 164"/>
+  <pokemon name="ponyta" id="77" height="10" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png" baseExperience="82" move="23 24 29 32 33 34 36 37 38 39 45 52 53 67 70 76 83 92 95 97 98 99 102 104 115 117 126 129 130 156 164"/>
+  <pokemon name="geodude" id="74" height="4" weight="200" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" baseExperience="60" move="5 7 9 29 33 34 36 38 53 66 68 69 70 88 89 90 91 92 99 102 104 106 111 117 118 120 126 153 156 157 164"/>
+  <pokemon name="tentacool" id="72" height="9" weight="455" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" baseExperience="67" move="14 15 20 35 36 38 40 48 51 55 56 57 58 59 61 62 72 92 99 102 103 104 109 112 114 115 117 127 130 132 145 156 164"/>
+  <pokemon name="bellsprout" id="69" height="7" weight="40" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png" baseExperience="60" move="14 15 20 21 22 35 36 38 51 72 74 75 76 77 78 79 92 99 102 104 115 117 141 148 156 164"/>
+  <pokemon name="machop" id="66" height="8" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" baseExperience="61" move="2 5 7 8 9 25 27 29 34 36 38 43 53 66 67 68 69 70 89 90 91 92 96 99 102 104 113 116 117 118 126 130 156 157 164"/>
+  <pokemon name="abra" id="63" height="9" weight="195" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" baseExperience="62" move="5 7 8 9 25 29 34 36 38 66 68 69 86 92 94 99 100 102 104 112 113 115 117 118 130 138 148 149 156 161 164"/>
+  <pokemon name="poliwag" id="60" height="6" weight="124" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" baseExperience="60" move="3 29 34 36 38 54 55 56 57 58 59 61 91 92 94 95 99 102 104 111 114 117 127 130 133 145 149 150 156 164"/>
+  <pokemon name="growlithe" id="58" height="7" weight="190" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" baseExperience="70" move="24 29 34 36 37 38 43 44 46 52 53 70 82 83 91 92 97 99 102 104 115 117 126 129 130 156 164"/>
+  <pokemon name="mankey" id="56" height="5" weight="280" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" baseExperience="61" move="2 5 6 7 8 9 10 25 29 34 36 37 38 43 66 67 68 69 70 85 87 89 91 92 96 99 102 103 104 111 116 117 118 129 130 154 156 157 164"/>
+  <pokemon name="psyduck" id="54" height="8" weight="196" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" baseExperience="64" move="5 6 8 10 25 29 34 36 38 39 50 55 56 57 58 59 60 61 66 68 69 70 91 92 93 94 95 99 102 103 104 109 113 117 127 129 130 133 148 154 156 164"/>
+  <pokemon name="meowth" id="52" height="4" weight="42" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" baseExperience="58" move="6 10 15 29 34 36 38 39 44 45 55 61 85 87 91 92 95 99 102 103 104 111 117 129 130 133 138 148 154 156 163 164"/>
+  <pokemon name="diglett" id="50" height="2" weight="8" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png" baseExperience="53" move="10 15 28 29 34 36 38 45 89 90 91 92 99 102 103 104 117 154 156 157 163 164"/>
+  <pokemon name="venonat" id="48" height="10" weight="300" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png" baseExperience="61" move="33 36 38 48 50 60 72 76 77 78 79 81 92 93 94 97 99 102 103 104 115 117 129 141 148 149 156 164"/>
+  <pokemon name="paras" id="46" height="3" weight="54" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" baseExperience="57" move="10 14 15 34 36 38 60 68 71 72 73 74 76 77 78 81 91 92 97 99 102 103 104 113 115 117 130 141 147 148 156 163 164"/>
+  <pokemon name="oddish" id="43" height="5" weight="54" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png" baseExperience="64" move="14 15 36 38 51 71 72 74 75 76 77 78 79 80 92 99 102 104 115 117 148 156 164"/>
+  <pokemon name="zubat" id="41" height="8" weight="75" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" baseExperience="49" move="13 16 17 18 19 36 38 44 48 71 72 92 95 98 99 102 104 109 114 117 129 141 156 162 164"/>
+  <pokemon name="vulpix" id="37" height="6" weight="99" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png" baseExperience="60" move="29 34 36 38 39 46 50 52 53 83 91 92 95 98 99 102 104 109 115 117 126 129 130 156 164"/>
+  <pokemon name="nidoran-m" id="32" height="5" weight="90" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png" baseExperience="55" move="15 24 29 30 31 32 33 34 36 38 40 43 48 50 58 59 64 68 70 85 87 91 92 93 99 102 104 111 115 116 117 130 133 156 162 164"/>
+  <pokemon name="nidoran-f" id="29" height="4" weight="70" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png" baseExperience="55" move="10 15 24 29 33 34 36 38 39 40 44 45 48 50 58 59 68 70 85 87 91 92 99 102 104 111 115 116 117 130 154 156 162 164"/>
+  <pokemon name="sandshrew" id="27" height="6" weight="120" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" baseExperience="60" move="10 14 15 28 29 34 36 38 40 66 68 69 70 89 90 91 92 99 102 104 111 117 129 130 154 156 157 162 163 164"/>
+  <pokemon name="ekans" id="23" height="20" weight="69" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" baseExperience="58" move="20 21 29 34 35 36 38 40 43 44 50 51 70 72 89 90 91 92 99 102 103 104 114 117 130 137 156 157 164"/>
+  <pokemon name="spearow" id="21" height="3" weight="20" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" baseExperience="52" move="13 18 19 31 36 38 43 45 64 65 92 97 98 99 102 104 116 117 119 129 143 156 161 164"/>
+  <pokemon name="rattata" id="19" height="3" weight="35" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" baseExperience="51" move="15 29 33 34 36 38 39 44 55 58 59 61 68 85 86 87 91 92 98 99 102 103 104 111 116 117 129 130 154 156 158 162 164"/>
+  <pokemon name="pidgey" id="16" height="3" weight="18" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" baseExperience="50" move="13 16 17 18 19 28 33 36 38 92 97 98 99 102 104 115 117 119 129 143 156 164"/>
+  <pokemon name="weedle" id="13" height="3" weight="32" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" baseExperience="39" move="40 81"/>
+  <pokemon name="caterpie" id="10" height="3" weight="29" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" baseExperience="39" move="33 81"/>
+  <pokemon name="squirtle" id="7" height="5" weight="90" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" baseExperience="63" move="5 8 25 29 33 34 36 38 39 44 54 55 56 57 58 59 61 66 68 69 70 91 92 93 99 102 104 110 111 114 115 117 127 130 145 156 164"/>
+  <pokemon name="charmander" id="4" height="6" weight="85" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" baseExperience="62" move="5 7 9 10 14 15 25 29 34 36 38 43 44 45 52 53 66 68 69 70 82 83 91 92 99 102 104 108 111 115 117 126 129 130 156 157 163 164"/>
+  <pokemon name="bulbasaur" id="1" height="7" weight="69" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" baseExperience="64" move="13 14 15 20 22 29 33 34 36 38 45 70 72 73 74 75 76 77 79 80 81 92 99 102 104 111 113 115 117 124 130 133 148 156 164"/>
+  <move name="pound" id="1" pokemon="124 113 97 89 39 35 151 96 88"/>
+  <move name="karate-chop" id="2" pokemon="68 67 57 66 56"/>
+  <move name="double-slap" id="3" pokemon="124 122 113 62 61 40 39 36 35 60"/>
+  <move name="comet-punch" id="4" pokemon="107 115"/>
+  <move name="mega-punch" id="5" pokemon="143 126 125 124 122 113 112 107 106 105 97 94 80 76 75 68 67 65 64 62 61 57 55 40 39 36 35 34 31 26 25 9 8 6 5 151 150 115 108 104 96 74 66 63 56 54 7 4"/>
+  <move name="pay-day" id="6" pokemon="143 112 87 80 57 55 53 34 31 26 25 151 150 86 79 56 54 52"/>
+  <move name="fire-punch" id="7" pokemon="149 143 126 125 122 113 112 107 105 97 94 93 89 76 75 68 67 65 64 57 40 39 36 35 34 31 6 5 151 150 115 108 104 96 92 88 74 66 63 56 4"/>
+  <move name="ice-punch" id="8" pokemon="149 143 125 124 122 113 112 107 97 94 93 89 80 68 67 65 64 62 61 57 55 40 39 36 35 34 31 9 8 151 150 115 108 96 92 88 66 63 56 54 7"/>
+  <move name="thunder-punch" id="9" pokemon="149 143 126 125 122 113 112 107 105 97 94 93 89 76 75 68 67 65 64 57 40 39 36 35 34 31 26 25 6 5 151 150 115 108 104 96 92 88 74 66 63 56 4"/>
+  <move name="scratch" id="10" pokemon="141 57 55 53 51 47 31 30 28 6 5 140 56 54 52 50 46 29 27 4"/>
+  <move name="vice-grip" id="11" pokemon="99 127 98"/>
+  <move name="guillotine" id="12" pokemon="99 127 98"/>
+  <move name="razor-wind" id="13" pokemon="149 141 49 42 22 18 17 12 151 146 145 144 142 123 116 83 41 21 16 1"/>
+  <move name="swords-dance" id="14" pokemon="141 112 105 103 99 85 73 71 70 47 45 44 28 20 15 6 5 3 2 151 127 123 114 111 108 104 102 98 84 83 72 69 46 43 27 4 1"/>
+  <move name="cut" id="15" pokemon="149 141 112 99 73 71 70 53 51 47 45 44 34 33 31 30 28 20 15 6 5 3 2 151 127 123 115 114 108 98 83 72 69 52 50 46 43 32 29 27 19 4 1"/>
+  <move name="gust" id="16" pokemon="49 18 17 12 144 83 41 16"/>
+  <move name="wing-attack" id="17" pokemon="149 42 18 17 6 146 142 123 41 16"/>
+  <move name="whirlwind" id="18" pokemon="143 85 49 42 22 18 17 12 151 146 145 144 142 84 83 41 21 16"/>
+  <move name="fly" id="19" pokemon="149 85 42 22 18 17 6 151 146 145 144 142 84 83 41 21 16"/>
+  <move name="bind" id="20" pokemon="149 148 139 73 71 70 24 3 2 151 147 138 127 114 108 95 72 69 23 1"/>
+  <move name="slam" id="21" pokemon="149 148 99 70 25 147 138 114 108 98 95 86 69 23"/>
+  <move name="vine-whip" id="22" pokemon="71 70 3 2 114 69 1"/>
+  <move name="stomp" id="23" pokemon="112 103 99 78 128 115 111 108 98 79 77"/>
+  <move name="double-kick" id="24" pokemon="135 106 34 33 31 30 104 77 58 32 29"/>
+  <move name="mega-kick" id="25" pokemon="143 141 126 125 124 122 113 112 107 106 105 97 94 80 76 68 67 65 64 62 61 57 55 40 39 36 35 34 31 26 25 9 8 6 5 151 150 115 108 104 96 66 63 56 54 7 4"/>
+  <move name="jump-kick" id="26" pokemon="106 85 84"/>
+  <move name="rolling-kick" id="27" pokemon="106 66"/>
+  <move name="sand-attack" id="28" pokemon="141 136 135 134 51 28 18 17 140 133 83 50 27 16"/>
+  <move name="headbutt" id="29" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 117 113 112 107 106 105 103 101 97 94 87 80 78 76 75 68 67 65 64 62 61 59 57 55 53 40 39 38 36 35 34 33 31 30 28 26 25 24 20 9 8 6 5 3 2 151 150 147 142 138 133 131 128 127 123 116 115 114 111 108 104 100 96 95 86 83 79 77 74 66 63 60 58 56 54 52 50 37 32 29 27 23 19 7 4 1"/>
+  <move name="horn-attack" id="30" pokemon="139 119 112 34 33 138 128 118 111 32"/>
+  <move name="fury-attack" id="31" pokemon="119 112 85 78 33 22 15 127 118 111 84 83 32 21"/>
+  <move name="horn-drill" id="32" pokemon="149 148 139 119 112 87 78 34 33 31 30 151 131 128 118 111 86 77 32"/>
+  <move name="tackle" id="33" pokemon="143 136 135 134 130 121 110 101 82 80 78 76 75 49 34 33 31 30 20 18 17 9 8 3 2 137 133 129 128 120 109 100 95 90 81 79 77 74 48 32 29 19 16 10 7 1"/>
+  <move name="body-slam" id="34" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 113 112 107 106 105 99 97 94 89 87 85 80 78 76 75 71 68 67 65 64 62 61 59 57 55 53 51 47 45 40 39 38 36 35 34 33 31 30 28 26 25 24 20 9 8 6 5 3 2 151 150 147 140 138 133 131 128 127 118 115 114 111 108 104 98 96 95 88 86 84 83 79 77 74 66 63 60 58 56 54 52 50 46 37 32 29 27 23 19 7 4 1"/>
+  <move name="wrap" id="35" pokemon="149 148 73 71 70 24 147 108 72 69 23"/>
+  <move name="take-down" id="36" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105 103 101 99 97 94 91 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 108 104 102 100 98 96 95 90 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="thrash" id="37" pokemon="130 124 105 85 57 34 128 127 111 104 84 77 58 56"/>
+  <move name="double-edge" id="38" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105 103 99 97 94 91 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 108 104 102 98 96 95 90 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="tail-whip" id="39" pokemon="136 135 134 119 113 112 105 78 55 38 31 30 26 25 20 9 8 133 128 118 115 111 104 77 54 52 37 29 19 7"/>
+  <move name="poison-sting" id="40" pokemon="73 34 33 31 30 28 24 72 32 29 27 23 13"/>
+  <move name="twineedle" id="41" pokemon="15 90"/>
+  <move name="pin-missile" id="42" pokemon="135 15"/>
+  <move name="leer" id="43" pokemon="149 148 141 139 136 130 126 125 117 112 105 99 68 67 59 57 33 24 22 6 5 147 146 140 138 128 123 116 115 111 104 98 90 83 66 58 56 32 23 21 4"/>
+  <move name="bite" id="44" pokemon="139 136 134 130 59 53 42 30 24 20 9 8 142 138 133 115 58 52 41 29 23 19 7 4"/>
+  <move name="growl" id="45" pokemon="113 105 87 85 80 78 53 51 35 30 26 25 22 6 5 3 2 133 131 104 86 84 79 77 52 50 29 21 4 1"/>
+  <move name="roar" id="46" pokemon="149 136 135 134 130 112 76 59 53 38 34 31 20 9 6 3 151 146 145 144 142 131 115 111 95 58 37"/>
+  <move name="sing" id="47" pokemon="113 40 39 36 35 131"/>
+  <move name="supersonic" id="48" pokemon="119 91 82 73 49 42 12 147 142 138 120 118 108 90 84 81 72 48 41 32 29"/>
+  <move name="sonic-boom" id="49" pokemon="101 82 100 81"/>
+  <move name="disable" id="50" pokemon="97 89 80 65 64 55 49 40 39 150 116 115 108 96 92 88 86 79 54 48 37 32 29 23"/>
+  <move name="acid" id="51" pokemon="73 71 70 45 44 24 72 69 43 23"/>
+  <move name="ember" id="52" pokemon="136 126 78 59 38 6 5 146 77 58 37 4"/>
+  <move name="flamethrower" id="53" pokemon="149 148 143 136 130 126 113 112 110 105 89 80 78 76 75 68 67 59 40 39 38 36 35 34 31 6 5 151 150 147 146 142 128 115 111 109 108 104 88 79 77 74 66 58 37 4"/>
+  <move name="mist" id="54" pokemon="134 150 147 144 131 60 7"/>
+  <move name="water-gun" id="55" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105 99 91 87 80 73 62 61 55 53 40 39 36 35 34 33 31 30 20 9 8 151 150 147 144 140 138 131 120 118 116 115 108 104 98 90 86 79 72 60 54 52 19 7"/>
+  <move name="hydro-pump" id="56" pokemon="141 139 134 130 121 117 91 73 61 55 9 8 140 138 131 120 118 116 90 72 60 54 7"/>
+  <move name="surf" id="57" pokemon="149 148 143 141 139 134 130 121 119 117 112 99 91 87 80 73 62 61 55 34 31 25 9 8 151 147 140 138 131 128 120 118 116 115 108 98 90 86 79 72 60 54 7"/>
+  <move name="ice-beam" id="58" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105 99 91 87 80 73 62 61 55 40 39 36 35 34 33 31 30 20 9 8 151 150 147 144 140 138 137 131 128 120 118 116 115 111 108 104 98 90 86 79 72 60 54 32 29 19 7"/>
+  <move name="blizzard" id="59" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105 99 91 87 80 73 62 61 55 40 39 36 35 34 33 31 30 20 9 8 151 150 147 144 140 138 137 131 128 120 118 116 115 111 108 104 98 90 86 79 72 60 54 32 29 19 7"/>
+  <move name="psybeam" id="60" pokemon="122 97 65 64 49 12 137 118 109 96 54 48 46"/>
+  <move name="bubble-beam" id="61" pokemon="149 148 143 141 139 134 130 124 121 119 117 113 112 105 99 91 87 80 73 62 61 55 53 40 39 36 35 34 33 31 30 20 9 8 151 150 147 144 140 138 131 120 118 116 115 108 104 98 90 86 79 72 60 54 52 19 7"/>
+  <move name="aurora-beam" id="62" pokemon="134 91 87 140 138 131 120 116 90 86 72"/>
+  <move name="hyper-beam" id="63" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 105 103 101 99 97 94 91 89 87 85 82 80 78 76 73 71 68 65 62 59 57 55 53 51 49 47 45 42 40 38 36 34 31 28 26 24 22 20 18 15 12 9 6 3 151 150 147 146 145 144 142 137 131 128 127 123 115 114 108"/>
+  <move name="peck" id="64" pokemon="119 85 34 33 22 146 145 144 118 86 84 83 32 21"/>
+  <move name="drill-peck" id="65" pokemon="85 22 145 84 21"/>
+  <move name="submission" id="66" pokemon="143 141 139 126 125 124 122 113 112 107 106 105 97 94 80 76 75 68 67 65 64 62 61 57 55 40 39 36 35 34 31 28 26 25 9 8 6 5 151 150 127 115 108 104 96 74 66 63 56 54 27 7 4"/>
+  <move name="low-kick" id="67" pokemon="141 126 125 107 106 105 103 97 78 68 67 57 55 151 150 115 104 96 77 66 56"/>
+  <move name="counter" id="68" pokemon="143 126 125 124 122 113 112 107 106 105 97 94 80 76 75 68 67 65 64 62 61 57 55 47 40 39 36 35 34 33 31 30 28 26 25 20 9 8 6 5 151 150 123 115 111 108 104 96 74 66 63 56 54 46 32 29 27 19 7 4"/>
+  <move name="seismic-toss" id="69" pokemon="143 141 139 126 125 124 122 113 112 107 106 105 97 94 80 76 75 68 67 65 64 62 61 57 55 40 39 36 35 34 31 28 26 25 9 8 6 5 151 150 127 115 108 104 96 74 66 63 56 54 27 7 4"/>
+  <move name="strength" id="70" pokemon="149 143 136 135 134 130 126 125 113 112 107 106 105 103 99 94 89 87 80 78 76 75 68 67 62 61 59 57 55 40 39 36 35 34 33 31 30 28 26 25 24 20 9 8 6 5 3 2 151 150 142 131 128 127 115 111 108 104 102 98 95 88 86 79 77 74 66 58 56 54 32 29 27 23 7 4 1"/>
+  <move name="absorb" id="71" pokemon="141 47 45 44 42 140 114 46 43 41"/>
+  <move name="mega-drain" id="72" pokemon="141 103 94 93 89 73 71 70 49 47 45 44 42 24 15 12 3 2 151 140 114 102 92 88 72 69 48 46 43 41 23 1"/>
+  <move name="leech-seed" id="73" pokemon="3 2 114 102 46 1"/>
+  <move name="growth" id="74" pokemon="70 47 44 3 2 114 69 46 43 1"/>
+  <move name="razor-leaf" id="75" pokemon="71 70 3 2 69 43 1"/>
+  <move name="solar-beam" id="76" pokemon="143 122 113 103 78 71 70 59 49 47 45 44 40 39 38 36 35 15 12 6 3 2 151 150 146 137 131 128 115 114 108 102 77 69 48 46 43 1"/>
+  <move name="poison-powder" id="77" pokemon="71 70 49 47 45 44 12 3 2 114 102 69 48 46 43 1"/>
+  <move name="stun-spore" id="78" pokemon="71 70 49 47 45 44 12 114 102 69 48 46 43"/>
+  <move name="sleep-powder" id="79" pokemon="71 70 49 45 44 12 3 2 114 102 69 48 43 1"/>
+  <move name="petal-dance" id="80" pokemon="45 44 3 43 1"/>
+  <move name="string-shot" id="81" pokemon="49 47 15 14 12 11 3 2 151 127 48 46 13 10 1"/>
+  <move name="dragon-rage" id="82" pokemon="149 148 130 59 6 5 151 147 142 131 116 58 4"/>
+  <move name="fire-spin" id="83" pokemon="136 126 78 38 6 5 146 77 58 37 4"/>
+  <move name="thunder-shock" id="84" pokemon="135 125 82 26 25 145 81"/>
+  <move name="thunderbolt" id="85" pokemon="149 148 143 135 130 125 122 121 113 112 110 101 94 93 89 82 57 53 40 39 36 35 34 33 31 30 26 25 20 151 150 147 145 137 131 128 120 115 111 109 108 100 92 88 81 56 52 32 29 19"/>
+  <move name="thunder-wave" id="86" pokemon="149 148 135 130 125 122 121 113 101 97 82 80 65 64 40 39 36 35 26 25 20 151 150 147 145 137 120 100 96 81 79 63 19"/>
+  <move name="thunder" id="87" pokemon="149 148 143 135 130 125 122 121 113 112 110 101 94 93 89 82 57 53 40 39 36 35 34 33 31 30 26 25 20 151 150 147 145 137 131 128 120 115 111 109 108 100 92 88 81 56 52 32 29 19"/>
+  <move name="rock-throw" id="88" pokemon="76 75 95 74"/>
+  <move name="earthquake" id="89" pokemon="149 143 130 113 112 107 106 105 80 76 75 68 67 62 61 57 51 34 31 28 24 9 6 3 151 150 142 128 127 115 111 108 104 95 79 74 66 56 50 27 23"/>
+  <move name="fissure" id="90" pokemon="143 112 105 80 76 75 68 67 62 61 51 34 31 28 24 9 6 151 131 128 115 111 108 104 95 79 74 66 50 27 23"/>
+  <move name="dig" id="91" pokemon="141 136 135 134 112 105 99 89 80 76 75 68 67 65 64 62 61 59 57 55 53 51 47 40 39 38 36 35 34 33 31 30 28 26 25 24 20 9 8 6 5 151 140 133 127 115 111 108 104 98 95 88 79 74 66 60 58 56 54 52 50 46 37 32 29 27 23 19 7 4"/>
+  <move name="toxic" id="92" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="confusion" id="93" pokemon="122 103 97 80 65 64 55 49 12 150 114 102 96 79 54 48 32 7"/>
+  <move name="psychic" id="94" pokemon="143 126 125 124 122 121 113 103 97 94 93 80 65 64 62 61 55 49 40 39 36 35 12 151 150 137 131 120 102 96 92 79 63 60 54 48"/>
+  <move name="hypnosis" id="95" pokemon="122 103 97 94 93 62 61 151 102 96 92 77 60 54 52 41 37"/>
+  <move name="meditate" id="96" pokemon="122 106 97 96 66 56"/>
+  <move name="agility" id="97" pokemon="149 148 135 119 117 107 85 78 25 22 18 17 15 147 146 145 144 142 137 123 118 116 98 84 83 77 58 48 46 21 16"/>
+  <move name="quick-attack" id="98" pokemon="136 135 134 125 85 78 38 26 25 20 18 17 133 127 123 84 83 77 41 37 21 19 16"/>
+  <move name="rage" id="99" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="teleport" id="100" pokemon="126 125 124 122 121 113 103 101 97 91 82 80 65 64 59 49 40 39 36 35 12 151 150 137 120 102 100 96 90 81 79 63"/>
+  <move name="night-shade" id="101" pokemon="94 93 151 92"/>
+  <move name="mimic" id="102" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="screech" id="103" pokemon="125 101 89 82 73 57 55 53 42 24 140 109 108 104 100 95 90 88 81 72 56 54 52 50 48 46 23 19"/>
+  <move name="double-team" id="104" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="recover" id="105" pokemon="121 65 64 150 137 120"/>
+  <move name="harden" id="106" pokemon="143 141 121 99 89 76 75 14 11 140 127 120 98 95 88 74"/>
+  <move name="minimize" id="107" pokemon="113 89 36 35 120 88"/>
+  <move name="smokescreen" id="108" pokemon="126 117 110 6 5 116 109 4"/>
+  <move name="confuse-ray" id="109" pokemon="126 122 121 94 93 42 38 140 131 120 92 72 54 41 37"/>
+  <move name="withdraw" id="110" pokemon="139 91 80 9 8 138 90 7"/>
+  <move name="defense-curl" id="111" pokemon="143 113 76 75 62 61 57 53 40 39 36 35 34 33 31 30 28 26 25 20 9 8 6 5 3 2 151 108 95 74 60 56 52 32 29 27 19 7 4 1"/>
+  <move name="barrier" id="112" pokemon="122 73 151 150 120 96 90 72 63"/>
+  <move name="light-screen" id="113" pokemon="149 148 135 125 124 122 121 113 103 101 97 82 80 68 67 65 64 55 47 40 39 36 35 26 25 3 2 151 150 147 145 123 120 102 100 96 81 79 66 63 54 46 1"/>
+  <move name="haze" id="114" pokemon="134 110 42 24 147 138 118 109 98 92 88 84 72 60 41 23 7"/>
+  <move name="reflect" id="115" pokemon="149 148 143 141 139 136 135 134 130 125 124 122 121 113 103 101 97 91 85 82 80 78 73 71 70 65 64 59 49 47 45 44 40 39 38 36 35 34 33 31 30 26 25 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 120 114 102 100 96 90 84 83 81 79 77 72 69 63 58 48 46 43 37 32 29 16 7 4 1"/>
+  <move name="focus-energy" id="116" pokemon="117 106 105 68 67 57 34 33 22 20 15 133 127 123 116 115 104 66 56 32 29 21 19"/>
+  <move name="bide" id="117" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="metronome" id="118" pokemon="143 126 125 124 122 113 107 106 97 94 76 75 68 67 65 64 62 61 57 36 35 151 150 96 74 66 63 56"/>
+  <move name="mirror-move" id="119" pokemon="22 18 17 84 83 21 16"/>
+  <move name="self-destruct" id="120" pokemon="143 110 103 101 94 93 91 89 76 75 151 150 109 102 100 95 92 90 88 74"/>
+  <move name="egg-bomb" id="121" pokemon="113 103 151 102"/>
+  <move name="lick" id="122" pokemon="143 124 94 93 108 92 88 86"/>
+  <move name="smog" id="123" pokemon="136 126 110 109 92"/>
+  <move name="sludge" id="124" pokemon="110 89 109 88 1"/>
+  <move name="bone-club" id="125" pokemon="105 104"/>
+  <move name="fire-blast" id="126" pokemon="149 148 143 136 130 126 113 112 110 105 89 80 78 76 75 68 67 59 40 39 38 36 35 34 31 6 5 151 150 147 146 142 128 115 111 109 108 104 88 79 77 74 66 58 37 4"/>
+  <move name="waterfall" id="127" pokemon="149 148 141 139 134 130 121 119 117 87 73 62 61 55 9 8 151 147 140 138 131 120 118 116 86 72 60 54 7"/>
+  <move name="clamp" id="128" pokemon="91 90"/>
+  <move name="swift" id="129" pokemon="149 148 136 135 134 125 121 119 117 107 106 101 91 85 82 80 78 59 57 55 53 49 42 38 28 26 25 22 20 18 17 15 12 6 5 151 150 147 146 145 144 142 137 133 123 120 118 116 100 90 84 83 81 79 77 58 56 54 52 48 41 37 27 21 19 16 4"/>
+  <move name="skull-bash" id="130" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 107 106 105 101 97 94 87 85 80 78 73 68 67 65 64 62 61 59 57 55 53 47 40 39 38 36 35 34 33 31 30 28 26 25 24 20 15 9 8 6 5 151 150 147 137 133 131 128 123 120 118 116 115 114 111 108 104 96 95 86 84 83 79 77 72 66 63 60 58 56 54 52 46 37 32 29 27 23 19 7 4 1"/>
+  <move name="spike-cannon" id="131" pokemon="139 91 138"/>
+  <move name="constrict" id="132" pokemon="139 73 138 114 72"/>
+  <move name="amnesia" id="133" pokemon="143 80 61 55 151 150 114 108 98 79 60 54 52 32 1"/>
+  <move name="kinesis" id="134" pokemon="65 64"/>
+  <move name="soft-boiled" id="135" pokemon="113 36 35 151"/>
   <move name="high-jump-kick" id="136" pokemon="106"/>
-  <move name="glare" id="137"/>
-  <move name="dream-eater" id="138" pokemon="124 122 121 113 103"/>
-  <move name="poison-gas" id="139" pokemon="110"/>
-  <move name="barrage" id="140" pokemon="103"/>
-  <move name="leech-life" id="141"/>
+  <move name="glare" id="137" pokemon="24 23"/>
+  <move name="dream-eater" id="138" pokemon="124 122 121 113 103 97 94 93 80 65 64 53 40 39 38 36 35 12 151 150 137 131 108 102 96 92 79 63 52"/>
+  <move name="poison-gas" id="139" pokemon="110 97 89 109 96 88"/>
+  <move name="barrage" id="140" pokemon="103 102"/>
+  <move name="leech-life" id="141" pokemon="49 47 42 151 69 48 46 41"/>
   <move name="lovely-kiss" id="142" pokemon="124"/>
-  <move name="sky-attack" id="143"/>
-  <move name="transform" id="144"/>
-  <move name="bubble" id="145" pokemon="117"/>
-  <move name="dizzy-punch" id="146"/>
-  <move name="spore" id="147"/>
-  <move name="flash" id="148" pokemon="135 125 124 122 121 113 110 103"/>
-  <move name="psywave" id="149" pokemon="143 126 125 124 122 121 113 103"/>
-  <move name="splash" id="150"/>
-  <move name="acid-armor" id="151" pokemon="134"/>
-  <move name="crabhammer" id="152"/>
-  <move name="explosion" id="153" pokemon="110 103"/>
-  <move name="fury-swipes" id="154"/>
-  <move name="bonemerang" id="155" pokemon="105"/>
-  <move name="rest" id="156" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
-  <move name="rock-slide" id="157" pokemon="149 143 141 139 113 112 107 106 105"/>
-  <move name="hyper-fang" id="158"/>
-  <move name="sharpen" id="159"/>
-  <move name="conversion" id="160"/>
-  <move name="tri-attack" id="161" pokemon="121 113"/>
-  <move name="super-fang" id="162"/>
-  <move name="slash" id="163" pokemon="141"/>
-  <move name="substitute" id="164" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103"/>
+  <move name="sky-attack" id="143" pokemon="85 22 18 17 151 146 145 144 142 84 83 21 16"/>
+  <move name="transform" id="144" pokemon="151 132"/>
+  <move name="bubble" id="145" pokemon="117 99 61 9 8 116 98 72 60 7"/>
+  <move name="dizzy-punch" id="146" pokemon="115"/>
+  <move name="spore" id="147" pokemon="47 46"/>
+  <move name="flash" id="148" pokemon="135 125 124 122 121 113 110 103 101 97 82 80 71 70 65 64 55 53 49 47 45 44 40 39 36 35 26 25 15 12 3 2 151 150 145 137 120 114 109 102 100 96 81 79 69 63 54 52 48 46 43 1"/>
+  <move name="psywave" id="149" pokemon="143 126 125 124 122 121 113 103 97 94 93 80 65 64 62 61 49 40 39 36 35 12 151 150 137 131 120 109 102 96 92 79 63 60 48"/>
+  <move name="splash" id="150" pokemon="129 116 60"/>
+  <move name="acid-armor" id="151" pokemon="134 89 88"/>
+  <move name="crabhammer" id="152" pokemon="99 98"/>
+  <move name="explosion" id="153" pokemon="110 103 101 94 93 91 89 82 76 75 151 109 102 100 95 92 90 88 81 74"/>
+  <move name="fury-swipes" id="154" pokemon="57 55 53 51 30 28 56 54 52 50 29 27 19"/>
+  <move name="bonemerang" id="155" pokemon="105 104"/>
+  <move name="rest" id="156" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
+  <move name="rock-slide" id="157" pokemon="149 143 141 139 113 112 107 106 105 99 89 76 75 68 67 62 57 51 34 31 28 24 9 6 5 151 150 142 140 138 128 127 115 111 108 104 98 95 88 74 66 56 50 27 23 4"/>
+  <move name="hyper-fang" id="158" pokemon="20 19"/>
+  <move name="sharpen" id="159" pokemon="137"/>
+  <move name="conversion" id="160" pokemon="137"/>
+  <move name="tri-attack" id="161" pokemon="121 113 97 91 85 82 80 65 64 51 40 39 36 35 151 150 137 120 96 90 84 79 63 21"/>
+  <move name="super-fang" id="162" pokemon="42 34 33 31 30 28 20 151 41 32 29 27 19"/>
+  <move name="slash" id="163" pokemon="141 53 51 47 28 6 5 140 127 123 83 52 50 46 27 4"/>
+  <move name="substitute" id="164" pokemon="149 148 143 141 139 136 135 134 130 126 125 124 122 121 119 117 113 112 110 107 106 105 103 101 99 97 94 93 91 89 87 85 82 80 78 76 75 73 71 70 68 67 65 64 62 61 59 57 55 53 51 49 47 45 44 42 40 39 38 36 35 34 33 31 30 28 26 25 24 22 20 18 17 15 12 9 8 6 5 3 2 151 150 147 146 145 144 142 140 138 137 133 131 128 127 123 120 118 116 115 114 111 109 108 104 102 100 98 96 95 92 90 88 86 84 83 81 79 77 74 72 69 66 63 60 58 56 54 52 50 48 46 43 41 37 32 29 27 23 21 19 16 7 4 1"/>
   <move name="struggle" id="165"/>
   <type name="normal"/>
   <type name="fighting"/>
