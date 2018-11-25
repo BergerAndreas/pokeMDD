@@ -4,10 +4,10 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Pokemon diagram" domainClass="pokemon::Root" enablePopupBars="true">
       <metamodel href="platform:/plugin/pokeMDD/model/pokemon.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon"/>
-        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type"/>
-        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move"/>
-        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance">
+        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon_DONT"/>
+        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type_DONT"/>
+        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move_DONT"/>
+        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance_DONT">
           <style xsi:type="style:SquareDescription" labelExpression="aql:self.pokemon.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
