@@ -79,7 +79,7 @@
             </subContainerMappings>
             <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Move" semanticCandidatesExpression="aql:self.move" domainClass="pokemon::Move">
-                <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
+                <style xsi:type="style:SquareDescription" labelExpression="aql:self.name.toUpperFirst()" labelAlignment="LEFT" labelPosition="node">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelFormat>italic</labelFormat>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -96,7 +96,7 @@
             </subContainerMappings>
             <subContainerMappings name="TypeContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Type" semanticCandidatesExpression="aql:self.type" domainClass="pokemon::Type">
-                <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" width="4">
+                <style xsi:type="style:SquareDescription" labelExpression="aql:self.name.toUpperFirst()" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" width="4">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -110,7 +110,7 @@
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false" labelExpression="aql:self.name.toUpperFirst()">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelFormat>bold</labelFormat>
               <labelFormat>underline</labelFormat>

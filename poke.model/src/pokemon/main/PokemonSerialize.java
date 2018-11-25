@@ -127,6 +127,7 @@ public class PokemonSerialize {
 		resource.getContents().add(root);
 		try {
 			resource.save(Collections.EMPTY_MAP);
+			System.out.println("Done!");
 			
 		}catch (Exception e) {
 			e.printStackTrace();
