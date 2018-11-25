@@ -4,27 +4,9 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Pokemon diagram" domainClass="pokemon::Root" enablePopupBars="true">
       <metamodel href="platform:/plugin/pokeMDD/model/pokemon.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-          </style>
-        </nodeMappings>
+        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon"/>
+        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type"/>
+        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move"/>
         <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance">
           <style xsi:type="style:SquareDescription" labelExpression="aql:self.pokemon.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -48,8 +30,16 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root_DONTSHOW" childrenPresentation="HorizontalStack">
+        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root" childrenPresentation="HorizontalStack">
           <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::Pokemon" childrenPresentation="VerticalStack">
+            <subContainerMappings name="SpriteContainer" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+              <subNodeMappings name="SpriteNode" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:null" hideLabelByDefault="true" sizeComputationExpression="-1" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+            </subContainerMappings>
             <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Move" semanticCandidatesExpression="aql:self.move" domainClass="pokemon::Move">
                 <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
@@ -256,6 +246,11 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@containerMappings[name='PokemonContainer']/@subContainerMappings[name='Pokemon']/@subContainerMappings[name='SpriteContainer']/@subNodeMappings[name='SpriteNode']/@style" attributeName="workspacePath" value="aql:'/my.project.design/images/' + self.id + '.png' "/>
+          </vsmElementCustomizations>
+        </customization>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="my.project.design.Services"/>
