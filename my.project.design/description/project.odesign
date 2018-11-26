@@ -249,7 +249,7 @@
                     </buttons>
                     <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
                       <initialOperation>
-                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.econtainer(pokemon::Pokemon)">
                           <subModelOperations xsi:type="tool_1:SetValue" featureName="pokemonInstance" valueExpression="var:instance"/>
                         </firstModelOperations>
                       </initialOperation>
@@ -263,16 +263,16 @@
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:SelectDescription" name="PokemonInstanceSelect" labelExpression="Pokemon:" valueExpression="aql:instance.pokemon" candidatesExpression="aql:self.eContainer(pokemon::Root).pokemon" candidateDisplayExpression="aql:candidate.name">
+                      <controls xsi:type="properties:SelectDescription" name="PokemonInstanceSelect" labelExpression="Pokemon:" valueExpression="aql:instance.pokemon" candidatesExpression="aql:self.pokemon" candidateDisplayExpression="aql:candidate.name">
                         <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="pokemon" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>
-                      <controls xsi:type="properties:SelectDescription" name="TrainerSelect" labelExpression="Trainer:" valueExpression="aql:instance.trainer" candidatesExpression="aql:self.eContainer(pokemon::Root).trainer" candidateDisplayExpression="aql:candidate. name">
+                      <controls xsi:type="properties:SelectDescription" name="TrainerSelect" labelExpression="Trainer:" valueExpression="aql:instance.trainer" candidatesExpression="aql:self.trainer" candidateDisplayExpression="aql:candidate.name">
                         <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="trainer" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
