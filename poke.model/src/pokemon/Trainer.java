@@ -63,7 +63,7 @@ public interface Trainer extends EObject {
 	 * @return the value of the '<em>Pokemon</em>' reference list.
 	 * @see pokemon.PokemonPackage#getTrainer_Pokemon()
 	 * @see pokemon.PokemonInstance#getTrainer
-	 * @model opposite="trainer" required="true" upper="6"
+	 * @model opposite="trainer" upper="6"
 	 * @generated
 	 */
 	EList<PokemonInstance> getPokemon();

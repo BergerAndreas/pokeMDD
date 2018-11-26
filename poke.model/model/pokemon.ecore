@@ -72,14 +72,16 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
         eType="#//Pokemon" eOpposite="#//Pokemon/pokemonInstance"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="moves" lowerBound="1" upperBound="4"
-        eType="#//Move"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="trainer" eType="#//Trainer"
         eOpposite="#//Trainer/pokemon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="move1" eType="#//Move"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="move2" eType="#//Move"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="move3" eType="#//Move"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="move4" eType="#//Move"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Trainer">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
-        upperBound="6" eType="#//PokemonInstance" eOpposite="#//PokemonInstance/trainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" upperBound="6"
+        eType="#//PokemonInstance" eOpposite="#//PokemonInstance/trainer"/>
   </eClassifiers>
 </ecore:EPackage>

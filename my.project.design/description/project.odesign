@@ -133,7 +133,31 @@
             <subContainerMappings name="TrainerPokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Trainer" childrenPresentation="HorizontalStack">
               <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::PokemonInstance" childrenPresentation="VerticalStack">
                 <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::PokemonInstance" childrenPresentation="List">
-                  <subNodeMappings name="Move" semanticCandidatesExpression="aql:self.moves" domainClass="pokemon::Move">
+                  <subNodeMappings name="Move1" semanticCandidatesExpression="aql:self.move1" domainClass="pokemon::Move">
+                    <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelFormat>italic</labelFormat>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                    </style>
+                  </subNodeMappings>
+                  <subNodeMappings name="Move2" semanticCandidatesExpression="aql:self.move2" domainClass="pokemon::Move">
+                    <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelFormat>italic</labelFormat>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                    </style>
+                  </subNodeMappings>
+                  <subNodeMappings name="Move3" semanticCandidatesExpression="aql:self.move3" domainClass="pokemon::Move">
+                    <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelFormat>italic</labelFormat>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                    </style>
+                  </subNodeMappings>
+                  <subNodeMappings name="Move4" semanticCandidatesExpression="aql:self.move4" domainClass="pokemon::Move">
                     <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
                       <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                       <labelFormat>italic</labelFormat>
@@ -274,6 +298,34 @@
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
                             <subModelOperations xsi:type="tool_1:SetValue" featureName="trainer" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" name="PokemonMove1" labelExpression="Move 1" valueExpression="aql:instance.move1" candidatesExpression="aql:self.move" candidateDisplayExpression="aql:candidate.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="move1" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" name="PokemonMove2" labelExpression="Move 2" valueExpression="aql:instance.move2" candidatesExpression="aql:self.move" candidateDisplayExpression="aql:candidate.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="move2" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" name="PokemonMove3" labelExpression="Move 3" valueExpression="aql:instance.move3" candidatesExpression="aql:self.move" candidateDisplayExpression="aql:candidate.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="move3" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                      <controls xsi:type="properties:SelectDescription" name="PokemonMove4" labelExpression="Move 4" valueExpression="aql:instance.move4" candidatesExpression="aql:self.move" candidateDisplayExpression="aql:candidate.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="move4" valueExpression="var:newValue"/>
                           </firstModelOperations>
                         </initialOperation>
                       </controls>

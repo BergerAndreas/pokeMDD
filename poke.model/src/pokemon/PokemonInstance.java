@@ -2,8 +2,6 @@
  */
 package pokemon;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -17,8 +15,11 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}</li>
  *   <li>{@link pokemon.PokemonInstance#getLevel <em>Level</em>}</li>
- *   <li>{@link pokemon.PokemonInstance#getMoves <em>Moves</em>}</li>
  *   <li>{@link pokemon.PokemonInstance#getTrainer <em>Trainer</em>}</li>
+ *   <li>{@link pokemon.PokemonInstance#getMove1 <em>Move1</em>}</li>
+ *   <li>{@link pokemon.PokemonInstance#getMove2 <em>Move2</em>}</li>
+ *   <li>{@link pokemon.PokemonInstance#getMove3 <em>Move3</em>}</li>
+ *   <li>{@link pokemon.PokemonInstance#getMove4 <em>Move4</em>}</li>
  * </ul>
  *
  * @see pokemon.PokemonPackage#getPokemonInstance()
@@ -31,7 +32,7 @@ public interface PokemonInstance extends EObject {
 	 * It is bidirectional and its opposite is '{@link pokemon.Pokemon#getPokemonInstance <em>Pokemon Instance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Pokemon</em>' reference isn't clear,
+	 * If the meaning of the '<em>Pokemon</em>' container reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -81,22 +82,6 @@ public interface PokemonInstance extends EObject {
 	void setLevel(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Moves</b></em>' reference list.
-	 * The list contents are of type {@link pokemon.Move}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Moves</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Moves</em>' reference list.
-	 * @see pokemon.PokemonPackage#getPokemonInstance_Moves()
-	 * @model required="true" upper="4"
-	 * @generated
-	 */
-	EList<Move> getMoves();
-
-	/**
 	 * Returns the value of the '<em><b>Trainer</b></em>' reference.
 	 * It is bidirectional and its opposite is '{@link pokemon.Trainer#getPokemon <em>Pokemon</em>}'.
 	 * <!-- begin-user-doc -->
@@ -123,5 +108,109 @@ public interface PokemonInstance extends EObject {
 	 * @generated
 	 */
 	void setTrainer(Trainer value);
+
+	/**
+	 * Returns the value of the '<em><b>Move1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Move1</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Move1</em>' reference.
+	 * @see #setMove1(Move)
+	 * @see pokemon.PokemonPackage#getPokemonInstance_Move1()
+	 * @model
+	 * @generated
+	 */
+	Move getMove1();
+
+	/**
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getMove1 <em>Move1</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Move1</em>' reference.
+	 * @see #getMove1()
+	 * @generated
+	 */
+	void setMove1(Move value);
+
+	/**
+	 * Returns the value of the '<em><b>Move2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Move2</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Move2</em>' reference.
+	 * @see #setMove2(Move)
+	 * @see pokemon.PokemonPackage#getPokemonInstance_Move2()
+	 * @model
+	 * @generated
+	 */
+	Move getMove2();
+
+	/**
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getMove2 <em>Move2</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Move2</em>' reference.
+	 * @see #getMove2()
+	 * @generated
+	 */
+	void setMove2(Move value);
+
+	/**
+	 * Returns the value of the '<em><b>Move3</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Move3</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Move3</em>' reference.
+	 * @see #setMove3(Move)
+	 * @see pokemon.PokemonPackage#getPokemonInstance_Move3()
+	 * @model
+	 * @generated
+	 */
+	Move getMove3();
+
+	/**
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getMove3 <em>Move3</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Move3</em>' reference.
+	 * @see #getMove3()
+	 * @generated
+	 */
+	void setMove3(Move value);
+
+	/**
+	 * Returns the value of the '<em><b>Move4</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Move4</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Move4</em>' reference.
+	 * @see #setMove4(Move)
+	 * @see pokemon.PokemonPackage#getPokemonInstance_Move4()
+	 * @model
+	 * @generated
+	 */
+	Move getMove4();
+
+	/**
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getMove4 <em>Move4</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Move4</em>' reference.
+	 * @see #getMove4()
+	 * @generated
+	 */
+	void setMove4(Move value);
 
 } // PokemonInstance

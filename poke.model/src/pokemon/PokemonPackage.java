@@ -396,22 +396,49 @@ public interface PokemonPackage extends EPackage {
 	int POKEMON_INSTANCE__LEVEL = 1;
 
 	/**
-	 * The feature id for the '<em><b>Moves</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POKEMON_INSTANCE__MOVES = 2;
-
-	/**
 	 * The feature id for the '<em><b>Trainer</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POKEMON_INSTANCE__TRAINER = 3;
+	int POKEMON_INSTANCE__TRAINER = 2;
+
+	/**
+	 * The feature id for the '<em><b>Move1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POKEMON_INSTANCE__MOVE1 = 3;
+
+	/**
+	 * The feature id for the '<em><b>Move2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POKEMON_INSTANCE__MOVE2 = 4;
+
+	/**
+	 * The feature id for the '<em><b>Move3</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POKEMON_INSTANCE__MOVE3 = 5;
+
+	/**
+	 * The feature id for the '<em><b>Move4</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POKEMON_INSTANCE__MOVE4 = 6;
 
 	/**
 	 * The number of structural features of the '<em>Instance</em>' class.
@@ -420,7 +447,7 @@ public interface PokemonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POKEMON_INSTANCE_FEATURE_COUNT = 4;
+	int POKEMON_INSTANCE_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Instance</em>' class.
@@ -793,17 +820,6 @@ public interface PokemonPackage extends EPackage {
 	EAttribute getPokemonInstance_Level();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pokemon.PokemonInstance#getMoves <em>Moves</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Moves</em>'.
-	 * @see pokemon.PokemonInstance#getMoves()
-	 * @see #getPokemonInstance()
-	 * @generated
-	 */
-	EReference getPokemonInstance_Moves();
-
-	/**
 	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getTrainer <em>Trainer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -813,6 +829,50 @@ public interface PokemonPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPokemonInstance_Trainer();
+
+	/**
+	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getMove1 <em>Move1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move1</em>'.
+	 * @see pokemon.PokemonInstance#getMove1()
+	 * @see #getPokemonInstance()
+	 * @generated
+	 */
+	EReference getPokemonInstance_Move1();
+
+	/**
+	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getMove2 <em>Move2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move2</em>'.
+	 * @see pokemon.PokemonInstance#getMove2()
+	 * @see #getPokemonInstance()
+	 * @generated
+	 */
+	EReference getPokemonInstance_Move2();
+
+	/**
+	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getMove3 <em>Move3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move3</em>'.
+	 * @see pokemon.PokemonInstance#getMove3()
+	 * @see #getPokemonInstance()
+	 * @generated
+	 */
+	EReference getPokemonInstance_Move3();
+
+	/**
+	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getMove4 <em>Move4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Move4</em>'.
+	 * @see pokemon.PokemonInstance#getMove4()
+	 * @see #getPokemonInstance()
+	 * @generated
+	 */
+	EReference getPokemonInstance_Move4();
 
 	/**
 	 * Returns the meta object for class '{@link pokemon.Trainer <em>Trainer</em>}'.
@@ -1112,20 +1172,44 @@ public interface PokemonPackage extends EPackage {
 		EAttribute POKEMON_INSTANCE__LEVEL = eINSTANCE.getPokemonInstance_Level();
 
 		/**
-		 * The meta object literal for the '<em><b>Moves</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference POKEMON_INSTANCE__MOVES = eINSTANCE.getPokemonInstance_Moves();
-
-		/**
 		 * The meta object literal for the '<em><b>Trainer</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference POKEMON_INSTANCE__TRAINER = eINSTANCE.getPokemonInstance_Trainer();
+
+		/**
+		 * The meta object literal for the '<em><b>Move1</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POKEMON_INSTANCE__MOVE1 = eINSTANCE.getPokemonInstance_Move1();
+
+		/**
+		 * The meta object literal for the '<em><b>Move2</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POKEMON_INSTANCE__MOVE2 = eINSTANCE.getPokemonInstance_Move2();
+
+		/**
+		 * The meta object literal for the '<em><b>Move3</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POKEMON_INSTANCE__MOVE3 = eINSTANCE.getPokemonInstance_Move3();
+
+		/**
+		 * The meta object literal for the '<em><b>Move4</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference POKEMON_INSTANCE__MOVE4 = eINSTANCE.getPokemonInstance_Move4();
 
 		/**
 		 * The meta object literal for the '{@link pokemon.impl.TrainerImpl <em>Trainer</em>}' class.

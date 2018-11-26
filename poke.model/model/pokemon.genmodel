@@ -38,8 +38,11 @@
     <genClasses ecoreClass="pokemon.ecore#//PokemonInstance">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/pokemon"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pokemon.ecore#//PokemonInstance/level"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/moves"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/trainer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/move1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/move2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/move3"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//PokemonInstance/move4"/>
     </genClasses>
     <genClasses ecoreClass="pokemon.ecore#//Trainer">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pokemon.ecore#//Trainer/name"/>
