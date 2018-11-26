@@ -241,7 +241,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:container.pokemon">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pokemon::PokemonInstance" referenceName="pokemonInstance">
                   <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Pokemon">
                     <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">

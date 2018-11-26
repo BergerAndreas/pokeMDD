@@ -10,7 +10,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pokemon.ecore#//Root/move"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pokemon.ecore#//Root/type"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pokemon.ecore#//Root/trainer"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pokemon.ecore#//Root/pokemonInstance"/>
     </genClasses>
     <genClasses ecoreClass="pokemon.ecore#//Pokemon">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pokemon.ecore#//Pokemon/name"/>
@@ -21,6 +20,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pokemon.ecore#//Pokemon/baseExperience"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//Pokemon/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pokemon.ecore#//Pokemon/move"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pokemon.ecore#//Pokemon/pokemonInstance"/>
     </genClasses>
     <genClasses ecoreClass="pokemon.ecore#//Move">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pokemon.ecore#//Move/name"/>

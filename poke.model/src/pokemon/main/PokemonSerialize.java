@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -77,6 +78,9 @@ public class PokemonSerialize {
 	        	
 	        	try(InputStream in = new URL("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png").openStream()){
 	        	    Files.copy(in, Paths.get("../my.project.design/images/" + id + ".png"));
+	        	}
+	        	catch(FileAlreadyExistsException e) {
+	        		//Don't care about existing files
 	        	}
 	        	catch(Exception e) {
 	        		e.printStackTrace();
