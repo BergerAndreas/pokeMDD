@@ -6,6 +6,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Map;
@@ -46,10 +48,10 @@ public class PokemonSerialize {
 	        	m.setId(id);
 	        	
 	        	// Add move details
-//        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
-//        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
-//        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
-//        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
+        		JsonNode moveNode = fetchData("https://pokeapi.co/api/v2/move/"+ id +"/");
+        		m.setAccuracy(moveNode.get("accuracy") == null ? 0 : moveNode.get("accuracy").asInt());
+        		m.setPower(moveNode.get("power") == null ? 0: moveNode.get("power").asInt());
+        		m.setPp(Integer.parseInt(moveNode.get("pp").asText()));
 
 	        	//Save move
 	        	root.getMove().add(m);
@@ -70,6 +72,15 @@ public class PokemonSerialize {
 	        	p.setName(pokemon.get("name").asText());
 	        	int id = Integer.parseInt(pokemon.get("url").asText().split("/")[6]);
 	        	p.setId(id);
+	        	
+	        	//Download sprite png
+	        	
+	        	try(InputStream in = new URL("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png").openStream()){
+	        	    Files.copy(in, Paths.get("../my.project.design/images/" + id + ".png"));
+	        	}
+	        	catch(Exception e) {
+	        		e.printStackTrace();
+	        	}
 	        	
 	        	//Add attributes
 	        	JsonNode pokemonNode = fetchData("https://pokeapi.co/api/v2/pokemon/"+ id +"/");
@@ -116,6 +127,7 @@ public class PokemonSerialize {
 		resource.getContents().add(root);
 		try {
 			resource.save(Collections.EMPTY_MAP);
+			System.out.println("Done!");
 			
 		}catch (Exception e) {
 			e.printStackTrace();

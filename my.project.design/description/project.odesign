@@ -4,34 +4,17 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Pokemon diagram" domainClass="pokemon::Root" enablePopupBars="true">
       <metamodel href="platform:/plugin/pokeMDD/model/pokemon.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance">
+        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon_DONT"/>
+        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type_DONT"/>
+        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move_DONT"/>
+        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance_DONT">
           <style xsi:type="style:SquareDescription" labelExpression="aql:self.pokemon.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
           </style>
         </nodeMappings>
+        <nodeMappings name="Trainer" domainClass="pokemon::Trainer"/>
         <edgeMappings name="typeEdge" sourceMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']" targetMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Type']" targetFinderExpression="feature:type">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -48,11 +31,56 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root_DONTSHOW" childrenPresentation="HorizontalStack">
+        <containerMappings name="PokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Root" childrenPresentation="HorizontalStack">
           <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::Pokemon" childrenPresentation="VerticalStack">
+            <subContainerMappings name="SpriteContainer" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+              <subNodeMappings name="SpriteNode" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:null" hideLabelByDefault="true" sizeComputationExpression="-1" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                </style>
+              </subNodeMappings>
+            </subContainerMappings>
+            <subContainerMappings name="PokemonInfoContainer" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
+              <subNodeMappings name="PokemonId" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:'Id: ' + self.id" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="PokemonId" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:'Id: ' + self.id" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="PokemonHeight" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:'Height: ' + self.height" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="PokemonWeight" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:'Weight: ' + self.weight" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+              <subNodeMappings name="PokemonBaseExp" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="aql:'Base Experience: ' + self.baseExperience" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                </style>
+              </subNodeMappings>
+            </subContainerMappings>
             <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Move" semanticCandidatesExpression="aql:self.move" domainClass="pokemon::Move">
-                <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
+                <style xsi:type="style:SquareDescription" labelExpression="aql:self.name.toUpperFirst()" labelAlignment="LEFT" labelPosition="node">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelFormat>italic</labelFormat>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -69,7 +97,7 @@
             </subContainerMappings>
             <subContainerMappings name="TypeContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Pokemon" childrenPresentation="List">
               <subNodeMappings name="Type" semanticCandidatesExpression="aql:self.type" domainClass="pokemon::Type">
-                <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" width="4">
+                <style xsi:type="style:SquareDescription" labelExpression="aql:self.name.toUpperFirst()" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW" width="4">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -83,7 +111,7 @@
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false" labelExpression="aql:self.name.toUpperFirst()">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelFormat>bold</labelFormat>
               <labelFormat>underline</labelFormat>
@@ -255,7 +283,44 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createTrainer" nodeMappings="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Trainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pokemon::Trainer" referenceName="trainer">
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Trainer">
+                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                      <initialOperation/>
+                    </buttons>
+                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                      <initialOperation>
+                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                          <subModelOperations xsi:type="tool_1:SetValue" featureName="trainer" valueExpression="var:instance"/>
+                        </firstModelOperations>
+                      </initialOperation>
+                    </buttons>
+                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='createTrainer']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                    <groups name="Default Group" labelExpression="Group" semanticCandidateExpression="var:self">
+                      <controls xsi:type="properties:TextDescription" labelExpression="Name:" valueExpression="aql:instance.name">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:instance">
+                            <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </controls>
+                    </groups>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@containerMappings[name='PokemonContainer']/@subContainerMappings[name='Pokemon']/@subContainerMappings[name='SpriteContainer']/@subNodeMappings[name='SpriteNode']/@style" attributeName="workspacePath" value="aql:'/my.project.design/images/' + self.id + '.png' "/>
+          </vsmElementCustomizations>
+        </customization>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="my.project.design.Services"/>
