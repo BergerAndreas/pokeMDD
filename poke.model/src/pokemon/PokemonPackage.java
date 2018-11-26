@@ -378,7 +378,7 @@ public interface PokemonPackage extends EPackage {
 	int POKEMON_INSTANCE = 4;
 
 	/**
-	 * The feature id for the '<em><b>Pokemon</b></em>' reference.
+	 * The feature id for the '<em><b>Pokemon</b></em>' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -771,10 +771,10 @@ public interface PokemonPackage extends EPackage {
 	EClass getPokemonInstance();
 
 	/**
-	 * Returns the meta object for the reference '{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}'.
+	 * Returns the meta object for the container reference '{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Pokemon</em>'.
+	 * @return the meta object for the container reference '<em>Pokemon</em>'.
 	 * @see pokemon.PokemonInstance#getPokemon()
 	 * @see #getPokemonInstance()
 	 * @generated
@@ -1096,7 +1096,7 @@ public interface PokemonPackage extends EPackage {
 		EClass POKEMON_INSTANCE = eINSTANCE.getPokemonInstance();
 
 		/**
-		 * The meta object literal for the '<em><b>Pokemon</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Pokemon</b></em>' container reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

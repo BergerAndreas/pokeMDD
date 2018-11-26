@@ -14,8 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -373,7 +372,7 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 	 */
 	public EList<PokemonInstance> getPokemonInstance() {
 		if (pokemonInstance == null) {
-			pokemonInstance = new EObjectContainmentEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.POKEMON__POKEMON_INSTANCE);
+			pokemonInstance = new EObjectContainmentWithInverseEList<PokemonInstance>(PokemonInstance.class, this, PokemonPackage.POKEMON__POKEMON_INSTANCE, PokemonPackage.POKEMON_INSTANCE__POKEMON);
 		}
 		return pokemonInstance;
 	}
@@ -391,6 +390,8 @@ public class PokemonImpl extends MinimalEObjectImpl.Container implements Pokemon
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getType()).basicAdd(otherEnd, msgs);
 			case PokemonPackage.POKEMON__MOVE:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMove()).basicAdd(otherEnd, msgs);
+			case PokemonPackage.POKEMON__POKEMON_INSTANCE:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPokemonInstance()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}

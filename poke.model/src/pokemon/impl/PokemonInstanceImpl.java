@@ -5,8 +5,8 @@ package pokemon.impl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import pokemon.Move;
 import pokemon.Pokemon;
 import pokemon.PokemonInstance;
@@ -40,16 +41,6 @@ import pokemon.Trainer;
  * @generated
  */
 public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements PokemonInstance {
-	/**
-	 * The cached value of the '{@link #getPokemon() <em>Pokemon</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPokemon()
-	 * @generated
-	 * @ordered
-	 */
-	protected Pokemon pokemon;
-
 	/**
 	 * The default value of the '{@link #getLevel() <em>Level</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -115,15 +106,8 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public Pokemon getPokemon() {
-		if (pokemon != null && pokemon.eIsProxy()) {
-			InternalEObject oldPokemon = (InternalEObject)pokemon;
-			pokemon = (Pokemon)eResolveProxy(oldPokemon);
-			if (pokemon != oldPokemon) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PokemonPackage.POKEMON_INSTANCE__POKEMON, oldPokemon, pokemon));
-			}
-		}
-		return pokemon;
+		if (eContainerFeatureID() != PokemonPackage.POKEMON_INSTANCE__POKEMON) return null;
+		return (Pokemon)eInternalContainer();
 	}
 
 	/**
@@ -131,8 +115,9 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Pokemon basicGetPokemon() {
-		return pokemon;
+	public NotificationChain basicSetPokemon(Pokemon newPokemon, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newPokemon, PokemonPackage.POKEMON_INSTANCE__POKEMON, msgs);
+		return msgs;
 	}
 
 	/**
@@ -141,10 +126,19 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	public void setPokemon(Pokemon newPokemon) {
-		Pokemon oldPokemon = pokemon;
-		pokemon = newPokemon;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PokemonPackage.POKEMON_INSTANCE__POKEMON, oldPokemon, pokemon));
+		if (newPokemon != eInternalContainer() || (eContainerFeatureID() != PokemonPackage.POKEMON_INSTANCE__POKEMON && newPokemon != null)) {
+			if (EcoreUtil.isAncestor(this, newPokemon))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newPokemon != null)
+				msgs = ((InternalEObject)newPokemon).eInverseAdd(this, PokemonPackage.POKEMON__POKEMON_INSTANCE, Pokemon.class, msgs);
+			msgs = basicSetPokemon(newPokemon, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PokemonPackage.POKEMON_INSTANCE__POKEMON, newPokemon, newPokemon));
 	}
 
 	/**
@@ -248,6 +242,10 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case PokemonPackage.POKEMON_INSTANCE__POKEMON:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetPokemon((Pokemon)otherEnd, msgs);
 			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
 				if (trainer != null)
 					msgs = ((InternalEObject)trainer).eInverseRemove(this, PokemonPackage.TRAINER__POKEMON, Trainer.class, msgs);
@@ -264,6 +262,8 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case PokemonPackage.POKEMON_INSTANCE__POKEMON:
+				return basicSetPokemon(null, msgs);
 			case PokemonPackage.POKEMON_INSTANCE__TRAINER:
 				return basicSetTrainer(null, msgs);
 		}
@@ -276,11 +276,24 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case PokemonPackage.POKEMON_INSTANCE__POKEMON:
+				return eInternalContainer().eInverseRemove(this, PokemonPackage.POKEMON__POKEMON_INSTANCE, Pokemon.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case PokemonPackage.POKEMON_INSTANCE__POKEMON:
-				if (resolve) return getPokemon();
-				return basicGetPokemon();
+				return getPokemon();
 			case PokemonPackage.POKEMON_INSTANCE__LEVEL:
 				return getLevel();
 			case PokemonPackage.POKEMON_INSTANCE__MOVES:
@@ -351,7 +364,7 @@ public class PokemonInstanceImpl extends MinimalEObjectImpl.Container implements
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case PokemonPackage.POKEMON_INSTANCE__POKEMON:
-				return pokemon != null;
+				return getPokemon() != null;
 			case PokemonPackage.POKEMON_INSTANCE__LEVEL:
 				return level != LEVEL_EDEFAULT;
 			case PokemonPackage.POKEMON_INSTANCE__MOVES:

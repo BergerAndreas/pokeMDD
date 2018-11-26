@@ -27,26 +27,28 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface PokemonInstance extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Pokemon</b></em>' reference.
+	 * Returns the value of the '<em><b>Pokemon</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link pokemon.Pokemon#getPokemonInstance <em>Pokemon Instance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pokemon</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pokemon</em>' reference.
+	 * @return the value of the '<em>Pokemon</em>' container reference.
 	 * @see #setPokemon(Pokemon)
 	 * @see pokemon.PokemonPackage#getPokemonInstance_Pokemon()
-	 * @model required="true"
+	 * @see pokemon.Pokemon#getPokemonInstance
+	 * @model opposite="pokemonInstance" required="true" transient="false"
 	 * @generated
 	 */
 	Pokemon getPokemon();
 
 	/**
-	 * Sets the value of the '{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}' reference.
+	 * Sets the value of the '{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}' container reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pokemon</em>' reference.
+	 * @param value the new value of the '<em>Pokemon</em>' container reference.
 	 * @see #getPokemon()
 	 * @generated
 	 */

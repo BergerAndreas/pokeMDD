@@ -227,6 +227,7 @@ public interface Pokemon extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Pokemon Instance</b></em>' containment reference list.
 	 * The list contents are of type {@link pokemon.PokemonInstance}.
+	 * It is bidirectional and its opposite is '{@link pokemon.PokemonInstance#getPokemon <em>Pokemon</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Pokemon Instance</em>' containment reference list isn't clear,
@@ -235,7 +236,8 @@ public interface Pokemon extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Pokemon Instance</em>' containment reference list.
 	 * @see pokemon.PokemonPackage#getPokemon_PokemonInstance()
-	 * @model containment="true"
+	 * @see pokemon.PokemonInstance#getPokemon
+	 * @model opposite="pokemon" containment="true"
 	 * @generated
 	 */
 	EList<PokemonInstance> getPokemonInstance();
