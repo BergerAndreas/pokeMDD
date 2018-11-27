@@ -11,11 +11,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import org.eclipse.emf.common.util.ECollections;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -117,8 +119,10 @@ public class PokemonSerialize {
 	        	root.getPokemon().add(p);
 	        }
 	        
-		
-		
+	        
+		//Sort pokemons by id
+	    ECollections.sort(root.getPokemon(), (p1, p2) -> p1.getId() - p2.getId());
+	    
 		//Save the model
 		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 		Map<String, Object> map = reg.getExtensionToFactoryMap();
