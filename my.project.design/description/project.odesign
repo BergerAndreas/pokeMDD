@@ -4,17 +4,41 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Pokemon diagram" domainClass="pokemon::Root" enablePopupBars="true">
       <metamodel href="platform:/plugin/pokeMDD/model/pokemon.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon_DONT"/>
-        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type_DONT"/>
-        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move_DONT"/>
-        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="feature:pokemonInstance" domainClass="pokemon::PokemonInstance_DONT">
+        <nodeMappings name="Pokemon" semanticCandidatesExpression="feature:pokemon" domainClass="pokemon::Pokemon">
+          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Type" semanticCandidatesExpression="feature:type" domainClass="pokemon::Type">
+          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Move" semanticCandidatesExpression="feature:move" domainClass="pokemon::Move">
+          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="PokemonInstance" semanticCandidatesExpression="aql:self.pokemon.pokemonInstance" domainClass="pokemon::PokemonInstance">
           <style xsi:type="style:SquareDescription" labelExpression="aql:self.pokemon.name" labelPosition="node" resizeKind="NSEW" width="10" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Trainer" domainClass="pokemon::Trainer"/>
+        <nodeMappings name="Trainer" domainClass="pokemon::Trainer">
+          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+          </style>
+        </nodeMappings>
         <edgeMappings name="typeEdge" sourceMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']" targetMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Type']" targetFinderExpression="feature:type">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -24,6 +48,22 @@
           </style>
         </edgeMappings>
         <edgeMappings name="moveEdge" sourceMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']" targetMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Move']" targetFinderExpression="feature:move">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="pokemonInstanceEdge" sourceMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='PokemonInstance']" targetMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']" targetFinderExpression="feature:pokemon">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="trainerEdge" sourceMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Trainer']" targetMapping="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='PokemonInstance']" targetFinderExpression="feature:pokemon">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -197,7 +237,7 @@
                     <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
                   </style>
                 </subContainerMappings>
-                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false" labelExpression="aql:self.pokemon.name">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="10" showIcon="false" labelExpression="aql:self.pokemon.name.toUpperFirst()">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                   <labelFormat>bold</labelFormat>
                   <labelFormat>underline</labelFormat>
@@ -214,7 +254,7 @@
                 <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
               </style>
             </subContainerMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" showIcon="false">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>

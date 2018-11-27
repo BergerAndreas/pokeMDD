@@ -331,4 +331,5 @@
   <type id="14" name="psychic" pokemon="jynx mr-mime starmie exeggutor hypno slowbro alakazam kadabra mew mewtwo exeggcute drowzee slowpoke abra"/>
   <type id="15" name="ice" pokemon="jynx cloyster dewgong articuno lapras"/>
   <type id="16" name="dragon" pokemon="dragonite dragonair dratini"/>
+  <trainer name="Hallvard"/>
 </pokemon:Root>
