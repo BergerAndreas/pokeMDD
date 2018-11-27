@@ -9,6 +9,7 @@ Install the folowing into Eclipse:
 * Sirius Properties Views - Specifier Support
 * Sirius Specifier Environment
 * (Ecore Diagram Editor (SDK))
+* (Lots and lots of ram)
 
 ## Running the diagram
 
@@ -42,7 +43,7 @@ Root is the container for Pokemon, Move, Type, and Trainer.
 
 **Trainer:** Contains the Trainers, which in turn contain all their Pokémon. 
 
-**Nodes**
+**Nodes:**
 
 Pokemon, PokemonInstance, Move, Type
 
@@ -52,3 +53,10 @@ Pokemon, PokemonInstance, Move, Type
 * Pokemon to its Moves
 * Pokemon to its Types
 * Trainer to its PokemonInstances
+
+### Fetching Data
+
+Data is fetched from https://pokeapi.co/api/v2/.
+
+To fetch data run PokemonSerialize.java in poke.model > src > pokemon.main.
+
