@@ -132,6 +132,14 @@
           <subContainerMappings name="Trainer" semanticCandidatesExpression="aql:self.trainer" domainClass="pokemon::Trainer" childrenPresentation="HorizontalStack">
             <subContainerMappings name="TrainerPokemonContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::Trainer" childrenPresentation="HorizontalStack">
               <subContainerMappings name="Pokemon" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::PokemonInstance" childrenPresentation="VerticalStack">
+                <subContainerMappings name="SpriteContainer" semanticCandidatesExpression="aql:self.pokemon" domainClass="pokemon::Pokemon">
+                  <subNodeMappings name="SpriteNode" semanticCandidatesExpression="aql:self" domainClass="pokemon::Pokemon">
+                    <style xsi:type="style:WorkspaceImageDescription" labelExpression="aql:null" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW">
+                      <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                      <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    </style>
+                  </subNodeMappings>
+                </subContainerMappings>
                 <subContainerMappings name="MoveContainer" semanticCandidatesExpression="var:self" domainClass="pokemon::PokemonInstance" childrenPresentation="List">
                   <subNodeMappings name="Move1" semanticCandidatesExpression="aql:self.move1" domainClass="pokemon::Move">
                     <style xsi:type="style:SquareDescription" labelAlignment="LEFT" labelPosition="node">
@@ -370,7 +378,7 @@
         </toolSections>
         <customization>
           <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
-            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@containerMappings[name='PokemonContainer']/@subContainerMappings[name='Pokemon']/@subContainerMappings[name='SpriteContainer']/@subNodeMappings[name='SpriteNode']/@style" attributeName="workspacePath" value="aql:'/my.project.design/images/' + self.id + '.png' "/>
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@containerMappings[name='PokemonContainer']/@subContainerMappings[name='Pokemon']/@subContainerMappings[name='SpriteContainer']/@subNodeMappings[name='SpriteNode']/@style //@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@containerMappings[name='TrainerContainer']/@subContainerMappings[name='Trainer']/@subContainerMappings[name='TrainerPokemonContainer']/@subContainerMappings[name='Pokemon']/@subContainerMappings[name='SpriteContainer']/@subNodeMappings[name='SpriteNode']/@style" attributeName="workspacePath" value="aql:'/my.project.design/images/' + self.id + '.png' "/>
           </vsmElementCustomizations>
         </customization>
       </defaultLayer>
