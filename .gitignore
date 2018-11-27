@@ -5,3 +5,5 @@
 poke.model/src/pokemon
 !poke.model/src/pokemon/main
 
+#Ignore generated xmi file
+*.pokemon
