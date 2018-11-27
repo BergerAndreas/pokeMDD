@@ -73,7 +73,7 @@ public class PokemonSerialize {
 		map.put("pokemon", new XMIResourceFactoryImpl());
 
 		ResourceSet resSet = new ResourceSetImpl();
-		Resource resource = resSet.createResource(URI.createURI("model/m1mm.pokemon"));
+		Resource resource = resSet.createResource(URI.createURI("model/pokemons.pokemon"));
 		resource.getContents().add(root);
 		try {
 			resource.save(Collections.EMPTY_MAP);
