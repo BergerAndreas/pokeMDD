@@ -1,1 +1,9 @@
-/bin/
+#Ignoring all bin folders
+**/bin
+
+#Ignoring generated class code, but not main
+poke.model/src/pokemon
+!poke.model/src/pokemon/main
+
+#Ignore generated xmi file
+*.pokemon

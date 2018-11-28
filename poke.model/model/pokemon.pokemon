@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<pokemon:Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:pokemon="platform:/plugin/pokeMDD/model/pokemon.ecore">
-  <pokemon name="0"/>
-  <pokemon name="1"/>
-  <pokemon name="2"/>
-  <pokemon name="3"/>
-  <pokemon name="4"/>
-</pokemon:Root>
