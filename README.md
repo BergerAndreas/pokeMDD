@@ -27,6 +27,8 @@ Install the folowing into Eclipse:
 
 ### The Ecore Model
 
+![PlantUML diagram of Ecore model](pokemon_plantUML.png)
+
 Pokémon is the class used for data common for instances of a specific Pokémon, e.g. every Pikachu has the same ID, the same weight, and the same height. Pokemon have pointers to its corresponding types and moves.
 
 PokemonInstance holds the information about one instance of a pokemon, e.g. what 4 moves it has, its level, and who owns that specific pokemon. These are contained by the Pokemon class.
