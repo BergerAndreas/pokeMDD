@@ -270,45 +270,6 @@
           </style>
         </containerMappings>
         <toolSections name="Tools">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="createPokemon" nodeMappings="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='Pokemon']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="pokemon::Pokemon" referenceName="pokemon">
-                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Pokemon">
-                    <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
-                      <initialOperation/>
-                    </buttons>
-                    <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
-                      <initialOperation>
-                        <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                          <subModelOperations xsi:type="tool_1:SetValue" featureName="pokemon" valueExpression="var:instance"/>
-                        </firstModelOperations>
-                      </initialOperation>
-                    </buttons>
-                    <page name="Default Page" labelExpression="Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='createPokemon']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
-                    <groups name="Default Group" labelExpression="Group" semanticCandidateExpression="var:self">
-                      <controls xsi:type="properties:TextDescription" labelExpression="Name:" valueExpression="aql:instance.name">
-                        <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:instance">
-                            <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:newValue"/>
-                          </firstModelOperations>
-                        </initialOperation>
-                      </controls>
-                      <controls xsi:type="properties:TextDescription" labelExpression="Height:" valueExpression="aql:instance.height">
-                        <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:instance">
-                            <subModelOperations xsi:type="tool_1:SetValue" featureName="height" valueExpression="var:newValue"/>
-                          </firstModelOperations>
-                        </initialOperation>
-                      </controls>
-                    </groups>
-                  </subModelOperations>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createPokemonInstance" nodeMappings="//@ownedViewpoints[name='PokemnViewpoint']/@ownedRepresentations[name='Pokemon%20diagram']/@defaultLayer/@nodeMappings[name='PokemonInstance']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
