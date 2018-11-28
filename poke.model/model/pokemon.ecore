@@ -45,7 +45,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Move">
     <eAnnotations source="http://www.eclipse.org/acceleo/query/1.0">
       <details key="ppMustBePercentage" value="(self.pp >= 0) and self.pp &lt;= 100"/>
-      <details key="powerMustBePercentage" value="self.power >= 0 and self.power &lt;= 100"/>
       <details key="accuracyMustBePercentage" value="self.accuracy >= 0 and self.accuracy &lt;= 100"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -73,9 +72,9 @@
       <details key="constraints" value="noDuplicateMove1 noDuplicateMove2 noDuplicateMove3"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/acceleo/query/1.0">
-      <details key="noDuplicateMove1" value="self.move1 != self.move2 and self.move1 != self.move3 and self.move1 != self.move4"/>
-      <details key="noDuplicateMove2" value="self.move2 != self.move3 and self.move2 != self.move4"/>
-      <details key="noDuplicateMove3" value="self.move3 != self.move4"/>
+      <details key="noDuplicateMove1" value="self.move1 == null or (self.move1 != self.move2 and self.move1 != self.move3 and self.move1 != self.move4)"/>
+      <details key="noDuplicateMove2" value="self.move2 == null or (self.move2 != self.move3 and self.move2 != self.move4)"/>
+      <details key="noDuplicateMove3" value="self.move3==null or (self.move3 != self.move4)"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pokemon" lowerBound="1"
         eType="#//Pokemon" eOpposite="#//Pokemon/pokemonInstance"/>
