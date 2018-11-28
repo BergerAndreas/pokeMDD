@@ -35,6 +35,8 @@ Trainers can own PokemonInstances.
 
 Root is the container for Pokemon, Move, Type, and Trainer.
 
+The model has constraints for ensuring valid model instances, like positive numbers for height and not duplicating moves of pokémons.
+
 ### The Diagram
 
 **Containers:**
@@ -60,3 +62,8 @@ Data is fetched from https://pokeapi.co/api/v2/.
 
 To fetch data run PokemonSerialize.java in poke.model > src > pokemon.main.
 
+This will create a new file called root.pokemon in poke.model > model
+
+Move this file to the poke.examples project and rename it to root.xmi.
+
+You can now create a new pokemon diagram based on this file.
