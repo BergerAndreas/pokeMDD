@@ -47,7 +47,11 @@ The model has constraints for ensuring valid model instances, like positive numb
 
 **Pokemon:** Contain all the Pokemon, each with an  image, a lists of their moves and types, as well as id, height, and weight.
 
+![Pokemon Container](pokemen.png)
+
 **Trainer:** Contains the Trainers, which in turn contain all their Pokémon. 
+
+![Trainer Container](trainers.png)
 
 **Nodes:**
 
