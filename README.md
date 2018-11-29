@@ -4,7 +4,7 @@ This application fetches data from the REST API pokeapi.co and imports the data 
 
 ## Prerequisites
 
-Install the folowing into Eclipse:
+Install the following into Eclipse:
 * Acceleo
 * Acceleo Query SDK
 * Sirius Properties Views - Runtime Support
