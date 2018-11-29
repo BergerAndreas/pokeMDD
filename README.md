@@ -1,5 +1,7 @@
 # pokeMDD
 
+This application fetches data from the REST API pokeapi.co and imports the data into an Ecore model for the first generation pokémons. This data can then be viewed and edited with Sirius to add trainers and pokémon instances and assign pokémon instances to trainers. The application focuses on proof of concept. Because of this the Sirius diagram shows a variety of nodes and containers, instead of trying to be pretty. Included is an example .xmi file with imported pokémons, two trainers and assigned pokémon instances.
+
 ## Prerequisites
 
 Install the folowing into Eclipse:
