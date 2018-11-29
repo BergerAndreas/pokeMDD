@@ -18,6 +18,7 @@ Install the following into Eclipse:
 1. Clone the Git repository
 2. Import the projects into Eclipse
     * Set _pokemon.model_ and _my.project.design_ as active plugins
+4. Open _pokemon.genmodel_ and generate model code.
 3. Launch a new runtime from your Eclipse
     * Click on **Run / Run Configurations**
     * Double click on **Eclipse Application** to get a New_configuration
